@@ -56,3 +56,10 @@ th, td {
 th {
   background-color: #f8f9fa;
 }
+
+@media (prefers-color-scheme: dark) {
+  body { background: #1a1a1a; color: #e0e0e0; }
+  a { color: #58a6ff; }
+  code, pre { background: #2d2d2d; }
+  th { background: #333; }
+}
