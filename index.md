@@ -3,7 +3,7 @@ layout: home
 title: Welcome
 ---
 
-![AWS Logo](/assets/images/aws-logo.png)
+![AWS Logo](/assets/images/icons8-aws-logo-100.png)
 
 **AWS Zero to Architect** – hands-on blog series.
 
