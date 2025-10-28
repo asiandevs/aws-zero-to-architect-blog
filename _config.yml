@@ -7,3 +7,8 @@ header_pages:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
