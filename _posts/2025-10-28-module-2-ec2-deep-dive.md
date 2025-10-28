@@ -1,6 +1,6 @@
 ---
 title: "Getting Started with AWS & EC2 (with hands-on labs)"
-date: 2025-10-29
+date: 2025-10-28
 categories: aws ec2 iam security
 tags: ec2 ami ebs instance-types key-pairs
 image: /assets/images/ec2-launch.jpg
