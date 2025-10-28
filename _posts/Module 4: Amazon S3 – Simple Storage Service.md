@@ -16,7 +16,8 @@ By the end of this module, you will be able to:
 
 ---
 
-## ☁️ Introduction to Amazon S3
+## ☁️ Introduction to Amazon S3  <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/c0318bdd-fdd4-4e3f-ba2e-385c6a3fcc42" />
+
 
 **Amazon S3 (Simple Storage Service)** is an **object storage service** that offers industry-leading scalability, data availability, and security.
 It allows you to **store and retrieve any amount of data** at any time, from anywhere on the web.
@@ -79,7 +80,8 @@ It allows you to **store and retrieve any amount of data** at any time, from any
 
 ---
 
-## 🧪 Hands-On: Create and Configure an S3 Bucket
+## 🧪 Hands-On: Create and Configure an S3 Bucket      <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/4b6dc488-e63b-4b8c-8042-05afdc4723c7" />
+
 
 ### 🧰 **Objective**
 
