@@ -18,7 +18,8 @@ By the end of this module, you will be able to:
 
 ## 🧠 Concept Overview
 
-### 🧩 What is Amazon Elastic Block Store (EBS)?
+### 🧩 What is Amazon Elastic Block Store (EBS)?    <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/8066640d-41ca-4134-83b9-dfaa5ecfcb78" />
+
 
 EBS provides **persistent block-level storage** for Amazon EC2 instances.
 Think of it as an **external hard drive** for your virtual machine that can be detached, reattached, resized, and backed up independently.
@@ -194,7 +195,8 @@ Attach a single **Provisioned IOPS (io1/io2)** volume to **up to 16 EC2 instance
 
 ---
 
-## 📁 Elastic File System (EFS)
+## 📁 Elastic File System (EFS)  <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/6cc60856-654b-4db8-a089-b423c78b0186" />
+
 
 Amazon EFS provides **scalable, fully managed shared file storage** for EC2 instances.
 
