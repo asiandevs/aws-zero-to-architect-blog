@@ -1,4 +1,13 @@
 ---
+title: "AWS EC2 Masterclass: Launch, Secure & Scale Your First Instance"
+date: 2025-11-04
+categories: aws ec2 iam security
+tags: ec2 ami ebs instance-types key-pairs
+image: /assets/images/ec2-launch.jpg
+description: "Hands-on guide to launching, configuring, and securing EC2 instances with AMIs, EBS, and key pairs."
+---
+
+---
 
 # ⚙️ Module 2 – Getting Started with AWS & EC2
 
