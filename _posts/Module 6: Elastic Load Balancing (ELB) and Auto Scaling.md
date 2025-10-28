@@ -15,7 +15,8 @@ By the end of this module, you will be able to:
 
 ---
 
-## ☁️ What Is Elastic Load Balancing?
+## ☁️ What Is Elastic Load Balancing?  <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/767e2ced-5f6d-4c0a-a299-e629748316fb" />
+
 
 **Elastic Load Balancing (ELB)** automatically distributes incoming traffic across multiple EC2 instances in one or more Availability Zones (AZs).
 It improves **fault tolerance**, **scalability**, and **application performance** by ensuring no single instance becomes a bottleneck.
@@ -217,7 +218,8 @@ Enable these under **Load Balancer → Monitoring / Attributes**.
 
 ---
 
-# ⚙️ Auto Scaling
+# ⚙️ Auto Scaling    <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/6fa15269-3d8b-479f-9f9f-0a9c7cc33e27" />
+
 
 ## 🧩 What Is Auto Scaling?
 
