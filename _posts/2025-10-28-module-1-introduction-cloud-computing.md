@@ -1,4 +1,12 @@
 ---
+title: "Cloud Computing 101: From Virtualization to AWS, Azure, GCP & OCI"
+date: 2025-10-28
+categories: aws cloud-computing iaas paas saas
+tags: aws azure gcp oci virtualization
+image: /assets/images/cloud-hero.jpg
+description: "Beginner’s guide to cloud computing, deployment models, service types, and top providers."
+---
+---
 
 # 🧭 Module 1 – Introduction to Cloud Computing
 
