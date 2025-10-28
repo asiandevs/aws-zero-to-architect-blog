@@ -79,7 +79,7 @@ Virtualization allows multiple operating systems and applications to run on a si
 
 ---
 
-## 🧠 Key AWS Concepts (Preview for Module 2)
+## 🧠 Key AWS Concepts 
 
 | **Domain**     | **Example Services**      |
 | -------------- | ------------------------- |
