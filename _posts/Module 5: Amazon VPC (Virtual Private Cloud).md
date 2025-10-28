@@ -16,7 +16,8 @@ By the end of this module, you will be able to:
 
 ---
 
-## ☁️ What is Amazon VPC?
+## ☁️ What is Amazon VPC?    <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/8dbdaaf8-02fc-4358-a7ac-fd7814751580" />
+
 
 **Amazon VPC (Virtual Private Cloud)** lets you **provision a logically isolated section** of the AWS Cloud where you can define your own network configuration — IP address ranges, subnets, route tables, and security rules.
 
@@ -222,7 +223,8 @@ ssh -i mykey.pem ec2-user@<private-ip> -J ec2-user@<public-ip>
 
 ---
 
-## 🌉 VPC Peering
+## 🌉 VPC Peering    <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/c9aa4b84-5d0c-4651-b42a-dba636f87e78" />
+
 
 **Definition:** Connects two VPCs using private AWS network paths (no internet).
 
@@ -258,7 +260,8 @@ aws ec2 create-vpc-endpoint --vpc-id vpc-xxxx --service-name com.amazonaws.ap-so
 
 ---
 
-## 🧩 Optional: Bastion Host Setup
+## 🧩 Optional: Bastion Host Setup    <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/339fe9d3-23f4-47a8-b260-8eced38501df" />
+
 
 A **bastion host** provides secure SSH access to instances in private subnets.
 
