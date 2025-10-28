@@ -1,5 +1,5 @@
 ---
-title: "Module 1 – Getting Started with AWS & EC2"
+title: "Module 2 – Getting Started with AWS & EC2"
 date: 2025-10-28
 categories: aws ec2 iam security
 tags: ec2 ami ebs instance-types key-pairs
