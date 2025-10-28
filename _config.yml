@@ -1,3 +1,9 @@
-title: AWS Zero to Architect Blog
-description: A series on AWS fundamentals
+title: AWS Zero to Architect
+description: Blog series – from Cloud 101 to production-grade architectures
 theme: minima
+logo: /assets/images/logo.png          # optional
+header_pages:
+  - about.md
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
