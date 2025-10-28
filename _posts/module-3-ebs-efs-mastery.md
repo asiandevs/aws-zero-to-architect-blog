@@ -1,255 +1,323 @@
-# BLOG #3: Amazon EBS vs EFS – Build Persistent & Shared Storage Like a Pro
-
-> **Filename**: `_posts/2025-11-11-module-3-ebs-efs-mastery.md`  
-> **Publish Date**: November 11, 2025  
-> **Reading Time**: 10 minutes  
-> **Author**: Monowar (AWS Certified Solutions Architect – Professional)
-
-```markdown
----
-title: "Amazon EBS vs EFS: Build Persistent & Shared Storage Like a Pro"
-date: 2025-11-11
-categories: aws storage ebs efs block-storage file-storage
-tags: ebs efs snapshots multi-attach dlm encryption nfs
-image: /assets/images/ebs-efs-hero.jpg
-description: "Master Amazon EBS (block storage) and EFS (file storage). Learn volume types, snapshots, Multi-Attach, DLM, encryption, and how to mount EFS across multiple EC2 instances. Hands-on labs included."
 ---
 
-![EBS vs EFS Architecture](/assets/images/ebs-efs-diagram.png)
-
-> **"Storage is the foundation of any reliable cloud architecture."**  
-> — *AWS Storage Services Guide, 2025*
+# 💾 Module 3 – Elastic Block Store (EBS) and Elastic File System (EFS)
 
 ---
 
-## Amazon EBS: Block Storage for EC2
+## 🎯 Learning Objectives
 
-**Amazon Elastic Block Store (EBS)** provides **persistent, low-latency block-level storage** for **EC2 instances**.
+By the end of this module, you will be able to:
 
-Think of it as an **external SSD** you attach to your virtual server.
-
-> **Official Docs**: [EBS User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html)
-
----
-
-## Key EBS Characteristics
-
-| Feature | Description |
-|--------|-------------|
-| **Persistent** | Data survives instance stop/start |
-| **AZ-Bound** | Volume must be in same AZ as EC2 |
-| **Scalable** | Resize online with zero downtime |
-| **Encrypted** | KMS-managed at rest & in transit |
-| **Snapshots** | Point-in-time backups in S3 |
+* Explain the purpose and architecture of **Amazon EBS** and **EFS**.
+* Differentiate between EBS volume types and their performance characteristics.
+* Create, mount, and back up EBS volumes using snapshots.
+* Configure **EBS Multi-Attach** and **Data Lifecycle Manager (DLM)** policies.
+* Deploy a shared file system with **Amazon EFS** across multiple EC2 instances.
 
 ---
 
-## EBS Volume Types (2025)
+## 🧠 Concept Overview
 
-| Type | Performance | Use Case | IOPS / Throughput |
-|------|-----------|----------|-------------------|
-| **gp3** | SSD | Boot, dev/test | 16,000 IOPS, 1,000 MB/s |
-| **io2 Block Express** | High-performance SSD | Databases | 260,000 IOPS, 4,000 MB/s |
-| **st1** | HDD | Big data, logs | 500 MB/s throughput |
-| **sc1** | Cold HDD | Archives | 250 MB/s |
+### 🧩 What is Amazon Elastic Block Store (EBS)?
 
-> **gp3 is now default** — decouples IOPS from size  
-> [EBS Volume Types](https://aws.amazon.com/ebs/volume-types/)
+EBS provides **persistent block-level storage** for Amazon EC2 instances.
+Think of it as an **external hard drive** for your virtual machine that can be detached, reattached, resized, and backed up independently.
+
+> 💡 **Analogy:**
+> Imagine your EC2 instance as a laptop and EBS as a portable SSD — you can plug it in, store data, unplug it, and connect it to another laptop without losing data.
 
 ---
 
-## Hands-On Lab 1: Create, Attach & Mount EBS
+## 🧱 Key Characteristics of EBS
 
-### Step 1: Create Volume
-```bash
-# Console: EC2 → Volumes → Create Volume
-Type: gp3
-Size: 8 GB
-AZ: us-east-1a (same as EC2)
-```
-
-### Step 2: Attach to EC2
-```bash
-Actions → Attach Volume → Select Instance
-```
-
-### Step 3: Mount on Instance
-```bash
-ssh -i key.pem ec2-user@<public-ip>
-
-# List devices
-lsblk
-
-# Format (first time only)
-sudo mkfs -t ext4 /dev/xvdf
-
-# Mount
-sudo mkdir /data
-sudo mount /dev/xvdf /data
-
-# Verify
-df -h
-```
-
-> **Unmount**: `sudo umount /data`
+| **Feature**               | **Description**                                                             |
+| ------------------------- | --------------------------------------------------------------------------- |
+| **Persistent Storage**    | Data survives instance stop/start and can be reattached to other instances. |
+| **AZ Bound**              | Each volume resides within one Availability Zone.                           |
+| **Automatic Replication** | Data is automatically replicated within the same AZ for durability.         |
+| **Scalable**              | Volumes can be resized dynamically with minimal downtime.                   |
+| **Encrypted**             | Supports encryption of data at rest and in transit.                         |
+| **Snapshots**             | Incremental backups stored in Amazon S3.                                    |
 
 ---
 
-## EBS Snapshots: Incremental Backups
+## ⚙️ EBS Volume Types
+
+| **Type**                             | **Description**                                      | **Performance (IOPS / Throughput)**   | **Use Case**                               |
+| ------------------------------------ | ---------------------------------------------------- | ------------------------------------- | ------------------------------------------ |
+| **gp2 (General Purpose SSD)**        | Default SSD storage for general workloads.           | 3 IOPS/GB (max 10,000 IOPS), 160 MB/s | Boot volumes, dev/test workloads.          |
+| **gp3 (Enhanced General Purpose)**   | Latest generation with independent IOPS scaling.     | Up to 16,000 IOPS, 1,000 MB/s         | Cost-effective upgrade from gp2.           |
+| **io1 / io2 (Provisioned IOPS SSD)** | High-performance storage for latency-sensitive apps. | Up to 90,000 IOPS                     | Critical databases, SAP workloads.         |
+| **st1 (Throughput Optimized HDD)**   | Magnetic HDD optimized for sequential read/write.    | Up to 500 MB/s                        | Big data, log processing, data warehouses. |
+| **sc1 (Cold HDD)**                   | Lowest-cost HDD for infrequently accessed data.      | Up to 250 MB/s                        | Archival, backups, and cold storage.       |
+
+---
+
+## 🧩 IOPS and Throughput
+
+* **IOPS (Input/Output Operations per Second):** Measures random access speed (important for databases).
+* **Throughput:** Measures sequential read/write speed (important for streaming or large files).
+
+---
+
+## 🧪 Hands-On: Create and Attach an EBS Volume
+
+### **Objective:**
+
+Create an EBS volume, attach it to an EC2 instance, and mount it for use.
+
+---
+
+### **Step 1: Create the Volume**
+
+1. Go to **EC2 → Elastic Block Store → Volumes**.
+2. Click **Create Volume**.
+3. Choose:
+
+   * **Type:** gp2 (8 GB)
+   * **Availability Zone:** same as EC2 instance
+4. Click **Create Volume**.
+
+---
+
+### **Step 2: Attach the Volume**
+
+1. Select the new volume → **Actions → Attach Volume**.
+2. Choose your **EC2 Instance ID** → click **Attach**.
+
+---
+
+### **Step 3: Mount the Volume on EC2**
+
+Connect to your instance:
 
 ```bash
-# Console: Volumes → Select → Actions → Create Snapshot
-Name: EBS-Backup-Nov2025
+ssh -i mykey.pem ec2-user@<public-ip>
 ```
 
-- Stored in **S3** (you don’t see it)
-- **Incremental** → only changed blocks
-- **Cross-Region Copy** for DR
+Then execute:
 
----
-
-## EBS Multi-Attach (io2 Only)
-
-Attach **one volume** to **up to 16 EC2 instances** in same AZ.
-
-**Use Case**: Clustered databases (Oracle RAC, SAP HANA)
-
-**Requirements**:
-- `io2` volume
-- Nitro-based instances
-- Cluster-aware filesystem (e.g., OCFS2)
-
----
-
-## Data Lifecycle Manager (DLM): Automated Backups
-
-Automate **snapshot creation, retention, and deletion**.
-
-### Hands-On: Create DLM Policy
-```yaml
-Policy Type: EBS Snapshot
-Target: Volumes with tag Backup=true
-Schedule: Every 12 hours
-Retain: 7 snapshots
-```
-
-> [DLM Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-dlm.html)
-
----
-
-## EBS Encryption
-
-- **Enabled by default** on new volumes
-- Uses **AWS KMS**
-- Transparent to OS
-- Snapshots & restored volumes encrypted
-
----
-
-## Amazon EFS: Shared File Storage
-
-**Elastic File System (EFS)** = **fully managed NFS** for **multiple EC2 instances**.
-
-Think: **Network drive** accessible from **many servers**.
-
-> [EFS Docs](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
-
----
-
-## EFS Key Features
-
-| Feature | Benefit |
-|--------|--------|
-| **Multi-AZ** | Survives AZ failure |
-| **Petabyte-scale** | Grows automatically |
-| **Concurrent Access** | 1000s of instances |
-| **NFS Protocol** | Linux-native |
-| **Encryption** | At rest & in transit |
-
----
-
-## Hands-On Lab 2: Create & Mount EFS
-
-### Step 1: Create EFS
 ```bash
-# Console: EFS → Create File System
-VPC: Your VPC
-Performance: General Purpose
-Throughput: Bursting
+lsblk                                # List block devices
+sudo file -s /dev/xvdf               # Check if volume is formatted
+sudo mkfs -t ext4 /dev/xvdf          # Format the volume
+sudo mkdir /data                     # Create a mount point
+sudo mount /dev/xvdf /data           # Mount the volume
+df -h                                # Verify the mount
 ```
 
-### Step 2: Mount on EC2
-```bash
-# Install NFS
-sudo yum install -y nfs-utils
+To unmount:
 
-# Mount
+```bash
+sudo umount /data
+```
+
+---
+
+### **Step 4: Take a Snapshot (Backup)**
+
+1. Navigate to **Volumes → Select Volume → Actions → Create Snapshot**.
+2. Name it (e.g., `EBS-Backup-Oct2025`) → Click **Create Snapshot**.
+3. Snapshots are incremental and stored in **S3**, saving cost and space.
+
+---
+
+### **Step 5: Create Volume from Snapshot**
+
+You can restore the same volume anytime:
+
+1. Go to **Snapshots → Select Snapshot → Actions → Create Volume**.
+2. Choose AZ → Click **Create Volume** → Attach to another EC2 if needed.
+
+---
+
+## 🔁 EBS Multi-Attach
+
+**Feature:**
+Attach a single **Provisioned IOPS (io1/io2)** volume to **up to 16 EC2 instances** within the same AZ.
+
+**Use Case:**
+
+* Clustered databases
+* HA (high-availability) applications
+* Shared read/write volumes
+
+**Requirements:**
+
+* Must be io1/io2 volume type
+* Nitro-based EC2 instances only
+* Multi-Attach enabled during creation
+
+---
+
+## 🧩 Data Lifecycle Manager (DLM)
+
+**Purpose:** Automates snapshot creation, retention, and deletion.
+
+**Key Benefits:**
+
+* Reduces manual backup management.
+* Enforces compliance through scheduled policies.
+* Automatically removes outdated snapshots.
+
+**Quotas:**
+
+* Up to **100 policies per region**
+* **45 tags per resource**
+* One schedule per policy
+
+---
+
+### 🧪 **Hands-On: Configure DLM Policy**
+
+1. Navigate to **EC2 → Lifecycle Manager → Create Lifecycle Policy**.
+2. **Policy Type:** EBS Snapshot Policy.
+3. **Target Resource Type:** Volume → Select using tags (e.g., `Backup=true`).
+4. **Schedule:**
+
+   * Frequency: Every 12 hours
+   * Retain snapshots: 3
+5. Click **Create Policy**.
+
+✅ AWS will now automatically back up and rotate your snapshots.
+
+---
+
+## 🔒 EBS Encryption
+
+* EBS supports **encryption for all volume types**.
+* Encrypts data **at rest, in transit, and in snapshots**.
+* Managed by **AWS KMS** (Key Management Service).
+* Transparent to the instance — no code change required.
+
+> **Tip:** You can re-encrypt or copy snapshots to change encryption settings.
+
+---
+
+## 📁 Elastic File System (EFS)
+
+Amazon EFS provides **scalable, fully managed shared file storage** for EC2 instances.
+
+> 💡 **Analogy:**
+> EFS is like a shared network drive accessible from multiple computers simultaneously — all reading and writing the same files.
+
+---
+
+### 🔑 Key Features of EFS
+
+| **Feature**             | **Description**                                     |
+| ----------------------- | --------------------------------------------------- |
+| **Fully Managed**       | No provisioning; grows and shrinks automatically.   |
+| **Multi-AZ Redundancy** | Data stored redundantly across multiple AZs.        |
+| **Scalable**            | Petabyte-scale storage with automatic elasticity.   |
+| **Concurrent Access**   | Mountable on multiple EC2 instances simultaneously. |
+| **Linux-Compatible**    | Works natively with Linux (NFS protocol).           |
+| **Durable and Secure**  | Supports encryption at rest and in transit.         |
+
+---
+
+## 🧪 Hands-On: Create and Mount EFS
+
+### **Step 1: Create an EFS**
+
+1. Navigate to **Services → EFS → Create File System**.
+2. Choose **VPC** → Select **Availability Zones**.
+3. Set **Performance Mode:** General Purpose.
+4. **Throughput Mode:** Bursting.
+5. Add tags → click **Create**.
+
+---
+
+### **Step 2: Mount EFS on EC2**
+
+Connect to your EC2 instance and install NFS utilities:
+
+```bash
+sudo apt-get update
+sudo apt-get install -y nfs-common
+```
+
+Mount the file system:
+
+```bash
 sudo mkdir /efs
-sudo mount -t efs fs-12345678:/ /efs
-
-# Test
-echo "Hello from $(hostname)" > /efs/test.txt
+sudo mount -t efs fs-<your-id>:/ /efs
+cd /efs
+touch testfile.txt
+ls -l
 ```
 
-### Step 3: Mount on Second EC2
+---
+
+### **Step 3: Mount EFS on Multiple Instances**
+
+Repeat the above steps on another EC2 instance (same VPC/subnet).
+Then verify file visibility:
+
 ```bash
-# Same commands
-ls /efs
-# → See test.txt from first instance!
+ls -l /efs
+# You should see testfile.txt created from the first instance
+```
+
+✅ Both instances now share the same file system — perfect for web servers, microservices, or distributed apps.
+
+---
+
+### **Step 4: Unmount (Optional)**
+
+```bash
+sudo umount /efs
 ```
 
 ---
 
-## EBS vs EFS: Decision Matrix
+## ⚖️ EBS vs. EFS Comparison
 
-| Feature | EBS | EFS |
-|--------|-----|-----|
-| **Type** | Block | File |
-| **Access** | 1 instance (16 with Multi-Attach) | 1000s of instances |
-| **Performance** | High IOPS | Scalable throughput |
-| **Scope** | AZ | Region (multi-AZ) |
-| **Protocol** | Block | NFS |
-| **Best For** | Databases, boot volumes | Shared content, CMS, analytics |
-
-> **Rule of Thumb**:  
-> - **Single instance** → **EBS**  
-> - **Multiple instances** → **EFS**
+| **Feature**       | **EBS**                                      | **EFS**                        |
+| ----------------- | -------------------------------------------- | ------------------------------ |
+| **Type**          | Block storage                                | File storage                   |
+| **Accessibility** | One instance (Multi-Attach for io1/io2 only) | Multiple instances             |
+| **Performance**   | High IOPS for single instance                | Shared, scalable throughput    |
+| **Persistence**   | AZ-scoped                                    | Region-scoped (multi-AZ)       |
+| **Protocol**      | Block-level                                  | NFS (Linux only)               |
+| **Best For**      | Databases, OS drives                         | Shared content, analytics, CMS |
 
 ---
 
-## Real-World Architecture: Web App with EBS + EFS
+## 📚 Case Study: EC2 + EBS + EFS Deployment
 
-```mermaid
-graph TD
-    A[EC2 Web Server 1] -->|EBS Root| B[EBS gp3 20GB]
-    A -->|Shared Content| C[EFS File System]
-    D[EC2 Web Server 2] -->|EBS Root| E[EBS gp3 20GB]
-    D -->|Shared Content| C
-    C -->|Backups| F[S3 Snapshots]
-```
+**Scenario:**
+A company hosts a web application needing:
 
-**Use Case**: WordPress, Magento, Jenkins shared workspace
+* EC2 compute layer
+* EBS for OS and app data
+* EFS for shared content between servers
 
----
+### **Steps Summary:**
 
-## Key Takeaways
+1. Launch EC2 instance in **us-east-1a**.
+2. Attach 2 EBS volumes (8 GB each).
+3. Create an AMI → replicate to **us-west-2**.
+4. Mount and back up EBS volumes → snapshot one, delete the other.
+5. Create EFS and mount it to both EC2 instances.
+6. Test shared data consistency.
 
-| Concept | Remember |
-|--------|----------|
-| **EBS** | Block storage, AZ-bound, high IOPS |
-| **EFS** | NFS, multi-AZ, shared access |
-| **Snapshots** | Incremental, stored in S3 |
-| **DLM** | Automate backup lifecycle |
-| **Encryption** | Enabled by default |
-| **Multi-Attach** | io2 + Nitro only |
+Result:
+✅ Scalable, redundant architecture across Regions with shared storage and recoverable data.
 
 ---
 
-## Next: Amazon S3 Deep Dive
+## 🧾 Key Takeaways
 
-**Part 4** → [S3 Buckets, Versioning, CRR & Glacier](/posts/2025-11-18-module-4-s3-unlocked)
+* **EBS** provides block-level persistent storage for individual EC2 instances.
+* **EFS** delivers shared, elastic file storage accessible by multiple instances.
+* **Snapshots** enable efficient backups and cross-region replication.
+* **Data Lifecycle Manager** automates EBS backup management.
+* **Encryption** ensures security for data at rest and in transit.
 
 ---
 
-```
+> 🪄 **Next Module Preview:**
+> In **Module 4**, we’ll explore **Amazon S3 – Simple Storage Service**, covering buckets, object storage, versioning, lifecycle rules, and cross-region replication with real console labs.
 
+---
