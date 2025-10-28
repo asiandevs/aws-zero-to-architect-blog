@@ -43,7 +43,7 @@ Amazon Web Services is a global cloud provider with **data centers distributed w
 
 ---
 
-## 🧩 Understanding EC2 (Elastic Compute Cloud)
+## 🧩 Understanding EC2 (Elastic Compute Cloud)<img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/550f0759-26c1-4c5e-80e8-8ae39426633a" />
 
 Amazon EC2 provides **resizable compute capacity** in the cloud.
 It enables you to **launch virtual machines (instances)**, configure their storage, and manage them like on-prem servers.
@@ -126,7 +126,8 @@ ssh -i "mykey.pem" ec2-user@ec2-xx-xx-xx.compute.amazonaws.com
 
 ---
 
-## 🧠 Deep Dive: Amazon Machine Image (AMI)
+## 🧠 Deep Dive: Amazon Machine Image (AMI) <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/d93789f1-0323-4f90-a64a-9f9f6fcda2cf" />
+
 
 An **AMI** contains:
 
@@ -156,7 +157,8 @@ This allows quick **disaster recovery** or **multi-region deployment**.
 
 ---
 
-## 💾 EBS – Elastic Block Store (Intro)
+## 💾 EBS – Elastic Block Store (Intro) <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/e630fae0-a765-4897-9f88-330640aebc58" />
+
 
 EBS provides **persistent block-level storage** for EC2 instances.
 
@@ -167,7 +169,7 @@ EBS provides **persistent block-level storage** for EC2 instances.
 | **Snapshots**          | Incremental backups stored in S3.                |
 | **Encryption**         | Supports data encryption at rest and in transit. |
 
-### EBS Volume Types (From Your Notes)
+### EBS Volume Types
 
 | **Type**                           | **Performance**         | **Use Case**                     |
 | ---------------------------------- | ----------------------- | -------------------------------- |
