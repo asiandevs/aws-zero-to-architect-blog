@@ -1,4 +1,13 @@
 ---
+title: "Module 20 – Capstone Project and Review"
+date: 2025-11-17
+categories: aws project review certification
+tags: aws capstone hands-on labs certification-review
+image: /assets/images/capstone.jpg
+description: "Final project integrating all modules: building, deploying, and managing a complete cloud solution using AWS best practices."
+---
+
+---
 
 # 🧭 Module 20 – AWS Architecture Design Patterns and Exam Readiness
 
