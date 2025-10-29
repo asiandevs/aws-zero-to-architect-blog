@@ -1,6 +1,6 @@
 ---
 title: "Module 2 – Getting Started with AWS & EC2"
-date: 2025-10-28
+date: 2025-10-29
 categories: aws compute ec2 virtualization
 tags: aws ec2 ami ebs keypair nitro
 image: /assets/images/ec2.jpg
