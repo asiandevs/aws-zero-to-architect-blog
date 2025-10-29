@@ -1,10 +1,10 @@
 ---
 title: "Module 2 – Getting Started with AWS & EC2"
 date: 2025-10-28
-categories: aws ec2 iam security
-tags: ec2 ami ebs instance-types key-pairs
-image: /assets/images/ec2-launch.jpg
-description: "AWS EC2, exploring Regions, Availability Zones, AMIs, instance types, and how to launch your first instance from the console and CLI."
+categories: aws compute ec2 virtualization
+tags: aws ec2 ami ebs keypair nitro
+image: /assets/images/ec2.jpg
+description: "AWS global infrastructure, EC2 instance setup, AMI creation, EBS attachment, and Nitro system overview."
 ---
 
 ---
