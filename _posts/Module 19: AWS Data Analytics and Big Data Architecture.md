@@ -1,4 +1,13 @@
 ---
+title: "Module 19 – AWS Well-Architected Framework"
+date: 2025-11-16
+categories: aws architecture best-practices governance
+tags: aws well-architected pillars reliability security cost-optimization
+image: /assets/images/well-architected.jpg
+description: "Understanding the AWS Well-Architected Framework, its five pillars, and best practices for secure, efficient, and reliable architectures."
+---
+
+---
 
 # 📊 Module 19 – AWS Data Analytics and Big Data Architecture
 
