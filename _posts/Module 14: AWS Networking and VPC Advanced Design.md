@@ -1,4 +1,13 @@
 ---
+title: "Module 14 – AWS Security and Encryption Services"
+date: 2025-11-11
+categories: aws security encryption compliance
+tags: aws kms ssm secrets-manager guardduty inspector
+image: /assets/images/security.jpg
+description: "Implementing encryption, key management, and continuous threat detection using AWS KMS, Secrets Manager, and GuardDuty."
+---
+
+---
 
 # 🌐 Module 14 – AWS Networking and VPC Advanced Design
 
