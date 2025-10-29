@@ -1,4 +1,13 @@
 ---
+title: "Module 8 – AWS CloudFormation (Infrastructure as Code & Automation)"
+date: 2025-11-05
+categories: aws automation infrastructure-as-code
+tags: aws cloudformation yaml json stackset template
+image: /assets/images/cloudformation.jpg
+description: "Infrastructure as Code using CloudFormation templates, parameters, and automated stack deployment."
+---
+
+---
 
 # 🧩 Module 8 – AWS CloudFormation (Infrastructure as Code & Automation)
 
