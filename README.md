@@ -30,19 +30,6 @@ git push origin feature/new-module
 
 ---
 
-## ⚖️ License
-
-This project is licensed under the [MIT License](./LICENSE).
-
-
-````markdown
-# 🌩️ AWS Zero to Architect — Hands-On Learning Series
-
-**By [asiandevs](https://github.com/asiandevs)**  
-A complete, hands-on guide to mastering AWS — from cloud fundamentals to enterprise-grade architecture design and certification readiness.
-
----
-
 ## 🎯 What You’ll Learn
 
 - Cloud computing and AWS global infrastructure  
@@ -125,6 +112,9 @@ High Availability, Governance & FinOps
    ↓
 Data Analytics & Architecture Design
 ````
+## ⚖️ License
+
+This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
@@ -138,5 +128,4 @@ Data Analytics & Architecture Design
 > ✨ *Start from zero. Architect with confidence.*
 > 💻 Explore the posts under [`_posts/`](./_posts) and begin your AWS Solution Architect journey today.
 
-````
 
