@@ -1,4 +1,13 @@
 ---
+title: "Module 10 – Amazon S3 and CloudFront (Global Content Delivery & Security)"
+date: 2025-11-07
+categories: aws storage content-delivery
+tags: aws s3 cloudfront oac static-website https
+image: /assets/images/cloudfront.jpg
+description: "Building global content delivery with Amazon S3, CloudFront, HTTPS, and Route 53 integration."
+---
+
+---
 
 # 🌎 Module 10 – Amazon S3 and CloudFront (Global Content Delivery & Security)
 
