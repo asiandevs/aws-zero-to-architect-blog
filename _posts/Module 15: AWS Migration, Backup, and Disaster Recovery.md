@@ -1,4 +1,13 @@
 ---
+title: "Module 15 – Automation and DevOps Tools on AWS"
+date: 2025-11-12
+categories: aws devops automation cicd
+tags: aws codecommit codebuild codedeploy codepipeline
+image: /assets/images/devops.jpg
+description: "DevOps automation using AWS CI/CD services including CodeCommit, CodeBuild, CodeDeploy, and CodePipeline."
+---
+
+---
 
 # 🚀 Module 15 – AWS Migration, Backup, and Disaster Recovery
 
