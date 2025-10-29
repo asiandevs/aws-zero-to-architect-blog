@@ -1,4 +1,13 @@
 ---
+title: "Module 6 – Elastic Load Balancing (ELB) and Auto Scaling"
+date: 2025-11-03
+categories: aws networking compute scaling
+tags: aws elb alb nlb autoscaling availability
+image: /assets/images/elb.jpg
+description: "Load balancing types, cross-zone routing, health checks, and integrating Auto Scaling Groups for resilience."
+---
+
+---
 
 # ⚖️ Module 6 – Elastic Load Balancing (ELB) and Auto Scaling
 
