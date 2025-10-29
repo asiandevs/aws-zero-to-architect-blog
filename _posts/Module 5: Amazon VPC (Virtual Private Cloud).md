@@ -1,4 +1,13 @@
 ---
+title: "Module 5 – Networking with Amazon VPC"
+date: 2025-11-02
+categories: aws networking vpc security
+tags: aws vpc subnet natgateway igw peering
+image: /assets/images/vpc.jpg
+description: "Designing custom VPCs with subnets, route tables, gateways, security groups, and endpoints."
+---
+
+---
 
 # 🌐 Module 5 – Networking with Amazon VPC (Virtual Private Cloud)
 
