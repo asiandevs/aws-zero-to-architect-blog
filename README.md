@@ -6,6 +6,56 @@
 **By [asiandevs](https://github.com/asiandevs)**
 A complete, hands-on guide to mastering AWS — from cloud fundamentals to enterprise architecture design.
 
+✅ Complete Module List
+```
+Foundational (1-6):
+
+Introduction to Cloud Computing
+Getting Started with AWS
+EC2 Deep Dive
+EFS & FSx
+Amazon S3
+VPC Networking
+
+Core Services (7-12):
+7. Route 53 (DNS & Traffic Routing)
+8. CloudFormation (Infrastructure as Code)
+9. Lambda & API Gateway (Serverless)
+10. S3 & CloudFront (CDN)
+11. RDS & DynamoDB (Databases)
+12. Monitoring & Logging
+Advanced Topics (13-20):
+13. IAM & Security Services
+14. Advanced VPC Networking
+15. Migration, Backup & DR
+16. Cost Optimization & FinOps
+17. High Availability & Fault Tolerance
+18. Security, Compliance & Governance
+19. Data Analytics & Big Data
+20. Architecture Patterns & Exam Readiness
+```
+📝 What's Included
+```
+Each module contains:
+
+Theory with real-world analogies
+Hands-on labs with CLI commands
+Architecture diagrams
+Best practices and troubleshooting
+Code examples and templates
+Quick reference commands
+Certification mapping
+```
+
+
+## Total Training Value:
+```
+40+ hours of comprehensive content
+50+ hands-on labs
+100+ CLI commands
+Production-ready examples
+Certification preparation
+```
 ---
 ## 📚 About the Author
 
@@ -30,17 +80,6 @@ git push origin feature/new-module
 
 ---
 
-## 🎯 What You’ll Learn
-
-- Cloud computing and AWS global infrastructure  
-- EC2, storage (S3, EBS, EFS), and networking fundamentals  
-- IAM, KMS, and multi-account security governance  
-- High availability, fault tolerance, and disaster recovery  
-- Data analytics with Glue, Athena, Redshift, and Kinesis  
-- FinOps and cost optimization techniques  
-- Architecture design patterns and AWS SA–Pro exam readiness  
-
----
 
 ## 🗂️ Course Structure (20 Modules)
 
@@ -95,33 +134,9 @@ Every module includes:
 
 ---
 
-## 🧭 Learning Path
-
-```text
-Cloud Foundations
-   ↓
-Compute, Storage & Networking
-   ↓
-Security & IAM
-   ↓
-Monitoring, Automation & DevOps
-   ↓
-Migration & Disaster Recovery
-   ↓
-High Availability, Governance & FinOps
-   ↓
-Data Analytics & Architecture Design
-````
 ## ⚖️ License
 
 This project is licensed under the [MIT License](./LICENSE).
-
----
-
-## 🧠 Related Repositories
-
-* [asiandevs/azure-zero-to-architect-blog](https://github.com/asiandevs/azure-zero-to-architect-blog)
-* [asiandevs/oracle-zero-to-architect-blog](https://github.com/asiandevs/oracle-zero-to-architect-blog)
 
 ---
 
