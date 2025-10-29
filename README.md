@@ -7,62 +7,6 @@
 A complete, hands-on guide to mastering AWS — from cloud fundamentals to enterprise architecture design.
 
 ---
-
-## 🎯 What You’ll Learn
-
-* Cloud computing fundamentals
-* EC2, S3, EBS, EFS, and networking in AWS
-* IAM, KMS, and multi-account governance
-* High availability, fault tolerance, and DR patterns
-* Data analytics with Glue, Athena, and Redshift
-* FinOps and cost optimization strategies
-* Architecture design patterns for certification readiness
-
----
-
-## 🗂️ Course Structure (20 Modules)
-
-|   # | Module                                            | Link                                                                        |
-| --: | :------------------------------------------------ | :-------------------------------------------------------------------------- |
-|   1 | Introduction to Cloud Computing                   | [View →](./_posts/2025-01-01-module-01-introduction-to-cloud-computing.md)  |
-|   2 | Getting Started with AWS & EC2                    | [View →](./_posts/2025-01-02-module-02-getting-started-with-aws-ec2.md)     |
-|   3 | Elastic Block Store & EFS                         | [View →](./_posts/2025-01-03-module-03-elastic-block-store.md)              |
-|   4 | AWS S3 and CloudFront                             | [View →](./_posts/2025-01-04-module-04-s3-and-cloudfront.md)                |
-| ... | ...                                               | ...                                                                         |
-|  20 | AWS Architecture Design Patterns & Exam Readiness | [View →](./_posts/2025-01-20-module-20-aws-architecture-design-patterns.md) |
-
----
-
-## 🧪 Hands-On Approach
-
-Every module includes:
-
-* Step-by-step AWS Console and CLI labs
-* Architecture diagrams and analogies
-* Best practices and design patterns
-* Code snippets ready for testing
-
----
-
-## 🧰 Recommended Tools
-
-* AWS Free Tier Account
-* AWS CLI & CloudShell
-* Visual Studio Code / Cloud9
-* draw.io (for diagrams)
-
----
-
-## 🧭 Learning Path
-
-```text
-Cloud Foundations → Compute → Storage → Networking → Security → Monitoring
-        ↓
-Migration → DR → FinOps → Governance → Data Analytics → Architecture Design
-```
-
----
-
 ## 📚 About the Author
 
 👋 **Monowar Mukul**
@@ -191,38 +135,6 @@ High Availability, Governance & FinOps
    ↓
 Data Analytics & Architecture Design
 ````
-
----
-
-## 📚 About the Author
-
-👋 **Monowar Mukul**
-Senior Solution Architect | AWS, Azure, Oracle Cloud
-20+ years of IT experience in architecture, migration, and cloud transformation.
-Certified: **AWS SA–Pro**, **Azure Architect Expert**, **TOGAF 9.2**, **OCI Architect Professional**.
-
-> Building practical, scenario-driven learning for future architects.
-
----
-
-## 🧩 Contributing
-
-Pull requests are welcome!
-To contribute new labs, examples, or corrections:
-
-```bash
-git clone https://github.com/asiandevs/aws-zero-to-architect-blog.git
-cd aws-zero-to-architect-blog
-git checkout -b feature/update-module
-git commit -m "Add lab steps for Module 10"
-git push origin feature/update-module
-```
-
----
-
-## 🪙 License
-
-This project is licensed under the [MIT License](./LICENSE).
 
 ---
 
