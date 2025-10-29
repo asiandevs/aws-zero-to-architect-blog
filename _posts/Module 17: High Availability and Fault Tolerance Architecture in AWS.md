@@ -1,4 +1,13 @@
 ---
+title: "Module 17 – AWS Backup and Disaster Recovery"
+date: 2025-11-14
+categories: aws backup dr business-continuity
+tags: aws backup drs cross-region recoverypoint
+image: /assets/images/backup.jpg
+description: "Designing resilient backup and disaster recovery strategies using AWS Backup, cross-region replication, and DR planning."
+---
+
+---
 
 # 💰 Module 16 – AWS Cost Optimization and FinOps Practices
 
