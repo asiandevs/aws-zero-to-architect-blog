@@ -34,16 +34,6 @@ git push origin feature/new-module
 
 This project is licensed under the [MIT License](./LICENSE).
 
----
-
-Would you like me to now generate the **full README.md (main page)** in Markdown format — with the 20 linked modules — ready to paste directly into your GitHub repository root?
-
-
-Excellent ✅ — let’s generate your **main GitHub page** (`README.md`) for
-👉 [`asiandevs/aws-zero-to-architect-blog`](https://github.com/asiandevs/aws-zero-to-architect-blog).
-This will serve as the entry point for your full **AWS Zero to Architect** course.
-
----
 
 ````markdown
 # 🌩️ AWS Zero to Architect — Hands-On Learning Series
