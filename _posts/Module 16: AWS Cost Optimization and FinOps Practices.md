@@ -1,4 +1,13 @@
 ---
+title: "Module 16 – AWS Cost Management and Billing"
+date: 2025-11-13
+categories: aws billing cost-management finops
+tags: aws budgets costexplorer savingsplans costoptimization
+image: /assets/images/cost.jpg
+description: "Analyzing and optimizing AWS costs with Cost Explorer, Budgets, Savings Plans, and billing reports."
+---
+
+---
 
 # 💰 Module 16 – AWS Cost Optimization and FinOps Practices
 
