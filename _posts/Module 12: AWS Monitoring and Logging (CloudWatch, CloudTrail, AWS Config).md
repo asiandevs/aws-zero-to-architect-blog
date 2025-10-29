@@ -1,4 +1,13 @@
 ---
+title: "Module 12 – AWS Monitoring and Logging (CloudWatch, CloudTrail, AWS Config)"
+date: 2025-11-09
+categories: aws monitoring logging security
+tags: aws cloudwatch cloudtrail config observability compliance
+image: /assets/images/cloudwatch.jpg
+description: "Monitoring, logging, and compliance using CloudWatch, CloudTrail, and AWS Config for observability and governance."
+---
+
+---
 
 # 🛰️ Module 12 – AWS Monitoring and Logging (CloudWatch, CloudTrail, AWS Config)
 
