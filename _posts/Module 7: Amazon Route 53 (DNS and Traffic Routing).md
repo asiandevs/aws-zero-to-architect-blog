@@ -1,4 +1,13 @@
 ---
+title: "Module 7 – Amazon Route 53 (DNS and Traffic Routing)"
+date: 2025-11-04
+categories: aws networking dns
+tags: aws route53 dns failover latency weighted
+image: /assets/images/route53.jpg
+description: "DNS routing, domain registration, hosted zones, and routing policies with Route 53."
+---
+
+---
 
 # 🌍 Module 7 – Amazon Route 53 (DNS and Traffic Routing)
 
