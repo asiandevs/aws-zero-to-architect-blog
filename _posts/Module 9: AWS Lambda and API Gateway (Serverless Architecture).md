@@ -1,4 +1,13 @@
 ---
+title: "Module 9 – AWS Lambda and API Gateway (Serverless Architecture)"
+date: 2025-11-06
+categories: aws serverless compute
+tags: aws lambda apigateway serverless functions event-driven
+image: /assets/images/lambda.jpg
+description: "Creating serverless applications using AWS Lambda, integrating with API Gateway, and managing triggers, roles, and monitoring."
+---
+
+---
 
 # ⚙️ Module 9 – AWS Lambda and API Gateway (Serverless Architecture)
 
