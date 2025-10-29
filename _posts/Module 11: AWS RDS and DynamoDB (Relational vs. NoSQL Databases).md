@@ -1,4 +1,13 @@
 ---
+title: "Module 11 – AWS RDS and DynamoDB (Relational vs. NoSQL Databases)"
+date: 2025-11-08
+categories: aws database sql nosql
+tags: aws rds dynamodb mysql postgres scaling replication
+image: /assets/images/rds.jpg
+description: "Comparing relational and NoSQL databases with RDS and DynamoDB; replication, scaling, and automation."
+---
+
+---
 
 # 🧮 Module 11 – AWS RDS and DynamoDB (Relational vs. NoSQL Databases)
 
