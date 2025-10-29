@@ -1,4 +1,13 @@
 ---
+title: "Module 13 – Identity and Access Management (IAM)"
+date: 2025-11-10
+categories: aws security identity-access
+tags: aws iam policies roles mfa federation
+image: /assets/images/iam.jpg
+description: "User, group, and role management with IAM; policies, permissions boundaries, and multi-factor authentication."
+---
+
+---
 
 # 🔐 Module 13 – AWS IAM and Security Services (Identity, Access, and Encryption)
 
