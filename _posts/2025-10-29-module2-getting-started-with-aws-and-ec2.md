@@ -9,11 +9,11 @@ description: "AWS global infrastructure, EC2 instance setup, AMI creation, EBS a
 
 ---
 
-# ⚙️ Module 2 – Getting Started with AWS & EC2
+#  Module 2 – Getting Started with AWS & EC2
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By the end of this module, you will be able to:
 
@@ -24,7 +24,7 @@ By the end of this module, you will be able to:
 
 ---
 
-## ☁️ AWS Global Infrastructure
+##  AWS Global Infrastructure
 
 Amazon Web Services is a global cloud provider with **data centers distributed worldwide**, organized into:
 
@@ -34,12 +34,12 @@ Amazon Web Services is a global cloud provider with **data centers distributed w
 | **Availability Zone (AZ)** | One or more data centers with redundant power, networking, and connectivity within a Region.     |
 | **Edge Location**          | A caching endpoint in Amazon CloudFront used for low-latency content delivery.                   |
 
-> 💡 **Analogy:**
+>  **Analogy:**
 > Think of a *Region* as a country, an *Availability Zone* as a city within that country, and an *Edge Location* as a local post office optimizing delivery speed.
 
 ---
 
-### 🗺️ Example AWS Regions (as per your notes)
+###  Example AWS Regions (as per your notes)
 
 | **Continent**            | **Regions**                                                           |
 | ------------------------ | --------------------------------------------------------------------- |
@@ -52,12 +52,12 @@ Amazon Web Services is a global cloud provider with **data centers distributed w
 
 ---
 
-## 🧩 Understanding EC2 (Elastic Compute Cloud)<img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/550f0759-26c1-4c5e-80e8-8ae39426633a" />
+##  Understanding EC2 (Elastic Compute Cloud)<img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/550f0759-26c1-4c5e-80e8-8ae39426633a" />
 
 Amazon EC2 provides **resizable compute capacity** in the cloud.
 It enables you to **launch virtual machines (instances)**, configure their storage, and manage them like on-prem servers.
 
-### 🔑 EC2 Core Concepts
+###  EC2 Core Concepts
 
 | **Term**                       | **Description**                                                     |
 | ------------------------------ | ------------------------------------------------------------------- |
@@ -70,7 +70,7 @@ It enables you to **launch virtual machines (instances)**, configure their stora
 
 ---
 
-## ⚙️ EC2 Instance Families
+##  EC2 Instance Families
 
 | **Category**              | **Examples**   | **Use Case**                                        |
 | ------------------------- | -------------- | --------------------------------------------------- |
@@ -82,11 +82,11 @@ It enables you to **launch virtual machines (instances)**, configure their stora
 
 ---
 
-## ⚙️ Step-by-Step: Launching an EC2 Instance
+##  Step-by-Step: Launching an EC2 Instance
 
 Let’s perform the full EC2 setup using the AWS Console.
 
-### 🧪 **Hands-On Lab: Create and Connect an EC2 Instance**
+###  **Hands-On Lab: Create and Connect an EC2 Instance**
 
 1. **Sign in** to your AWS Management Console.
 2. Navigate to **Services → EC2**.
@@ -112,7 +112,7 @@ Let’s perform the full EC2 setup using the AWS Console.
 
 ---
 
-### 🧩 **Connect to EC2 (Linux Instance)**
+###  **Connect to EC2 (Linux Instance)**
 
 1. In the EC2 Console, select your running instance.
 2. Copy the **Public IPv4 DNS**.
@@ -127,7 +127,7 @@ ssh -i "mykey.pem" ec2-user@ec2-xx-xx-xx.compute.amazonaws.com
 
 ---
 
-### 🧩 **(Optional)** Using Windows (PuTTY)
+###  **(Optional)** Using Windows (PuTTY)
 
 1. Convert `.pem` → `.ppk` using PuTTYgen.
 2. Launch PuTTY → paste `ec2-user@public-ip`.
@@ -135,7 +135,7 @@ ssh -i "mykey.pem" ec2-user@ec2-xx-xx-xx.compute.amazonaws.com
 
 ---
 
-## 🧠 Deep Dive: Amazon Machine Image (AMI) <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/d93789f1-0323-4f90-a64a-9f9f6fcda2cf" />
+##  Deep Dive: Amazon Machine Image (AMI) <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/d93789f1-0323-4f90-a64a-9f9f6fcda2cf" />
 
 
 An **AMI** contains:
@@ -147,7 +147,7 @@ An **AMI** contains:
 
 ---
 
-### 🧪 **Hands-On: Create and Copy an AMI**
+###  **Hands-On: Create and Copy an AMI**
 
 **Creating an AMI from a Running Instance**
 
@@ -166,7 +166,7 @@ This allows quick **disaster recovery** or **multi-region deployment**.
 
 ---
 
-## 💾 EBS – Elastic Block Store (Intro) <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/e630fae0-a765-4897-9f88-330640aebc58" />
+##  EBS – Elastic Block Store (Intro) <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/e630fae0-a765-4897-9f88-330640aebc58" />
 
 
 EBS provides **persistent block-level storage** for EC2 instances.
@@ -189,7 +189,7 @@ EBS provides **persistent block-level storage** for EC2 instances.
 
 ---
 
-### 🧪 **Hands-On: Create and Attach an EBS Volume**
+###  **Hands-On: Create and Attach an EBS Volume**
 
 1. Navigate to **EC2 → Elastic Block Store → Volumes**.
 2. Click **Create Volume** → Size: 8 GB → Availability Zone: same as instance.
@@ -211,11 +211,11 @@ df -h                        # Verify mount
 sudo umount /dev/xvdf
 ```
 
-> 💡 EBS data persists even after instance termination (if “Delete on Termination” is disabled).
+>  EBS data persists even after instance termination (if “Delete on Termination” is disabled).
 
 ---
 
-## ⚙️ Hypervisors Used by AWS
+##  Hypervisors Used by AWS
 
 | **Hypervisor**   | **Type**              | **Usage**                                   |
 | ---------------- | --------------------- | ------------------------------------------- |
@@ -225,7 +225,7 @@ sudo umount /dev/xvdf
 
 ---
 
-## 🧾 Key Takeaways
+##  Key Takeaways
 
 * AWS operates globally via **Regions** and **Availability Zones**.
 * **EC2** provides flexible compute capacity.
@@ -235,7 +235,7 @@ sudo umount /dev/xvdf
 
 ---
 
-> 🪄 **Next Module Preview:**
+>  **Next Module Preview:**
 > In **Module 3**, we’ll explore **Elastic Block Store (EBS)** in detail—covering Snapshots, Multi-Attach, Encryption, and **Elastic File System (EFS)** setup with multiple EC2 instances.
 
 ---
