@@ -1,17 +1,16 @@
 ---
 title: "Module 3 - Elastic Block Store (EBS) and Elastic File System (EFS)"
 date: 2025-10-30
-categories: [aws, storage, ebs, efs]
-tags: [aws, ebs, efs, snapshots, encryption, lifecycle]
+categories: aws storage ebs efs
+tags: aws ebs efs snapshots encryption lifecycle
 image: /assets/images/ebs.jpg
 description: "Persistent block and shared file storage, snapshots, Multi-Attach, Data Lifecycle Manager, and EFS setup."
 ---
 
----
-
-# 💾 Module 3 – Elastic Block Store (EBS) and Elastic File System (EFS)
+# 💾 Module 3 - Elastic Block Store (EBS) and Elastic File System (EFS)
 
 ---
+
 
 ## 🎯 Learning Objectives
 
