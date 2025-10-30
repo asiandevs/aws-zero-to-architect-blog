@@ -1,6 +1,6 @@
 ---
 title: "Module 4 - Amazon S3: Simple Storage Service"
-date: 2025-11-01
+date: 2025-10-31
 categories: aws storage s3 object-storage
 tags: aws s3 bucket versioning lifecycle replication
 image: "/assets/images/s3.jpg"
