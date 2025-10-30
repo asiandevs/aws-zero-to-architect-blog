@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Module 4 - Amazon S3: Simple Storage Service"
-date: 2025-10-30
+date: 2025-10-30 00:00:00 +1100
 categories: aws storage s3 object-storage
 tags: aws s3 bucket versioning lifecycle replication
 image: "/assets/images/s3.jpg"
