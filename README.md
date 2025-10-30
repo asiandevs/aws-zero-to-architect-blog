@@ -85,7 +85,7 @@ git push origin feature/new-module
 
 | # | Module | Link |
 |--:|:--------|:------|
-| 1 | Introduction to Cloud Computing | [View →](./_posts/2025-01-01-module-01-introduction-to-cloud-computing.md) |
+| 1 | Introduction to Cloud Computing | [View →](./_posts/2025-10-28-module1-introduction-to-cloud-computing.md) |
 | 2 | Getting Started with AWS & EC2 | [View →](./_posts/2025-01-02-module-02-getting-started-with-aws-ec2.md) |
 | 3 | Elastic Block Store & EFS | [View →](./_posts/2025-01-03-module-03-elastic-block-store.md) |
 | 4 | S3 and CloudFront Deep Dive | [View →](./_posts/2025-01-04-module-04-s3-and-cloudfront.md) |
