@@ -2,7 +2,7 @@ title: AWS Zero to Architect
 description: Blog series – from Cloud 101 to production-grade architectures
 theme: minima
 logo: /assets/images/icons8-aws-logo-100.png          # optional
-permalink: /:year/:month/:day/:title:output_ext
+permalink: /:year/:month/:day/:title.html
 collections:
   posts:
     output: true
