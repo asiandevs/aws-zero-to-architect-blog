@@ -3,6 +3,9 @@ description: Blog series – from Cloud 101 to production-grade architectures
 theme: minima
 logo: /assets/images/icons8-aws-logo-100.png          # optional
 permalink: /:categories/:year/:month/:day/:title:output_ext
+collections:
+  posts:
+    output: true
 header_pages:
   - about.md
 plugins:
