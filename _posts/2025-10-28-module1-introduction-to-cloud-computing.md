@@ -8,11 +8,11 @@ description: "Virtualization, Cloud service models, Deployment models, AWS overv
 ---
 ---
 
-# 🧭 Module 1 – Introduction to Cloud Computing
+#  Module 1 – Introduction to Cloud Computing
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By the end of this module, you’ll be able to:
 
@@ -23,12 +23,12 @@ By the end of this module, you’ll be able to:
 
 ---
 
-## ☁️ What Is Cloud Computing?
+##  What Is Cloud Computing?
 
 **Cloud computing** is the on-demand delivery of computing resources—servers, storage, databases, networking, software, and analytics—over the internet (“the cloud”).
 It replaces the need for owning or maintaining physical data centers and servers.
 
-### 🔑 Key Concept
+###  Key Concept
 
 > **Cloud Computing = Virtualization + Internet**
 
@@ -36,14 +36,14 @@ Virtualization allows multiple operating systems and applications to run on a si
 
 ---
 
-## 💡 Real-World Analogy
+##  Real-World Analogy
 
 > Think of cloud computing like renting an apartment instead of buying a house.
 > You still get space and amenities, but you don’t worry about maintenance, electricity, or infrastructure costs—someone else manages that for you.
 
 ---
 
-## ⚙️ Advantages of Cloud Computing
+##  Advantages of Cloud Computing
 
 | **Feature**           | **Description**                                                    |
 | --------------------- | ------------------------------------------------------------------ |
@@ -56,7 +56,7 @@ Virtualization allows multiple operating systems and applications to run on a si
 
 ---
 
-## 🧩 Cloud Deployment Models
+##  Cloud Deployment Models
 
 | **Model**         | **Description**                                                  | **Use Case Example**                                    |
 | ----------------- | ---------------------------------------------------------------- | ------------------------------------------------------- |
@@ -66,7 +66,7 @@ Virtualization allows multiple operating systems and applications to run on a si
 
 ---
 
-## 🧱 Cloud Service Models
+##  Cloud Service Models
 
 | **Model**                       | **Abbreviation** | **Definition**                            | **Example AWS Service**    |
 | ------------------------------- | ---------------- | ----------------------------------------- | -------------------------- |
@@ -76,7 +76,7 @@ Virtualization allows multiple operating systems and applications to run on a si
 
 ---
 
-## ☁️ Major Cloud Service Providers
+##  Major Cloud Service Providers
 
 | **Provider**                          | **Market Position** | **Example Customers**                 |
 | ------------------------------------- | ------------------- | ------------------------------------- |
@@ -87,7 +87,7 @@ Virtualization allows multiple operating systems and applications to run on a si
 
 ---
 
-## 🧠 Key AWS Concepts 
+##  Key AWS Concepts 
 
 | **Domain**     | **Example Services**      |
 | -------------- | ------------------------- |
@@ -98,15 +98,15 @@ Virtualization allows multiple operating systems and applications to run on a si
 
 ---
 
-## 🧪 Hands-On Lab – Understanding Cloud & Virtualization
+##  Hands-On Lab – Understanding Cloud & Virtualization
 
-### 🧰 **Objective**
+###  **Objective**
 
 See how virtualization enables multiple environments on a single host and understand how AWS uses it to power EC2.
 
 ---
 
-### 🖥️ Step 1: Identify Hypervisor Types
+###  Step 1: Identify Hypervisor Types
 
 | **Type**                | **Architecture**                      | **Usage in AWS**                                         |
 | ----------------------- | ------------------------------------- | -------------------------------------------------------- |
@@ -119,7 +119,7 @@ AWS primarily uses **Xen** and **KVM** hypervisors under the hood.
 
 ---
 
-### 🧩 Step 2: Explore Virtualization Locally (Optional Pre-AWS Lab)
+###  Step 2: Explore Virtualization Locally (Optional Pre-AWS Lab)
 
 **On your laptop:**
 
@@ -134,7 +134,7 @@ Observe how each VM acts as an independent system — similar to AWS EC2 instanc
 
 ---
 
-### ☁️ Step 3: Create an AWS Free-Tier Account
+###  Step 3: Create an AWS Free-Tier Account
 
 Visit: [https://aws.amazon.com/resources/create-account/](https://aws.amazon.com/resources/create-account/)
 
@@ -144,7 +144,7 @@ Visit: [https://aws.amazon.com/resources/create-account/](https://aws.amazon.com
 
 ---
 
-### 🧭 Step 4: Navigate the AWS Console
+###  Step 4: Navigate the AWS Console
 
 1. Go to **Services → Compute → EC2**.
 2. Click **Launch Instance** (you’ll perform this fully in Module 2).
@@ -153,7 +153,7 @@ Visit: [https://aws.amazon.com/resources/create-account/](https://aws.amazon.com
 
 ---
 
-## 🧾 Key Takeaways
+##  Key Takeaways
 
 * Cloud computing delivers virtualized IT resources as a service.
 * Deployment = Public | Private | Hybrid clouds.
@@ -164,7 +164,7 @@ Visit: [https://aws.amazon.com/resources/create-account/](https://aws.amazon.com
 
 ---
 
-> 🪄 **Next Module Preview:**
+>  **Next Module Preview:**
 > In **Module 2**, we’ll dive deep into **AWS EC2**, exploring Regions, Availability Zones, AMIs, instance types, and how to launch your first instance from the console and CLI.
 
 ---
