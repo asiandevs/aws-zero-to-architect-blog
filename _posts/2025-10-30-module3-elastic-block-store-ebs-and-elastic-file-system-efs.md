@@ -7,12 +7,12 @@ image: /assets/images/ebs.jpg
 description: "Persistent block and shared file storage, snapshots, Multi-Attach, Data Lifecycle Manager, and EFS setup."
 ---
 
-# 💾 Module 3 - Elastic Block Store (EBS) and Elastic File System (EFS)
+#  Module 3 - Elastic Block Store (EBS) and Elastic File System (EFS)
 
 ---
 
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 By the end of this module, you will be able to:
 
@@ -24,20 +24,20 @@ By the end of this module, you will be able to:
 
 ---
 
-## 🧠 Concept Overview
+##  Concept Overview
 
-### 🧩 What is Amazon Elastic Block Store (EBS)?    <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/8066640d-41ca-4134-83b9-dfaa5ecfcb78" />
+###  What is Amazon Elastic Block Store (EBS)?    <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/8066640d-41ca-4134-83b9-dfaa5ecfcb78" />
 
 
 EBS provides **persistent block-level storage** for Amazon EC2 instances.
 Think of it as an **external hard drive** for your virtual machine that can be detached, reattached, resized, and backed up independently.
 
-> 💡 **Analogy:**
+>  **Analogy:**
 > Imagine your EC2 instance as a laptop and EBS as a portable SSD — you can plug it in, store data, unplug it, and connect it to another laptop without losing data.
 
 ---
 
-## 🧱 Key Characteristics of EBS
+##  Key Characteristics of EBS
 
 | **Feature**               | **Description**                                                             |
 | ------------------------- | --------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ Think of it as an **external hard drive** for your virtual machine that can be d
 
 ---
 
-## ⚙️ EBS Volume Types
+##  EBS Volume Types
 
 | **Type**                             | **Description**                                      | **Performance (IOPS / Throughput)**   | **Use Case**                               |
 | ------------------------------------ | ---------------------------------------------------- | ------------------------------------- | ------------------------------------------ |
@@ -62,14 +62,14 @@ Think of it as an **external hard drive** for your virtual machine that can be d
 
 ---
 
-## 🧩 IOPS and Throughput
+##  IOPS and Throughput
 
 * **IOPS (Input/Output Operations per Second):** Measures random access speed (important for databases).
 * **Throughput:** Measures sequential read/write speed (important for streaming or large files).
 
 ---
 
-## 🧪 Hands-On: Create and Attach an EBS Volume
+##  Hands-On: Create and Attach an EBS Volume
 
 ### **Objective:**
 
@@ -140,7 +140,7 @@ You can restore the same volume anytime:
 
 ---
 
-## 🔁 EBS Multi-Attach
+##  EBS Multi-Attach
 
 **Feature:**
 Attach a single **Provisioned IOPS (io1/io2)** volume to **up to 16 EC2 instances** within the same AZ.
@@ -159,7 +159,7 @@ Attach a single **Provisioned IOPS (io1/io2)** volume to **up to 16 EC2 instance
 
 ---
 
-## 🧩 Data Lifecycle Manager (DLM)
+##  Data Lifecycle Manager (DLM)
 
 **Purpose:** Automates snapshot creation, retention, and deletion.
 
@@ -177,7 +177,7 @@ Attach a single **Provisioned IOPS (io1/io2)** volume to **up to 16 EC2 instance
 
 ---
 
-### 🧪 **Hands-On: Configure DLM Policy**
+###  **Hands-On: Configure DLM Policy**
 
 1. Navigate to **EC2 → Lifecycle Manager → Create Lifecycle Policy**.
 2. **Policy Type:** EBS Snapshot Policy.
@@ -192,7 +192,7 @@ Attach a single **Provisioned IOPS (io1/io2)** volume to **up to 16 EC2 instance
 
 ---
 
-## 🔒 EBS Encryption
+##  EBS Encryption
 
 * EBS supports **encryption for all volume types**.
 * Encrypts data **at rest, in transit, and in snapshots**.
@@ -203,17 +203,17 @@ Attach a single **Provisioned IOPS (io1/io2)** volume to **up to 16 EC2 instance
 
 ---
 
-## 📁 Elastic File System (EFS)  <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/6cc60856-654b-4db8-a089-b423c78b0186" />
+##  Elastic File System (EFS)  <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/6cc60856-654b-4db8-a089-b423c78b0186" />
 
 
 Amazon EFS provides **scalable, fully managed shared file storage** for EC2 instances.
 
-> 💡 **Analogy:**
+>  **Analogy:**
 > EFS is like a shared network drive accessible from multiple computers simultaneously — all reading and writing the same files.
 
 ---
 
-### 🔑 Key Features of EFS
+###  Key Features of EFS
 
 | **Feature**             | **Description**                                     |
 | ----------------------- | --------------------------------------------------- |
@@ -226,7 +226,7 @@ Amazon EFS provides **scalable, fully managed shared file storage** for EC2 inst
 
 ---
 
-## 🧪 Hands-On: Create and Mount EFS
+##  Hands-On: Create and Mount EFS
 
 ### **Step 1: Create an EFS**
 
@@ -281,7 +281,7 @@ sudo umount /efs
 
 ---
 
-## ⚖️ EBS vs. EFS Comparison
+##  EBS vs. EFS Comparison
 
 | **Feature**       | **EBS**                                      | **EFS**                        |
 | ----------------- | -------------------------------------------- | ------------------------------ |
@@ -294,7 +294,7 @@ sudo umount /efs
 
 ---
 
-## 📚 Case Study: EC2 + EBS + EFS Deployment
+##  Case Study: EC2 + EBS + EFS Deployment
 
 **Scenario:**
 A company hosts a web application needing:
@@ -327,7 +327,7 @@ Result:
 
 ---
 
-> 🪄 **Next Module Preview:**
+>  **Next Module Preview:**
 > In **Module 4**, we’ll explore **Amazon S3 – Simple Storage Service**, covering buckets, object storage, versioning, lifecycle rules, and cross-region replication with real console labs.
 
 ---
