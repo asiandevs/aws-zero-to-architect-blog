@@ -6,7 +6,7 @@ image: /assets/images/aws-training-cover.jpg
 description: "Learn about the AWS Zero to Architect program, the author, and the vision behind this hands-on cloud training series."
 ---
 
-<!-- 🎯 HERO BANNER -->
+<!--  HERO BANNER -->
 <div style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/assets/images/aws-training-cover.jpg') center/cover no-repeat; color:white; padding:80px 30px; text-align:center; border-radius:16px; margin-bottom:40px;">
   <h1 style="font-size:2.8em; margin-bottom:10px;">☁️ About AWS Zero to Architect</h1>
   <p style="font-size:1.3em; max-width:800px; margin:0 auto;">
@@ -16,7 +16,7 @@ description: "Learn about the AWS Zero to Architect program, the author, and the
 
 ---
 
-## 👨‍💻 The Vision
+##  The Vision
 **AWS Zero to Architect** is a structured learning path designed to transform cloud beginners into capable solution architects.  
 Through a 20-module video and article series, this course delivers practical, scenario-based training drawn from real-world enterprise experience.
 
@@ -24,7 +24,7 @@ This series is not just about passing certifications — it’s about **understa
 
 ---
 
-## 📚 What You’ll Learn
+##  What You’ll Learn
 - Core AWS services: EC2, S3, RDS, VPC, and IAM  
 - Infrastructure automation with CloudFormation and DevOps pipelines  
 - Serverless and containerized workloads  
@@ -45,7 +45,7 @@ The series is organized into 20 progressive modules:
 4. Automation, cost control, and observability  
 5. Final capstone project integrating all learned concepts  
 
-➡️ [View Full Module Index](/assets/index.html)
+ [View Full Module Index](/assets/index.html)
 
 ---
 
@@ -68,13 +68,13 @@ Master of Information Technology Professional – *University of Southern Queens
 
 ---
 
-## 🌏 Community and Collaboration
+##  Community and Collaboration
 The **AWS Zero to Architect Blog** and GitHub repository are open resources for learners and professionals to collaborate.  
 
 You can:
 - ⭐ Star or fork the [GitHub Repository](https://github.com/asiandevs/aws-zero-to-architect-blog)  
-- 🧑‍💻 Contribute new examples or module improvements  
-- 🗨️ Join the discussion and share your AWS projects  
+-  Contribute new examples or module improvements  
+-  Join the discussion and share your AWS projects  
 
 ---
 
