@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Module 4 - Amazon S3: Simple Storage Service"
 date: 2025-10-30
 categories: aws storage s3 object-storage
