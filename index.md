@@ -1,5 +1,5 @@
 ---
-title: "AWS Cloud Computing Video Training – Module Index"
+title: "AWS Cloud Computing Training – Module Index"
 date: 2025-11-18
 layout: single
 categories: aws training index
