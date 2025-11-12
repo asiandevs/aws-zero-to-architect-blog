@@ -9,7 +9,7 @@ description: "DNS routing, domain registration, hosted zones, and routing polici
 
 ---
 
-# 🌍 Module 7 – Amazon Route 53 (DNS and Traffic Routing)
+# Module 7 – Amazon Route 53 (DNS and Traffic Routing) 🌍
 
 ---
 
