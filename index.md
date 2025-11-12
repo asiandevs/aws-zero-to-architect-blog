@@ -45,7 +45,7 @@ description: "Comprehensive 20-module AWS Cloud Computing training covering infr
 | 17 | | <img src="assets/images/backup.jpg" width="80" style="border-radius:10px;"> | | [AWS Backup & Disaster Recovery](/_posts/2025-11-14-module17-aws-backup-and-disaster-recovery.md) | | Backup automation, DR design, and recovery points. |
 | 18 | | <img src="assets/images/migration.jpg" width="80" style="border-radius:10px;"> | | [Hybrid Cloud & Migration Strategies](/_posts/2025-11-15-module18-hybrid-cloud-and-migration-strategies.md) | | Hybrid connectivity and data migration tools. |
 | 19 | | <img src="assets/images/well-architected.jpg" width="80" style="border-radius:10px;"> | | [AWS Well-Architected Framework](/_posts/2025-11-16-module19-aws-well-architected-framework.md) | | Pillars of architecture excellence and governance. |
-| 20 | | <img src="assets/images/capstone.jpg" width="80" style="border-radius:10px;"> | | [Project & Review](/_posts/2025-11-17-module20-project-and-review.md) | | Final project integrating all modules. |
+| 20 | | <img src="assets/images/review.png" width="80" style="border-radius:10px;"> | | [Project & Review](/_posts/2025-11-17-module20-project-and-review.md) | | Final project integrating all modules. |
 
 ---
 
