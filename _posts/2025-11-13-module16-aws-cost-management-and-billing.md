@@ -321,5 +321,3 @@ aws ec2 run-instances \
 > In **Module 17**, we'll explore **High Availability and Fault Tolerance Architecture in AWS** — learning to design self-healing, multi-AZ, and multi-region systems for mission-critical workloads.
 
 ---
-
-The main issue was the double separator lines right after the front matter, which can break Jekyll parsing. Replace your Module 16 file with this corrected version and it should work properly!
