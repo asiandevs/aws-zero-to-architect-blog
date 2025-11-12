@@ -9,7 +9,7 @@ description: "Building global content delivery with Amazon S3, CloudFront, HTTPS
 
 ---
 
-# 🌎 Module 10 – Amazon S3 and CloudFront (Global Content Delivery & Security)
+#  Module 10 – Amazon S3 and CloudFront (Global Content Delivery & Security) 🌎
 
 ---
 
