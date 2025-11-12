@@ -19,57 +19,61 @@
     <div class="container">
       <!-- HEADER -->
       <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
-        <h1 style="margin:0; font-size:2rem;">
-          <a href="{{ '/' | relative_url }}" style="text-decoration:none; color:#0366d6;">
-            {{ site.title }}
-          </a>
-        </h1>
 
-        <!-- Navigation with three buttons -->
-        <nav style="margin-top:0.5rem; display:flex; gap:10px; flex-wrap:wrap;">
+        <!-- Navigation Buttons -->
+        <nav style="margin-top:0.5rem; display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
 
-          <!-- Site Title Button (Light Green) -->
-          <a href="{{ '/' | relative_url }}" style="
+          <!-- AWS Zero to Architect (Light Green Fancy Font Button) -->
+          <a href="{{ site.baseurl }}/" style="
             display:inline-block;
-            padding:6px 16px;
-            background-color:#90ee90;
-            color:#000;
-            font-weight:bold;
-            border-radius:8px;
+            padding:8px 18px;
+            background-color:#90ee90; /* Light Green */
+            color:#004400;
+            font-weight:700;
+            border-radius:10px;
             text-decoration:none;
-            transition: all 0.3s;
-          " onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
-            ☁️ AWS Zero to Architect
+            font-family:'Poppins', 'Segoe UI', sans-serif;
+            font-size:1.1rem;
+            transition:all 0.3s ease;
+            box-shadow:0 2px 4px rgba(0,0,0,0.1);
+          " onmouseover="this.style.transform='translateY(-2px)';" 
+            onmouseout="this.style.transform='translateY(0)';">
+            ☁️ {{ site.title }}
           </a>
 
           <!-- About Button (Light Blue) -->
-          <a href="{{ '/about' | relative_url }}" style="
+          <a href="{{ site.baseurl }}/about" style="
             display:inline-block;
-            padding:6px 16px;
-            background-color:#87cefa;
-            color:#000;
-            font-weight:bold;
-            border-radius:8px;
+            padding:8px 16px;
+            background-color:#87cefa; /* Light Blue */
+            color:#003366;
+            font-weight:600;
+            border-radius:10px;
             text-decoration:none;
-            transition: all 0.3s;
-          " onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
+            font-family:'Poppins', 'Segoe UI', sans-serif;
+            transition:all 0.3s ease;
+            box-shadow:0 2px 4px rgba(0,0,0,0.1);
+          " onmouseover="this.style.transform='translateY(-2px)';" 
+            onmouseout="this.style.transform='translateY(0)';">
             About
           </a>
 
-          <!-- Main Index Button (Gradient Orange) -->
-          <a href="{{ site.main_index_url }}" style="
+          <!-- Main Index Button (Orange Gradient) -->
+          <a href="https://asiandevs.github.io/aws-zero-to-architect-blog/#module-index" style="
             display:inline-block;
-            padding:6px 16px;
-            background: linear-gradient(90deg, #ff9900, #ff6600);
+            padding:8px 16px;
+            background:linear-gradient(90deg, #ff9900, #ff6600);
             color:#fff;
             font-weight:bold;
-            border-radius:8px;
+            border-radius:10px;
             text-decoration:none;
-            transition: all 0.3s;
-          " onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
+            font-family:'Poppins', 'Segoe UI', sans-serif;
+            transition:all 0.3s ease;
+            box-shadow:0 2px 4px rgba(0,0,0,0.1);
+          " onmouseover="this.style.transform='translateY(-2px)';" 
+            onmouseout="this.style.transform='translateY(0)';">
             🏠 Main Index
           </a>
-
         </nav>
       </header>
 
