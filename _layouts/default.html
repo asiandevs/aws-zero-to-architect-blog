@@ -17,22 +17,40 @@
   </head>
   <body>
     <div class="container">
+      <!-- HEADER -->
       <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
         <h1 style="margin:0; font-size:2rem;">
           <a href="{{ '/' | relative_url }}" style="text-decoration:none; color:#0366d6;">
             {{ site.title }}
           </a>
         </h1>
-        <nav>
-          <a href="{{ '/about' | relative_url }}">About</a>
+
+        <!-- Navigation -->
+        <nav style="margin-top:0.5rem;">
+          <a href="{{ '/about' | relative_url }}" style="margin-right:15px;">About</a>
+          <!-- Back to Main Index Button -->
+          <a href="{{ site.main_index_url }}" style="
+            display:inline-block;
+            padding:6px 14px;
+            background: linear-gradient(90deg, #ff9900, #ff6600);
+            color:#fff;
+            font-weight:bold;
+            border-radius:8px;
+            text-decoration:none;
+            transition: all 0.3s;
+          " onmouseover="this.style.transform='translateY(-2px)';" onmouseout="this.style.transform='translateY(0)';">
+            🏠 Main Index
+          </a>
         </nav>
       </header>
 
+      <!-- MAIN CONTENT -->
       <main>
         {{ content }}
       </main>
 
-      <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; font-size:0.9rem; color:#666;">
+      <!-- FOOTER -->
+      <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; font-size:0.9rem; color:#666; text-align:center;">
         © {{ site.time | date: '%Y' }} {{ site.title }} • Built with Jekyll on GitHub Pages
       </footer>
     </div>
