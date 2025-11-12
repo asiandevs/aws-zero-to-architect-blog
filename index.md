@@ -97,50 +97,51 @@ h2, h3 {
 </style>
 
 ---
-<div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:1rem 0;">
+
+## <a id="module-index"></a>📘 Module Index
+
+<!-- Fancy Header Row -->
+<div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:1.5rem 0;">
   <span style="
     background:#2ecc71;
     color:#fff;
-    font-weight:bold;
-    padding:6px 14px;
-    border-radius:8px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow:0 2px 4px rgba(0,0,0,0.1);
-  ">#</span>
+    font-weight:700;
+    padding:8px 18px;
+    border-radius:12px;
+    font-family:'Poppins', sans-serif;
+    box-shadow:0 3px 6px rgba(0,0,0,0.15);
+  ">No.</span>
 
   <span style="
     background:#1abc9c;
     color:#fff;
-    font-weight:bold;
-    padding:6px 14px;
-    border-radius:8px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    font-weight:700;
+    padding:8px 18px;
+    border-radius:12px;
+    font-family:'Poppins', sans-serif;
+    box-shadow:0 3px 6px rgba(0,0,0,0.15);
   ">Preview</span>
 
   <span style="
     background:#3498db;
     color:#fff;
-    font-weight:bold;
-    padding:6px 14px;
-    border-radius:8px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    font-weight:700;
+    padding:8px 18px;
+    border-radius:12px;
+    font-family:'Poppins', sans-serif;
+    box-shadow:0 3px 6px rgba(0,0,0,0.15);
   ">Module Title</span>
 
   <span style="
     background:#9b59b6;
     color:#fff;
-    font-weight:bold;
-    padding:6px 14px;
-    border-radius:8px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+    font-weight:700;
+    padding:8px 18px;
+    border-radius:12px;
+    font-family:'Poppins', sans-serif;
+    box-shadow:0 3px 6px rgba(0,0,0,0.15);
   ">Description</span>
 </div>
-
-
-## <a id="module-index"></a>📘 Module Index
 
 | No. | &nbsp; | Preview | &nbsp; | Module Title | &nbsp; | Description |
 |-----|--------|----------|--------|---------------|--------|--------------|
