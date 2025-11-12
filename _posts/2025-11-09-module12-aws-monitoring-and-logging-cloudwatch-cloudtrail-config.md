@@ -9,7 +9,7 @@ description: "Monitoring, logging, and compliance using CloudWatch, CloudTrail, 
 
 ---
 
-# 🛰️ Module 12 – AWS Monitoring and Logging (CloudWatch, CloudTrail, AWS Config)
+#  Module 12 – AWS Monitoring and Logging (CloudWatch, CloudTrail, AWS Config) 🛰️
 
 ---
 
