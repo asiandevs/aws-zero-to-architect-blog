@@ -9,7 +9,7 @@ description: "Infrastructure as Code using CloudFormation templates, parameters,
 
 ---
 
-# 🧩 Module 8 – AWS CloudFormation (Infrastructure as Code & Automation)
+#  Module 8 – AWS CloudFormation (Infrastructure as Code & Automation) 🧩
 
 ---
 
