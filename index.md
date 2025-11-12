@@ -48,6 +48,20 @@ table th, table td {
   padding: 12px 10px;
   text-align: left;
 }
+table th {
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 10px 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+table th:nth-child(1) { background-color: #2ecc71; } /* Green */
+table th:nth-child(3) { background-color: #1abc9c; } /* Teal */
+table th:nth-child(5) { background-color: #3498db; } /* Blue */
+table th:nth-child(7) { background-color: #9b59b6; } /* Purple */
+
 table tr {
   background: #fff;
   border-radius: 12px;
@@ -76,7 +90,7 @@ table td:nth-child(5) a:hover {
   color: #ff6600 !important;
   text-decoration: underline;
 }
-/* Link Styling */
+/* Links */
 a {
   color: #ff6600;
   font-weight: 600;
@@ -87,7 +101,6 @@ a:hover {
   color: #ff3300;
   text-decoration: underline;
 }
-/* Section Titles */
 h2, h3 {
   color: #ff6600;
   margin-top: 40px;
@@ -96,55 +109,10 @@ h2, h3 {
 }
 </style>
 
----
-
 ## <a id="module-index"></a>📘 Module Index
 
-<!-- Fancy Header Row -->
-<div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:1.5rem 0;">
-  <span style="
-    background:#2ecc71;
-    color:#fff;
-    font-weight:700;
-    padding:8px 18px;
-    border-radius:12px;
-    font-family:'Poppins', sans-serif;
-    box-shadow:0 3px 6px rgba(0,0,0,0.15);
-  ">No.</span>
-
-  <span style="
-    background:#1abc9c;
-    color:#fff;
-    font-weight:700;
-    padding:8px 18px;
-    border-radius:12px;
-    font-family:'Poppins', sans-serif;
-    box-shadow:0 3px 6px rgba(0,0,0,0.15);
-  ">Preview</span>
-
-  <span style="
-    background:#3498db;
-    color:#fff;
-    font-weight:700;
-    padding:8px 18px;
-    border-radius:12px;
-    font-family:'Poppins', sans-serif;
-    box-shadow:0 3px 6px rgba(0,0,0,0.15);
-  ">Module Title</span>
-
-  <span style="
-    background:#9b59b6;
-    color:#fff;
-    font-weight:700;
-    padding:8px 18px;
-    border-radius:12px;
-    font-family:'Poppins', sans-serif;
-    box-shadow:0 3px 6px rgba(0,0,0,0.15);
-  ">Description</span>
-</div>
-
 | No. | &nbsp; | Preview | &nbsp; | Module Title | &nbsp; | Description |
-|-----|--------|----------|--------|---------------|--------|--------------|
+|:---:|:------:|:--------:|:------:|:-------------:|:------:|:-------------|
 | 1 | | <img src="assets/images/cc.jpg" width="80" style="border-radius:10px;"> | | [Introduction to Cloud Computing](/_posts/2025-10-28-module1-introduction-to-cloud-computing.md) | | Virtualization, Cloud models, Deployment types, AWS overview. |
 | 2 | | <img src="assets/images/ec2.jpg" width="80" style="border-radius:10px;"> | | [Getting Started with AWS & EC2](/_posts/2025-10-29-module2-getting-started-with-aws-and-ec2.md) | | EC2 instances, AMIs, EBS, and key pair management. |
 | 3 | | <img src="assets/images/ebs.jpg" width="80" style="border-radius:10px;"> | | [Elastic Block Store (EBS) & Elastic File System (EFS)](/_posts/2025-10-30-module3-elastic-block-store-ebs-and-elastic-file-system-efs.md) | | Persistent storage, snapshots, Multi-Attach, lifecycle. |
