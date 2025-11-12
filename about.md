@@ -82,8 +82,8 @@ You can:
 Have questions, feedback, or collaboration ideas?  
 Reach out via:
 - **GitHub:** [@asiandevs](https://github.com/asiandevs)  
-- **LinkedIn:** [Monowar Mukul](https://www.linkedin.com/in/monowar-mukul)  
-- **Email:** available on GitHub profile  
+- **LinkedIn:** [Monowar Mukul](https://www.linkedin.com/in/monowarmukul)  
+- **Email:** monowar.mukul@gmail.com  
 
 ---
 
