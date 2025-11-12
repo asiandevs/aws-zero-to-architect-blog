@@ -1,15 +1,21 @@
+# _config.yml
 title: AWS Zero to Architect
 description: Blog series – from Cloud 101 to production-grade architectures
 theme: minima
-logo: /assets/images/icons8-aws-logo-100.png          # optional
+logo: /assets/images/icons8-aws-logo-100.png
 permalink: /:year/:month/:day/:title.html
 url: "https://asiandevs.github.io"
 baseurl: "/aws-zero-to-architect-blog"
+
 header_pages:
   - about.md
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+# Custom variable for main page link
+main_index_url: "/aws-zero-to-architect-blog/index.md"
+
 defaults:
   - scope:
       path: ""
