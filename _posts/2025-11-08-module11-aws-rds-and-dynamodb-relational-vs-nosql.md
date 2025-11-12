@@ -9,7 +9,7 @@ description: "Comparing relational and NoSQL databases with RDS and DynamoDB; re
 
 ---
 
-# 🧮 Module 11 – AWS RDS and DynamoDB (Relational vs. NoSQL Databases)
+#  Module 11 – AWS RDS and DynamoDB (Relational vs. NoSQL Databases) 🧮
 
 ---
 
