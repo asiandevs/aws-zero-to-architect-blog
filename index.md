@@ -10,15 +10,31 @@ description: "Comprehensive 20-module AWS Cloud Computing training covering infr
 
 <!-- 🎯 HERO BANNER -->
 <div style="background: linear-gradient(135deg, rgba(255,153,0,0.85), rgba(255,94,0,0.85)), url('assets/images/aws-training-cover.jpg') center/cover no-repeat; color:white; padding:100px 30px; text-align:center; border-radius:20px; box-shadow: 0 8px 25px rgba(0,0,0,0.4); margin-bottom:40px;">
-  <h1 style="font-size:3em; font-weight:800; margin-bottom:15px; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">☁️ AWS Cloud Computing Training</h1>
+  <h1 style="font-size:3em; font-weight:800; margin-bottom:15px; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">AWS Cloud Computing Training</h1>
   <p style="font-size:1.4em; max-width:850px; margin:0 auto 25px auto; line-height:1.6; text-shadow: 1px 1px 5px rgba(0,0,0,0.5);">
     Master the cloud from fundamentals to advanced AWS architecture.  
     20 modules, 100+ practical labs, real-world examples.
   </p>
-  <a href="#module-index" style="display:inline-block; margin-top:20px; padding:14px 32px; background:linear-gradient(90deg, #ff9900, #ff6600); color:#fff; font-weight:bold; border-radius:12px; text-decoration:none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); transition: all 0.3s;">
-    🚀 Start Learning
+  <a href="#module-index" style="
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 32px;
+    background-color:#90ee90;
+    color:#003300;
+    font-weight:bold;
+    border-radius:12px;
+    text-decoration:none;
+    font-family:'Poppins', 'Segoe UI', sans-serif;
+    box-shadow:0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  " onmouseover="this.style.backgroundColor='#76d776'; this.style.transform='translateY(-2px)';" 
+    onmouseout="this.style.backgroundColor='#90ee90'; this.style.transform='translateY(0)';">
+    Start Learning
   </a>
 </div>
+
+<!-- Load Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
 /* Table Card Styling */
@@ -26,6 +42,7 @@ table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 14px;
+  font-family: 'Poppins', sans-serif;
 }
 table th, table td {
   padding: 12px 10px;
@@ -48,6 +65,17 @@ table img {
 table img:hover {
   transform: scale(1.05);
 }
+/* Module Title Column */
+table td:nth-child(5) a {
+  color: #000 !important;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+table td:nth-child(5) a:hover {
+  color: #ff6600 !important;
+  text-decoration: underline;
+}
 /* Link Styling */
 a {
   color: #ff6600;
@@ -67,8 +95,6 @@ h2, h3 {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
 }
 </style>
-
----
 
 ---
 
