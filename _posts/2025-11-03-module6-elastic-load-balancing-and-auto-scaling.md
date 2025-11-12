@@ -9,7 +9,7 @@ description: "Load balancing types, cross-zone routing, health checks, and integ
 
 ---
 
-# ⚖️ Module 6 – Elastic Load Balancing (ELB) and Auto Scaling
+#  Module 6 – Elastic Load Balancing (ELB) and Auto Scaling ⚖️
 
 ---
 
