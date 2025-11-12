@@ -9,7 +9,7 @@ description: "Creating serverless applications using AWS Lambda, integrating wit
 
 ---
 
-# ⚙️ Module 9 – AWS Lambda and API Gateway (Serverless Architecture)
+#  Module 9 – AWS Lambda and API Gateway (Serverless Architecture) ⚙️
 
 ---
 
