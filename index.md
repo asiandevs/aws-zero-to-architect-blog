@@ -10,7 +10,7 @@ description: "Comprehensive 20-module AWS Cloud Computing training covering infr
 
 <!-- 🎯 HERO BANNER -->
 <div style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/images/aws-training-cover.jpg') center/cover no-repeat; color:white; padding:80px 30px; text-align:center; border-radius:16px; margin-bottom:30px;">
-  <h1 style="font-size:2.8em; margin-bottom:10px;">☁️ AWS Cloud Computing Video Training</h1>
+  <h1 style="font-size:2.8em; margin-bottom:10px;">☁️ AWS Cloud Computing Training</h1>
   <p style="font-size:1.3em; max-width:800px; margin:0 auto;">
     Master the cloud from fundamentals to advanced AWS architecture.  
     20 modules, 100+ practical labs, real-world examples.
