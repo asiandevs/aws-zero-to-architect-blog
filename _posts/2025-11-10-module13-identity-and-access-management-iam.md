@@ -9,7 +9,7 @@ description: "User, group, and role management with IAM; policies, permissions b
 
 ---
 
-# 🔐 Module 13 – AWS IAM and Security Services (Identity, Access, and Encryption)
+#  Module 13 – AWS IAM and Security Services (Identity, Access, and Encryption) 🔐
 
 ---
 
