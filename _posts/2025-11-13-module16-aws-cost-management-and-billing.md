@@ -9,7 +9,7 @@ description: "Analyzing and optimizing AWS costs with Cost Explorer, Budgets, Sa
 
 ---
 
-# 💰 Module 16 – AWS Cost Optimization and FinOps Practices
+#  Module 16 – AWS Cost Optimization and FinOps Practices 💰
 
 ---
 
