@@ -7,7 +7,7 @@ image: /assets/images/cost.jpg
 description: "Analyzing and optimizing AWS costs with Cost Explorer, Budgets, Savings Plans, and billing reports."
 ---
 
-#  Module 16 – AWS Cost Optimization and FinOps Practices 💰
+# Module 16 – AWS Cost Optimization and FinOps Practices 💰
 
 ---
 
@@ -28,7 +28,7 @@ By the end of this module, you will be able to:
 **FinOps** (Cloud Financial Operations) is the practice of bringing **financial accountability** to variable cloud spending — a collaboration between **finance, engineering, and business**.
 
 > 💡 **Analogy:**
-> Think of FinOps as **“DevOps for cloud money”** — it ensures that cloud resources deliver maximum value without overspending.
+> Think of FinOps as **"DevOps for cloud money"** — it ensures that cloud resources deliver maximum value without overspending.
 
 ---
 
@@ -54,7 +54,7 @@ By the end of this module, you will be able to:
 | **Lambda**               | Charged per request and execution time.               |
 | **S3**                   | Charged for storage class and data retrieval.         |
 
-> 💬 Always align **costs to usage patterns** — don’t over-provision what’s idle.
+> 💬 Always align **costs to usage patterns** — don't over-provision what's idle.
 
 ---
 
@@ -113,7 +113,7 @@ Create **spending thresholds** to receive alerts when costs exceed expected leve
 5. Notification: SNS or Email.
 6. Save.
 
-✅ You’ll now be alerted when monthly spending approaches your limit.
+✅ You'll now be alerted when monthly spending approaches your limit.
 
 ---
 
@@ -137,8 +137,8 @@ AI-powered service that learns your spending patterns and detects anomalies auto
 **Steps:**
 
 1. Go to **AWS Cost Anomaly Detection**.
-2. Choose “Service” as the **monitoring dimension**.
-3. Notification via SNS → “FinanceAlertsTopic”.
+2. Choose "Service" as the **monitoring dimension**.
+3. Notification via SNS → "FinanceAlertsTopic".
 
 ✅ Receive alerts for unusual spending (e.g., EC2 costs spike due to misconfiguration).
 
@@ -174,7 +174,7 @@ Group costs by department using tags.
    aws ec2 create-tags --resources i-0abc1234 --tags Key=Project,Value=CRM_Migration
    ```
 2. Enable **Cost Allocation Tags** in the Billing console.
-3. In **Cost Explorer**, group by → “Project”.
+3. In **Cost Explorer**, group by → "Project".
 
 ✅ Now, reports show costs per project — crucial for FinOps accountability.
 
@@ -195,7 +195,7 @@ Rightsizing identifies **underutilized instances** and recommends adjustments.
 aws compute-optimizer get-ec2-instance-recommendations
 ```
 
-You’ll see:
+You'll see:
 
 * Recommended instance type
 * Projected savings percentage
@@ -318,6 +318,8 @@ aws ec2 run-instances \
 ---
 
 > 🪄 **Next Module Preview:**
-> In **Module 17**, we’ll explore **High Availability and Fault Tolerance Architecture in AWS** — learning to design self-healing, multi-AZ, and multi-region systems for mission-critical workloads.
+> In **Module 17**, we'll explore **High Availability and Fault Tolerance Architecture in AWS** — learning to design self-healing, multi-AZ, and multi-region systems for mission-critical workloads.
 
 ---
+
+The main issue was the double separator lines right after the front matter, which can break Jekyll parsing. Replace your Module 16 file with this corrected version and it should work properly!
