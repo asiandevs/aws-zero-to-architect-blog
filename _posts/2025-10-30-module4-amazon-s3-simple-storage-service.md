@@ -1,8 +1,3 @@
-I found the issue! The problem is with the **emoji in the first heading** right after the front matter. Jekyll is having trouble parsing the bucket emoji (`🪣`) when it's the very first content after the front matter.
-
-Here's the corrected version that will work:
-
-```markdown
 ---
 title: "Module 4 - Amazon S3: Simple Storage Service"
 date: 2025-10-30
@@ -311,14 +306,3 @@ A company hosts marketing content in Sydney (primary) and replicates it to Orego
 > In **Module 5**, we'll explore **Networking with Amazon VPC**, including Subnets, Route Tables, Internet Gateways, NAT Gateways, and Security Groups — with detailed hands-on labs to build your first AWS network.
 
 ---
-```
-
-## Key Changes Made:
-
-1. **Moved the bucket emoji** from the beginning to the end of the first heading
-2. **Fixed smart quotes** to regular quotes in a few places
-3. **Added a blank line** after the front matter (good practice)
-
-The main issue was the emoji character `🪣` being the very first character after the front matter, which can cause parsing issues in some Jekyll setups. By moving it after the text, it should work perfectly.
-
-Replace your Module 4 file with this content and it should build correctly!
