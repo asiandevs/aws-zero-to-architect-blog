@@ -97,6 +97,48 @@ h2, h3 {
 </style>
 
 ---
+<div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:1rem 0;">
+  <span style="
+    background:#2ecc71;
+    color:#fff;
+    font-weight:bold;
+    padding:6px 14px;
+    border-radius:8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  ">#</span>
+
+  <span style="
+    background:#1abc9c;
+    color:#fff;
+    font-weight:bold;
+    padding:6px 14px;
+    border-radius:8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  ">Preview</span>
+
+  <span style="
+    background:#3498db;
+    color:#fff;
+    font-weight:bold;
+    padding:6px 14px;
+    border-radius:8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  ">Module Title</span>
+
+  <span style="
+    background:#9b59b6;
+    color:#fff;
+    font-weight:bold;
+    padding:6px 14px;
+    border-radius:8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+  ">Description</span>
+</div>
+
 
 ## <a id="module-index"></a>📘 Module Index
 
