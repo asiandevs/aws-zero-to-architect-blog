@@ -14,7 +14,8 @@ plugins:
   - jekyll-seo-tag
 
 # Custom variable for main page link
-main_index_url: "/aws-zero-to-architect-blog/index.md"
+# Add or replace this variable
+main_index_url: "/aws-zero-to-architect-blog/#module-index"
 
 defaults:
   - scope:
