@@ -9,7 +9,7 @@ description: "Implementing encryption, key management, and continuous threat det
 
 ---
 
-# 🌐 Module 14 – AWS Networking and VPC Advanced Design
+#  Module 14 – AWS Networking and VPC Advanced Design 🌐
 
 ---
 
