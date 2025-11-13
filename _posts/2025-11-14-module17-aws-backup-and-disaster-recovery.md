@@ -6,10 +6,7 @@ tags: aws datasync snowball transfer-family application-migration
 image: /assets/images/migration.jpg
 description: "Hybrid cloud design, data transfer tools, and migration approaches using AWS DataSync, Snowball, and Transfer Family."
 ---
-
----
-
-# 🛡️ Module 18 – AWS Security, Compliance and Governance Frameworks
+#  Module 18 – AWS Security, Compliance and Governance Frameworks 🛡️
 
 ---
 
