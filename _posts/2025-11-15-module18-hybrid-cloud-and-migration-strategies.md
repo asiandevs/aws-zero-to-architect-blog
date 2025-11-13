@@ -1,12 +1,13 @@
 ---
-title: "Module 18 – Hybrid Cloud and Migration Strategies"
+title: "Module 18 – AWS Security, Compliance and Governance Frameworks"
 date: 2025-11-15
-categories: aws migration hybrid-cloud
-tags: aws datasync snowball transfer-family application-migration
+categories: aws security compliance governance
+tags: aws security-hub guardduty config compliance frameworks
 image: /assets/images/migration.jpg
-description: "Hybrid cloud design, data transfer tools, and migration approaches using AWS DataSync, Snowball, and Transfer Family."
+description: "AWS security frameworks, compliance standards, governance tools, and security services implementation."
 ---
-#  Module 18 – AWS Security, Compliance and Governance Frameworks 🛡️
+
+# Module 18 – AWS Security, Compliance and Governance Frameworks 🛡️
 
 ---
 
@@ -14,7 +15,7 @@ description: "Hybrid cloud design, data transfer tools, and migration approaches
 
 By the end of this module, you will be able to:
 
-* Understand AWS’s **shared responsibility model**.
+* Understand AWS's **shared responsibility model**.
 * Implement **security, compliance, and governance frameworks**.
 * Use AWS services like **Security Hub**, **GuardDuty**, and **Config** for continuous compliance.
 * Apply **encryption and access control** policies across resources.
@@ -26,11 +27,11 @@ By the end of this module, you will be able to:
 
 | **Responsibility**          | **AWS**                                                       | **Customer**                                     |
 | --------------------------- | ------------------------------------------------------------- | ------------------------------------------------ |
-| **Security “of” the Cloud** | AWS secures infrastructure, hypervisor, hardware, networking. | —                                                |
-| **Security “in” the Cloud** | —                                                             | You secure OS, apps, IAM, data, network configs. |
+| **Security "of" the Cloud** | AWS secures infrastructure, hypervisor, hardware, networking. | —                                                |
+| **Security "in" the Cloud** | —                                                             | You secure OS, apps, IAM, data, network configs. |
 
 > 💡 **Analogy:**
-> AWS builds and secures the apartment building. You’re responsible for locking your own door.
+> AWS builds and secures the apartment building. You're responsible for locking your own door.
 
 ---
 
@@ -187,7 +188,7 @@ In the console → **Security Hub → Standards → Enable**:
 aws securityhub get-findings --max-results 10
 ```
 
-You’ll see prioritized findings with severity scores.
+You'll see prioritized findings with severity scores.
 
 ---
 
@@ -220,7 +221,7 @@ You’ll see prioritized findings with severity scores.
 
 ### Example Managed Rule:
 
-* `restricted-ssh`: Ensure security groups don’t allow 0.0.0.0/0 on port 22.
+* `restricted-ssh`: Ensure security groups don't allow 0.0.0.0/0 on port 22.
 
 **CLI Example:**
 
@@ -326,6 +327,6 @@ Combine AWS-native tools for full lifecycle security monitoring:
 ---
 
 > 🪄 **Next Module Preview:**
-> In **Module 19**, we’ll explore **AWS Data Analytics and Big Data Architecture** — covering Redshift, Glue, Athena, and data lake design patterns for enterprise-scale analytics.
+> In **Module 19**, we'll explore **AWS Data Analytics and Big Data Architecture** — covering Redshift, Glue, Athena, and data lake design patterns for enterprise-scale analytics.
 
 ---
