@@ -6,21 +6,8 @@ tags: aws security-hub guardduty config compliance frameworks
 image: /assets/images/migration.jpg
 description: "AWS security frameworks, compliance standards, governance tools, and security services implementation."
 ---
-# Module 18 – AWS Security, Compliance and Governance Frameworks 
 
----
-
-## 🎯 Learning Objectives
-
-By the end of this module, you will be able to:
-
-* Understand AWS's **shared responsibility model**.
-* Implement **security, compliance, and governance frameworks**.
-* Use AWS services like **Security Hub**, **GuardDuty**, and **Config** for continuous compliance.
-* Apply **encryption and access control** policies across resources.
-* Manage **multi-account governance** using **AWS Organizations**, **SCPs**, and **Control Tower**.
-
----
+# Module 18 – AWS Security, Compliance and Governance Frameworks
 
 ## ☁️ AWS Shared Responsibility Model
 
