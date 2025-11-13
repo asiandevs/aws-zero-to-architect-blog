@@ -233,6 +233,4 @@ Test self-healing capabilities using Auto Scaling Group and CloudWatch Alarm.
 > In **Module 18**, we'll cover **AWS Security, Compliance and Governance Frameworks** — learning how to build secure, auditable architectures aligned with CIS, NIST and ISO standards.
 
 ---
-Also, I fixed the smart quotes to regular quotes in one place for consistency.
 
-Replace your Module 17 file with this corrected version and it should work!
