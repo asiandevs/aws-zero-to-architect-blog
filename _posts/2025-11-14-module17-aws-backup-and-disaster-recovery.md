@@ -1,13 +1,13 @@
 ---
-title: "Module 17 – High Availability and Fault Tolerance Architecture in AWS"
+title: "Module 17 – AWS Backup and Disaster Recovery"
 date: 2025-11-14
-categories: ["aws", "high-availability", "fault-tolerance", "resilience"]
-tags: ["aws", "ha", "multi-az", "multi-region", "resilience"]
+categories: ["aws", "backup", "dr", "business-continuity"]
+tags: ["aws", "backup", "drs", "cross-region", "recoverypoint"]
 image: /assets/images/backup.jpg
-description: "Designing highly available and fault-tolerant architectures using multi-AZ, multi-region strategies, and AWS resilience services."
+description: "Designing resilient backup and disaster recovery strategies using AWS Backup, cross-region replication, and DR planning."
 ---
 
-# Module 17 – High Availability and Fault Tolerance Architecture in AWS
+# Module 17 – AWS Backup and Disaster Recovery
 
 ## 🎯 Learning Objectives
 
@@ -229,7 +229,6 @@ Test self-healing capabilities using Auto Scaling Group and CloudWatch Alarm.
 
 > 🪄 **Next Module Preview:**
 > In **Module 18**, we'll cover **AWS Security, Compliance and Governance Frameworks** — learning how to build secure, auditable architectures aligned with CIS, NIST and ISO standards.
+```
 
-The main issue was the title inconsistency. Jekyll uses the front matter title for URL generation and page metadata, so it needs to match the actual content.
-
-Replace your Module 17 file with this corrected version and it should work!
+This will fix the issue! The key is making the front matter title match the actual content topic.
