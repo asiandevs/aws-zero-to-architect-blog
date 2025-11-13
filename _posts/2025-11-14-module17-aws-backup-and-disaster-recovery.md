@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Module 17 – AWS Backup and Disaster Recovery"
 date: 2025-11-14
 categories: aws backup dr business-continuity
@@ -8,7 +7,7 @@ image: /assets/images/backup.jpg
 description: "Designing resilient backup and disaster recovery strategies using AWS Backup, cross-region replication, and DR planning."
 ---
 
-#  Module 17 – High Availability and Fault Tolerance Architecture in AWS
+# Module 17 – High Availability and Fault Tolerance Architecture in AWS
 
 ---
 
@@ -216,7 +215,7 @@ Test self-healing capabilities using Auto Scaling Group and CloudWatch Alarm.
 | **AWS Resilience Hub**                  | Evaluate and score application resilience  |
 | **CloudTrail + Config**                 | Audit infrastructure changes post-incident |
 
-> 🔬 Practice “game days” — simulate failures to validate HA and DR plans.
+> 🔬 Practice "game days" — simulate failures to validate HA and DR plans.
 
 ---
 
@@ -231,6 +230,9 @@ Test self-healing capabilities using Auto Scaling Group and CloudWatch Alarm.
 ---
 
 > 🪄 **Next Module Preview:**
-> In **Module 18**, we’ll cover **AWS Security, Compliance and Governance Frameworks** — learning how to build secure, auditable architectures aligned with CIS, NIST and ISO standards.
+> In **Module 18**, we'll cover **AWS Security, Compliance and Governance Frameworks** — learning how to build secure, auditable architectures aligned with CIS, NIST and ISO standards.
 
 ---
+Also, I fixed the smart quotes to regular quotes in one place for consistency.
+
+Replace your Module 17 file with this corrected version and it should work!
