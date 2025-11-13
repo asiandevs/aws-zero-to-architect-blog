@@ -1,12 +1,12 @@
 ---
 title: "Module 17 – High Availability and Fault Tolerance Architecture in AWS"
 date: 2025-11-14
-categories: ["aws", "backup", "dr", "business-continuity"]
-tags: ["aws", "backup", "drs", "cross-region", "recoverypoint"]
+categories: ["aws", "high-availability", "fault-tolerance", "resilience"]
+tags: ["aws", "ha", "multi-az", "multi-region", "resilience"]
 image: /assets/images/backup.jpg
-description: "Designing resilient backup and disaster recovery strategies using AWS Backup, cross-region replication, and DR planning."
+description: "Designing highly available and fault-tolerant architectures using multi-AZ, multi-region strategies, and AWS resilience services."
 ---
-High-Availability-and-Fault-Tolerance-Architecture-in-AWS
+
 # Module 17 – High Availability and Fault Tolerance Architecture in AWS
 
 ## 🎯 Learning Objectives
