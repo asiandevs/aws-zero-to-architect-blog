@@ -96,6 +96,7 @@ aws ce get-cost-and-usage \
   --granularity MONTHLY \
   --metrics "AmortizedCost" \
   --group-by Type=DIMENSION,Key=SERVICE
+```
 
 ---
 
@@ -318,4 +319,5 @@ aws ec2 run-instances \
 
 > 🪄 **Next Module Preview:**
 > In **Module 17**, we'll explore **High Availability and Fault Tolerance Architecture in AWS** — learning to design self-healing, multi-AZ, and multi-region systems for mission-critical workloads.
+
 
