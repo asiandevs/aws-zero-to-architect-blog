@@ -6,7 +6,6 @@ tags: aws security-hub guardduty config compliance frameworks
 image: /assets/images/migration.jpg
 description: "AWS security frameworks, compliance standards, governance tools, and security services implementation."
 ---
-
 # Module 18 – AWS Security, Compliance and Governance Frameworks 
 
 ---
