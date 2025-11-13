@@ -1,5 +1,5 @@
 ---
-title: "Module 17 – aws-backup-and-disaster-recovery"
+title: "Module 17 – aws backup and disaster recovery"
 date: 2025-11-14
 categories: aws backup dr business-continuity
 tags: aws backup drs cross-region recoverypoint
