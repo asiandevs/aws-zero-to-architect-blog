@@ -7,7 +7,7 @@ image: /assets/images/migration.jpg
 description: "AWS security frameworks, compliance standards, governance tools, and security services implementation."
 ---
 
-# Module 18 – AWS Security, Compliance and Governance Frameworks 🛡️
+# Module 18 – AWS Security, Compliance and Governance Frameworks 
 
 ---
 
@@ -329,4 +329,3 @@ Combine AWS-native tools for full lifecycle security monitoring:
 > 🪄 **Next Module Preview:**
 > In **Module 19**, we'll explore **AWS Data Analytics and Big Data Architecture** — covering Redshift, Glue, Athena, and data lake design patterns for enterprise-scale analytics.
 
----
