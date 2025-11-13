@@ -130,7 +130,7 @@ h2, h3 {
 | 15 | | <img src="assets/images/devops.jpg" width="80" style="border-radius:10px;"> | | [Automation & DevOps Tools on AWS](/_posts/2025-11-12-module15-automation-and-devops-tools-on-aws.md) | | CI/CD pipelines, CodeCommit, CodeBuild, CodeDeploy. |
 | 16 | | <img src="assets/images/cost.jpg" width="80" style="border-radius:10px;"> | | [AWS Cost Management & Billing](/_posts/2025-11-13-module16-aws-cost-management-and-billing.md) | | Budgets, Cost Explorer, and cost optimization. |
 | 17 | | <img src="assets/images/backup.jpg" width="80" style="border-radius:10px;"> | | [AWS Backup & Disaster Recovery](/_posts/2025-11-14-module17-aws-backup-and-disaster-recovery.md) | | Backup automation, DR design, and recovery points. |
-| 18 | | <img src="assets/images/migration.jpg" width="80" style="border-radius:10px;"> | | [Hybrid Cloud & Migration Strategies](/_posts/2025-11-15-module18-hybrid-cloud-and-migration-strategies.md) | | Hybrid connectivity and data migration tools. |
+| 18 | | <img src="assets/images/migration.jpg" width="80" style="border-radius:10px;"> | | [Hybrid Cloud & Migration Strategies](/_posts/2025-11-15-module18-aws-security-compliance-and-governance-frameworks.md) | | Security, Compliance, and Governance. |
 | 19 | | <img src="assets/images/well-architected.jpg" width="80" style="border-radius:10px;"> | | [AWS Well-Architected Framework](/_posts/2025-11-16-module19-aws-well-architected-framework.md) | | Pillars of architecture excellence and governance. |
 | 20 | | <img src="assets/images/review.png" width="80" style="border-radius:10px;"> | | [Project & Review](/_posts/2025-11-17-module20-project-and-review.md) | | Final project integrating all modules. |
 
