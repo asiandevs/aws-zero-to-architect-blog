@@ -1,10 +1,10 @@
 ---
-title: "Module 17 – AWS Backup and Disaster Recovery"
+title: "Module 17 – High Availability and Fault Tolerance Architecture in AWS"
 date: 2025-11-14
-categories: ["aws", "backup", "dr", "business-continuity"]
-tags: ["aws", "backup", "drs", "cross-region", "recoverypoint"]
+categories: ["aws", "high-availability", "fault-tolerance", "resilience"]
+tags: ["aws", "ha", "multi-az", "multi-region", "resilience"]
 image: /assets/images/backup.jpg
-description: "Designing resilient backup and disaster recovery strategies using AWS Backup, cross-region replication, and DR planning."
+description: "Designing highly available and fault-tolerant architectures using multi-AZ, multi-region strategies, and AWS resilience services."
 ---
 
 # Module 17 – High Availability and Fault Tolerance Architecture in AWS
@@ -230,4 +230,6 @@ Test self-healing capabilities using Auto Scaling Group and CloudWatch Alarm.
 > 🪄 **Next Module Preview:**
 > In **Module 18**, we'll cover **AWS Security, Compliance and Governance Frameworks** — learning how to build secure, auditable architectures aligned with CIS, NIST and ISO standards.
 
+The main issue was the title inconsistency. Jekyll uses the front matter title for URL generation and page metadata, so it needs to match the actual content.
 
+Replace your Module 17 file with this corrected version and it should work!
