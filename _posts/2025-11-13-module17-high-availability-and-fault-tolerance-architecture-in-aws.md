@@ -1,6 +1,6 @@
 ---
 title: "Module 17 – High Availability and Fault Tolerance Architecture in AWS"
-date: 2025-11-14
+date: 2025-11-13
 categories: ["aws", "high-availability", "fault-tolerance", "resilience"]
 tags: ["aws", "ha", "multi-az", "multi-region", "resilience"]
 image: /assets/images/backup.jpg
