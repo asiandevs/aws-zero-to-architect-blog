@@ -14,6 +14,43 @@
 
     {% feed_meta %}
     {% seo %}
+    <script>
+function toggleDarkMode() {
+  const body = document.body;
+  const toggle = document.getElementById('dark-mode-toggle');
+  const icon = document.getElementById('toggle-icon');
+
+  if (body.classList.contains('dark-mode')) {
+    // Switch to Light
+    body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+    icon.textContent = 'Dark Mode';
+    toggle.style.background = '#ff6600';
+  } else {
+    // Switch to Dark
+    body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
+    icon.textContent = 'Light Mode';
+    toggle.style.background = '#1a1a1a';
+  }
+}
+
+// On page load: Apply saved preference
+document.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const toggle = document.getElementById('dark-mode-toggle');
+  const icon = document.getElementById('toggle-icon');
+
+  if (saved === 'dark' || (!saved && prefersDark)) {
+    document.body.classList.add('dark-mode');
+    icon.textContent = 'Light Mode';
+    toggle.style.background = '#1a1a1a';
+  } else {
+    icon.textContent = 'Dark Mode';
+  }
+});
+</script>
   </head>
   <body>
     <div class="container">
@@ -88,4 +125,33 @@
       </footer>
     </div>
   </body>
+  <!-- Dark Mode Toggle -->
+<div style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+">
+  <button id="dark-mode-toggle" 
+    style="
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      background: #ff6600;
+      border: none;
+      color: white;
+      font-size: 1.4em;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255,102,0,0.4);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    "
+    onclick="toggleDarkMode()"
+    onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 6px 20px rgba(255,102,0,0.5)';"
+    onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(255,102,0,0.4)';"
+  >
+    <span id="toggle-icon">Dark Mode</span>
+  </button>
+</div>
 </html>
