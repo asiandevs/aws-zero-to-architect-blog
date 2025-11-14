@@ -108,6 +108,22 @@ h2, h3 {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
 }
 </style>
+<!-- Add near the top or in navbar -->
+<a href="/search/" style="
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: #ff6600;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  box-shadow: 0 4px 12px rgba(255,102,0,0.3);
+">
+  Search Modules
+</a>
+
 
 ## <a id="module-index"></a>📘 Module Index
 
