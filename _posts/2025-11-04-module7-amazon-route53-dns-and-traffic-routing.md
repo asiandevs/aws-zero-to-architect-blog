@@ -1,12 +1,21 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 7
+# File: _posts/2025-11-04-module7-amazon-route53-dns-and-traffic-routing.md
+# ──────────────────────────────────────────────────────────────
 ---
-title: "Module 7 – Amazon Route 53 (DNS and Traffic Routing)"
+title: "Module 7: Amazon Route 53 (DNS & Routing)"
 date: 2025-11-04
-categories: aws networking dns
-tags: aws route53 dns failover latency weighted
+categories: aws dns route53
+tags: route53 hosted-zone failover health-check
 image: /assets/images/route53.jpg
-description: "DNS routing, domain registration, hosted zones, and routing policies with Route 53."
----
+description: "DNS routing, hosted zones, and failover strategies."
 
+prev:
+  title: "Module 6: Elastic Load Balancing & Auto Scaling"
+  url: "/_posts/2025-11-03-module6-elastic-load-balancing-and-auto-scaling.md"
+next:
+  title: "Module 8: AWS CloudFormation (Infrastructure as Code)"
+  url: "/_posts/2025-11-05-module8-aws-cloudformation-infrastructure-as-code.md"
 ---
 
 # Module 7 – Amazon Route 53 (DNS and Traffic Routing) 🌍
