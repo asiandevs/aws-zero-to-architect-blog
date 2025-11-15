@@ -1,12 +1,21 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 9
+# File: _posts/2025-11-06-module9-aws-lambda-and-api-gateway-serverless-architecture.md
+# ──────────────────────────────────────────────────────────────
 ---
-title: "Module 9 – AWS Lambda and API Gateway (Serverless Architecture)"
+title: "Module 9: AWS Lambda & API Gateway (Serverless)"
 date: 2025-11-06
-categories: aws serverless compute
-tags: aws lambda apigateway serverless functions event-driven
+categories: aws lambda serverless
+tags: lambda api-gateway event-driven
 image: /assets/images/lambda.jpg
-description: "Creating serverless applications using AWS Lambda, integrating with API Gateway, and managing triggers, roles, and monitoring."
----
+description: "Build serverless APIs and event-driven apps."
 
+prev:
+  title: "Module 8: AWS CloudFormation (Infrastructure as Code)"
+  url: "/_posts/2025-11-05-module8-aws-cloudformation-infrastructure-as-code.md"
+next:
+  title: "Module 10: Amazon S3 & CloudFront (Global Delivery)"
+  url: "/_posts/2025-11-07-module10-amazon-s3-and-cloudfront-global-content-delivery.md"
 ---
 
 #  Module 9 – AWS Lambda and API Gateway (Serverless Architecture) ⚙️
