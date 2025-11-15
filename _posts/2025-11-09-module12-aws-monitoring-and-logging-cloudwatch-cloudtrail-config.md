@@ -9,13 +9,6 @@ categories: aws cloudwatch cloudtrail
 tags: cloudwatch alarms logs audit
 image: /assets/images/cloudwatch.jpg
 description: "Observability, audit logs, and compliance tools."
-
-prev:
-  title: "Module 11: AWS RDS & DynamoDB (Relational vs NoSQL)"
-  url: "/_posts/2025-11-08-module11-aws-rds-and-dynamodb-relational-vs-nosql.md"
-next:
-  title: "Module 13: Identity & Access Management (IAM)"
-  url: "/_posts/2025-11-10-module13-identity-and-access-management-iam.md"
 ---
 
 #  Module 12 – AWS Monitoring and Logging (CloudWatch, CloudTrail, AWS Config) 🛰️
