@@ -132,7 +132,7 @@ h2, h3 {
 | 17 | | <img src="assets/images/backup.jpg" width="80" style="border-radius:10px;"> | | [High Availability and Fault Tolerance Architecture in AWS](/_posts/2025-11-14-module17-high-availability-and-fault-tolerance-architecture-in-aws.md) | | Backup automation, DR design, and recovery points. |
 | 18 | | <img src="assets/images/migration.jpg" width="80" style="border-radius:10px;"> | | [aws security compliance and governance frameworks](_posts/2025-11-14-module18-aws-security-compliance-and-governance-frameworks.md) | | Security, Compliance, and Governance. |
 | 19 | | <img src="assets/images/well-architected.jpg" width="80" style="border-radius:10px;"> | | [Data Analytics](/_posts/2025-11-15-module19-aws-data-analytics.md) | | Pillars of architecture excellence and governance. |
-| 20 | | <img src="assets/images/review.png" width="80" style="border-radius:10px;"> | | [Project & Review](/_posts/2025-11-17-module20-project-and-review.md) | | Final project integrating all modules. |
+| 20 | | <img src="assets/images/review.png" width="80" style="border-radius:10px;"> | | [Architecture Design Patterns](/_posts/2025-11-15-module20-aws-architecture-design-patterns.md) | | Final project integrating all modules. |
 
 ---
 
