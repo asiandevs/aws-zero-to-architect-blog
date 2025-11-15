@@ -1,3 +1,7 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 1
+# File: _posts/2025-10-28-module1-introduction-to-cloud-computing.md
+# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 1 – Introduction to Cloud Computing"
 date: 2025-10-28
@@ -6,12 +10,10 @@ tags: aws azure gcp oci virtualization
 image: /assets/images/cc.jpg
 description: "Virtualization, Cloud service models, Deployment models, AWS overview."
 
-# === Navigation Links (Added for Next/Prev Buttons) ===
 prev: null
 next:
-  title: "Module 2: EC2 Instances & Launch Configurations"
-  url: "/module-02-ec2-instances.html"
----
+  title: "Module 2: Getting Started with AWS & EC2"
+  url: "/_posts/2025-10-29-module2-getting-started-with-aws-and-ec2.md"
 ---
 
 #  Module 1 – Introduction to Cloud Computing
