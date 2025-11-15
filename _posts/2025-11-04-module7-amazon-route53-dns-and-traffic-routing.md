@@ -9,13 +9,6 @@ categories: aws dns route53
 tags: route53 hosted-zone failover health-check
 image: /assets/images/route53.jpg
 description: "DNS routing, hosted zones, and failover strategies."
-
-prev:
-  title: "Module 6: Elastic Load Balancing & Auto Scaling"
-  url: "/_posts/2025-11-03-module6-elastic-load-balancing-and-auto-scaling.md"
-next:
-  title: "Module 8: AWS CloudFormation (Infrastructure as Code)"
-  url: "/_posts/2025-11-05-module8-aws-cloudformation-infrastructure-as-code.md"
 ---
 
 # Module 7 – Amazon Route 53 (DNS and Traffic Routing) 🌍
