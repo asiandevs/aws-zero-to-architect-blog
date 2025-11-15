@@ -9,13 +9,6 @@ categories: aws storage ebs efs
 tags: ebs efs snapshot lifecycle multi-attach
 image: /assets/images/ebs.jpg
 description: "Persistent storage, snapshots, Multi-Attach, lifecycle."
-
-prev:
-  title: "Module 2: Getting Started with AWS & EC2"
-  url: "/_posts/2025-10-29-module2-getting-started-with-aws-and-ec2.md"
-next:
-  title: "Module 4: Amazon S3: Simple Storage Service"
-  url: "/_posts/2025-10-30-module4-amazon-s3-simple-storage-service.md"
 ---
 
 #  Module 3 - Elastic Block Store (EBS) and Elastic File System (EFS)
