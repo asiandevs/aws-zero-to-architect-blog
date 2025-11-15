@@ -9,13 +9,6 @@ categories: aws rds dynamodb database
 tags: rds dynamodb replication scaling
 image: /assets/images/rds.jpg
 description: "Database architecture, scaling, replication."
-
-prev:
-  title: "Module 10: Amazon S3 & CloudFront (Global Delivery)"
-  url: "/_posts/2025-11-07-module10-amazon-s3-and-cloudfront-global-content-delivery.md"
-next:
-  title: "Module 12: Monitoring & Logging (CloudWatch, CloudTrail, Config)"
-  url: "/_posts/2025-11-09-module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.md"
 ---
 
 #  Module 11 – AWS RDS and DynamoDB (Relational vs. NoSQL Databases) 🧮
