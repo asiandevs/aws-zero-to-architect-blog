@@ -9,11 +9,6 @@ categories: aws cloud-computing iaas paas saas
 tags: aws azure gcp oci virtualization
 image: /assets/images/cc.jpg
 description: "Virtualization, Cloud service models, Deployment models, AWS overview."
-
-prev: null
-next:
-  title: "Module 2: Getting Started with AWS & EC2"
-  url: "/_posts/2025-10-29-module2-getting-started-with-aws-and-ec2.md"
 ---
 
 #  Module 1 – Introduction to Cloud Computing
