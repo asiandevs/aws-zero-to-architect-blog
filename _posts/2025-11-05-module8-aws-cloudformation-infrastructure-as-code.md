@@ -1,12 +1,21 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 8
+# File: _posts/2025-11-05-module8-aws-cloudformation-infrastructure-as-code.md
+# ──────────────────────────────────────────────────────────────
 ---
-title: "Module 8 – AWS CloudFormation (Infrastructure as Code & Automation)"
+title: "Module 8: AWS CloudFormation (Infrastructure as Code)"
 date: 2025-11-05
-categories: aws automation infrastructure-as-code
-tags: aws cloudformation yaml json stackset template
+categories: aws cloudformation iac
+tags: cloudformation stack template drift
 image: /assets/images/cloudformation.jpg
-description: "Infrastructure as Code using CloudFormation templates, parameters, and automated stack deployment."
----
+description: "IaC templates, stacks, and automation."
 
+prev:
+  title: "Module 7: Amazon Route 53 (DNS & Routing)"
+  url: "/_posts/2025-11-04-module7-amazon-route53-dns-and-traffic-routing.md"
+next:
+  title: "Module 9: AWS Lambda & API Gateway (Serverless)"
+  url: "/_posts/2025-11-06-module9-aws-lambda-and-api-gateway-serverless-architecture.md"
 ---
 
 #  Module 8 – AWS CloudFormation (Infrastructure as Code & Automation) 🧩
