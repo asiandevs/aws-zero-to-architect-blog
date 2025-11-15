@@ -1,0 +1,26 @@
+<!-- _includes/module-navigation.html -->
+{% if page.prev or page.next %}
+  <nav class="module-nav" style="margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; text-align: center; font-size: 1.1em;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+      
+      <!-- Previous Button -->
+      {% if page.prev %}
+        <a href="{{ page.prev.url }}" style="text-decoration: none; color: #0077b6; font-weight: 500;">
+          ← Previous: {{ page.prev.title | truncate: 40 }}
+        </a>
+      {% else %}
+        <span style="color: #aaa;">← No Previous</span>
+      {% endif %}
+
+      <!-- Next Button -->
+      {% if page.next %}
+        <a href="{{ page.next.url }}" style="text-decoration: none; color: #0077b6; font-weight: 500;">
+          Next: {{ page.next.title | truncate: 40 }} →
+        </a>
+      {% else %}
+        <span style="color: #aaa;">No Next →</span>
+      {% endif %}
+
+    </div>
+  </nav>
+{% endif %}
