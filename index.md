@@ -33,61 +33,22 @@ description: "Comprehensive 20-module AWS Cloud Computing training covering infr
   </a>
 </div>
 
-<!-- Load Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
-/* Table Card Styling */
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 14px;
-  font-family: 'Poppins', sans-serif;
-}
-table th, table td {
-  padding: 12px 10px;
-  text-align: left;
-}
-table th {
-  text-align: center;
-  border-radius: 12px;
-  color: white;
-  font-weight: 700;
-  font-size: 1em;
-  padding: 10px 15px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-}
+table { width: 100%; border-collapse: separate; border-spacing: 0 14px; font-family: 'Poppins', sans-serif; }
+table th, table td { padding: 12px 10px; text-align: left; }
+table th { text-align: center; border-radius: 12px; color: white; font-weight: 700; font-size: 1em; padding: 10px 15px; box-shadow: 0 3px 6px rgba(0,0,0,0.15); }
 table th:nth-child(1) { background-color: #2ecc71; }
 table th:nth-child(3) { background-color: #1abc9c; }
 table th:nth-child(5) { background-color: #3498db; }
 table th:nth-child(7) { background-color: #9b59b6; }
-table tr {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-table tr:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-table img {
-  border-radius: 12px;
-  transition: transform 0.2s;
-}
-table img:hover {
-  transform: scale(1.05);
-}
-table td:nth-child(5) a {
-  color: #000 !important;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-}
-table td:nth-child(5) a:hover {
-  color: #ff6600 !important;
-  text-decoration: underline;
-}
+table tr { background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
+table tr:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+table img { border-radius: 12px; transition: transform 0.2s; }
+table img:hover { transform: scale(1.05); }
+table td:nth-child(5) a { color: #000 !important; font-weight: 700; font-family: 'Poppins', sans-serif; text-decoration: none; }
+table td:nth-child(5) a:hover { color: #ff6600 !important; text-decoration: underline; }
 a { color: #ff6600; font-weight: 600; text-decoration: none; }
 a:hover { color: #ff3300; text-decoration: underline; }
 h2, h3 { color: #ff6600; margin-top: 40px; margin-bottom: 20px; text-shadow: 1px 1px 4px rgba(0,0,0,0.1); }
