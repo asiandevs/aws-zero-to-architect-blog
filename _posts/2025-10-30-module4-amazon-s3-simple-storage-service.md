@@ -9,13 +9,6 @@ categories: aws storage s3
 tags: s3 versioning lifecycle replication glacier
 image: /assets/images/s3.jpg
 description: "Object storage, versioning, lifecycle, replication."
-
-prev:
-  title: "Module 3: Elastic Block Store (EBS) & Elastic File System (EFS)"
-  url: "/_posts/2025-10-30-module3-elastic-block-store-ebs-and-elastic-file-system-efs.md"
-next:
-  title: "Module 5 – Networking with Amazon VPC"
-  url: "/_posts/2025-11-02-module5-networking-with-amazon-vpc.md"
 ---
 
 # Module 4 - Amazon S3: Simple Storage Service 🪣
