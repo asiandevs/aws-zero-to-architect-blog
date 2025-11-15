@@ -9,13 +9,6 @@ categories: aws elb autoscaling
 tags: elb alb nlb autoscaling health-check
 image: /assets/images/elb.jpg
 description: "Load balancing types, scaling policies, and health checks."
-
-prev:
-  title: "Module 5 – Networking with Amazon VPC"
-  url: "/_posts/2025-11-02-module5-networking-with-amazon-vpc.md"
-next:
-  title: "Module 7: Amazon Route 53 (DNS & Routing)"
-  url: "/_posts/2025-11-04-module7-amazon-route53-dns-and-traffic-routing.md"
 ---
 
 #  Module 6 – Elastic Load Balancing (ELB) and Auto Scaling ⚖️
