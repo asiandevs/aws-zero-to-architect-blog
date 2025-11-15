@@ -1,12 +1,21 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 13
+# File: _posts/2025-11-10-module13-identity-and-access-management-iam.md
+# ──────────────────────────────────────────────────────────────
 ---
-title: "Module 13 – Identity and Access Management (IAM)"
+title: "Module 13: Identity & Access Management (IAM)"
 date: 2025-11-10
-categories: aws security identity-access
-tags: aws iam policies roles mfa federation
+categories: aws iam security
+tags: iam users roles policies mfa
 image: /assets/images/iam.jpg
-description: "User, group, and role management with IAM; policies, permissions boundaries, and multi-factor authentication."
----
+description: "Users, roles, policies, and MFA."
 
+prev:
+  title: "Module 12: Monitoring & Logging (CloudWatch, CloudTrail, Config)"
+  url: "/_posts/2025-11-09-module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.md"
+next:
+  title: "Module 14: AWS Security & Encryption Services"
+  url: "/_posts/2025-11-11-module14-aws-security-and-encryption-services.md"
 ---
 
 #  Module 13 – AWS IAM and Security Services (Identity, Access, and Encryption) 🔐
