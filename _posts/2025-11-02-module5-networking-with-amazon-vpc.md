@@ -6,13 +6,13 @@ tags: aws vpc subnet natgateway igw peering
 image: /assets/images/vpc.jpg
 description: "Designing custom VPCs with subnets, route tables, gateways, security groups, and endpoints."
 
-# === Navigation Links (Next/Prev Buttons) ===
+# === CORRECTED: Use full _posts URL ===
 prev:
-  title: "Module 4: S3 Storage & Data Management"
-  url: "/module-04-s3-storage.html"
+  title: "Module 4: Amazon S3: Simple Storage Service"
+  url: "/_posts/2025-10-30-module4-amazon-s3-simple-storage-service.md"
 next:
-  title: "Module 6: Lambda & Serverless Computing"
-  url: "/module-06-lambda.html"
+  title: "Module 6: Elastic Load Balancing & Auto Scaling"
+  url: "/_posts/2025-11-03-module6-elastic-load-balancing-and-auto-scaling.md"
 ---
 
 ---
