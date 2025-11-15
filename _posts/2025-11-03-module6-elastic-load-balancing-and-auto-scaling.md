@@ -1,12 +1,21 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 6
+# File: _posts/2025-11-03-module6-elastic-load-balancing-and-auto-scaling.md
+# ──────────────────────────────────────────────────────────────
 ---
-title: "Module 6 – Elastic Load Balancing (ELB) and Auto Scaling"
+title: "Module 6: Elastic Load Balancing & Auto Scaling"
 date: 2025-11-03
-categories: aws networking compute scaling
-tags: aws elb alb nlb autoscaling availability
+categories: aws elb autoscaling
+tags: elb alb nlb autoscaling health-check
 image: /assets/images/elb.jpg
-description: "Load balancing types, cross-zone routing, health checks, and integrating Auto Scaling Groups for resilience."
----
+description: "Load balancing types, scaling policies, and health checks."
 
+prev:
+  title: "Module 5 – Networking with Amazon VPC"
+  url: "/_posts/2025-11-02-module5-networking-with-amazon-vpc.md"
+next:
+  title: "Module 7: Amazon Route 53 (DNS & Routing)"
+  url: "/_posts/2025-11-04-module7-amazon-route53-dns-and-traffic-routing.md"
 ---
 
 #  Module 6 – Elastic Load Balancing (ELB) and Auto Scaling ⚖️
