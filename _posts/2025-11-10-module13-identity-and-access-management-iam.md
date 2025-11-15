@@ -9,13 +9,6 @@ categories: aws iam security
 tags: iam users roles policies mfa
 image: /assets/images/iam.jpg
 description: "Users, roles, policies, and MFA."
-
-prev:
-  title: "Module 12: Monitoring & Logging (CloudWatch, CloudTrail, Config)"
-  url: "/_posts/2025-11-09-module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.md"
-next:
-  title: "Module 14: AWS Security & Encryption Services"
-  url: "/_posts/2025-11-11-module14-aws-security-and-encryption-services.md"
 ---
 
 #  Module 13 – AWS IAM and Security Services (Identity, Access, and Encryption) 🔐
