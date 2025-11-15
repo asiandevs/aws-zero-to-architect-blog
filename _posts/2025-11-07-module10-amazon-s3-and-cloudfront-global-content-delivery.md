@@ -9,13 +9,6 @@ categories: aws s3 cloudfront cdn
 tags: cloudfront cdn s3-static https
 image: /assets/images/cloudfront.jpg
 description: "Static hosting, CDN distribution, HTTPS setup."
-
-prev:
-  title: "Module 9: AWS Lambda & API Gateway (Serverless)"
-  url: "/_posts/2025-11-06-module9-aws-lambda-and-api-gateway-serverless-architecture.md"
-next:
-  title: "Module 11: AWS RDS & DynamoDB (Relational vs NoSQL)"
-  url: "/_posts/2025-11-08-module11-aws-rds-and-dynamodb-relational-vs-nosql.md"
 ---
 
 #  Module 10 – Amazon S3 and CloudFront (Global Content Delivery & Security) 🌎
