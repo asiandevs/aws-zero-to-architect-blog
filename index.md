@@ -55,6 +55,7 @@ h2, h3 { color: #ff6600; margin-top: 40px; margin-bottom: 20px; text-shadow: 1px
 </style>
 
 ## <a id="module-index"></a>Module Index
+
 | No. |   | Preview |   | Module Title |   | Description |
 |:---:|:-:|:--------:|:-:|:-------------|:-:|:-------------|
 | 1 | | <img src="assets/images/cc.jpg" width="80" style="border-radius:10px;"> | | [Introduction to Cloud Computing](/_posts/2025-10-28-module1-introduction-to-cloud-computing.md) | | Virtualization, Cloud models, Deployment types, AWS overview. |
@@ -71,29 +72,4 @@ h2, h3 { color: #ff6600; margin-top: 40px; margin-bottom: 20px; text-shadow: 1px
 | 12 | | <img src="assets/images/cloudwatch.jpg" width="80" style="border-radius:10px;"> | | [Monitoring & Logging (CloudWatch, CloudTrail, Config)](/_posts/2025-11-09-module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.md) | | Observability, audit logs, and compliance tools. |
 | 13 | | <img src="assets/images/iam.jpg" width="80" style="border-radius:10px;"> | | [Identity & Access Management (IAM)](/_posts/2025-11-10-module13-identity-and-access-management-iam.md) | | Users, roles, policies, and MFA. |
 | 14 | | <img src="assets/images/security.jpg" width="80" style="border-radius:10px;"> | | [AWS Security & Encryption Services](/_posts/2025-11-11-module14-aws-security-and-encryption-services.md) | | Encryption, KMS, Secrets Manager, GuardDuty. |
-| 15 | | <img src="assets/images/devops.jpg" width="80" style="border-radius:10px;"> | | [Automation & DevOps Tools on AWS](/_posts/2025-11-12-module15-automation-and-devops-tools-on-aws.md) | | CI/CD pipelines, CodeCommit, CodeBuild, CodeDeploy. |
-| 16 | | <img src="assets/images/cost.jpg" width="80" style="border-radius:10px;"> | | [AWS Cost Management & Billing](/_posts/2025-11-13-module16-aws-cost-management-and-billing.md) | | Budgets, Cost Explorer, and cost optimization. |
-| 17 | | <img src="assets/images/backup.jpg" width="80" style="border-radius:10px;"> | | [High Availability and Fault Tolerance Architecture in AWS](/_posts/2025-11-14-module17-high-availability-and-fault-tolerance-architecture-in-aws.md) | | Backup automation, DR design, and recovery points. |
-| 18 | | <img src="assets/images/migration.jpg" width="80" style="border-radius:10px;"> | | [AWS Security Compliance and Governance Frameworks](/_posts/2025-11-14-module18-aws-security-compliance-and-governance-frameworks.md) | | Security, Compliance, and Governance. |
-| 19 | | <img src="assets/images/well-architected.jpg" width="80" style="border-radius:10px;"> | | [AWS Data Analytics](/_posts/2025-11-15-module19-aws-data-analytics.md) | | Pillars of architecture excellence and governance. |
-| 20 | | <img src="assets/images/review.png" width="80" style="border-radius:10px;"> | | [AWS Architecture Design Patterns](/_posts/2025-11-15-module20-aws-architecture-design-patterns.md) | | Final project integrating all modules. |
-
----
-## Learning Outcomes
-By the end of this course, you will:
-- Understand cloud service models and AWS core services.
-- Design secure, scalable, and resilient cloud architectures.
-- Automate deployments using Infrastructure as Code.
-- Monitor, secure, and optimize workloads effectively.
-- Complete a full end-to-end AWS solution project.
-
----
-### Next Steps
-- Visit each module post for videos and labs.
-- Access GitHub repositories for templates and sample code.
-- Subscribe for updates and future AWS specialty modules.
-
----
-<p align="center" style="font-size:0.9em; color:gray;">
-© 2025 Monowar Mukul — AWS Cloud Architecture Learning Series
-</p>
+| 15 | | <img src="assets/images/devops.jpg" width="80" style="border-radius:10px;"> | | [Automation & DevOps Tools on AWS](/_posts/202
