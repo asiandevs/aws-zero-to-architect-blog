@@ -13,8 +13,7 @@ plugins:
   - jekyll-seo-tag
 # Custom variable for main page link
 main_index_url: "/#module-index"
-
-# Defaults for layouts (single block, proper indentation)
+# Defaults for layouts (single block)
 defaults:
   - scope:
       path: ""
