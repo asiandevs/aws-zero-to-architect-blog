@@ -4,32 +4,24 @@ description: Blog series – from Cloud 101 to production-grade architectures
 theme: minima
 logo: /assets/images/icons8-aws-logo-100.png
 permalink: /:year/:month/:day/:title.html
-url: "https://asiandevs.github.io"
-
+url: "https://asiandevs.github.io/aws-zero-to-architect-blog"
+baseurl: ""
 header_pages:
   - about.md
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
 # Custom variable for main page link
-# Add or replace this variable
-main_index_url: "/aws-zero-to-architect-blog/#module-index"
+main_index_url: "/#module-index"
 
+# Defaults for layouts (single block, proper indentation)
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
-
-# Force custom layout for posts (overrides Minima)
-defaults:
   - scope:
       path: "_posts"
       type: posts
     values:
       layout: default
-
-# Ensure baseurl for relative URLs
-baseurl: ""
-url: "https://asiandevs.github.io/aws-zero-to-architect-blog"
