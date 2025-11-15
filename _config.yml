@@ -1,4 +1,3 @@
-# _config.yml
 title: AWS Zero to Architect
 description: Blog series – from Cloud 101 to production-grade architectures
 theme: minima
@@ -12,13 +11,3 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 main_index_url: "/#module-index"
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: default
