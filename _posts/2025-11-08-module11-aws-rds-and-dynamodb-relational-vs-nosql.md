@@ -1,12 +1,21 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 11
+# File: _posts/2025-11-08-module11-aws-rds-and-dynamodb-relational-vs-nosql.md
+# ──────────────────────────────────────────────────────────────
 ---
-title: "Module 11 – AWS RDS and DynamoDB (Relational vs. NoSQL Databases)"
+title: "Module 11: AWS RDS & DynamoDB (Relational vs NoSQL)"
 date: 2025-11-08
-categories: aws database sql nosql
-tags: aws rds dynamodb mysql postgres scaling replication
+categories: aws rds dynamodb database
+tags: rds dynamodb replication scaling
 image: /assets/images/rds.jpg
-description: "Comparing relational and NoSQL databases with RDS and DynamoDB; replication, scaling, and automation."
----
+description: "Database architecture, scaling, replication."
 
+prev:
+  title: "Module 10: Amazon S3 & CloudFront (Global Delivery)"
+  url: "/_posts/2025-11-07-module10-amazon-s3-and-cloudfront-global-content-delivery.md"
+next:
+  title: "Module 12: Monitoring & Logging (CloudWatch, CloudTrail, Config)"
+  url: "/_posts/2025-11-09-module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.md"
 ---
 
 #  Module 11 – AWS RDS and DynamoDB (Relational vs. NoSQL Databases) 🧮
