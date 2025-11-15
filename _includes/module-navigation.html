@@ -1,3 +1,22 @@
+<!-- _includes/module-navigation.html -->
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% assign prev_post = null %}
+{% assign next_post = null %}
+
+{% for post in sorted_posts %}
+  {% if post.date == page.date %}
+    {% assign current_index = forloop.index0 %}
+    {% if current_index > 0 %}
+      {% assign prev_post = sorted_posts[current_index - 1] %}
+    {% endif %}
+    {% if current_index < sorted_posts.size - 1 %}
+      {% assign next_post = sorted_posts[current_index + 1] %}
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if prev_post or next_post %}
 <nav style="
   margin: 60px 0 40px;
   padding: 20px;
@@ -6,148 +25,28 @@
   text-align: center;
   font-size: 1.1em;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', sans-serif;
 ">
   <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; align-items: center;">
-    {% case page.title %}
-      {% when 'Module 1 – Introduction to Cloud Computing' %}
-        <span style="color: #94a3b8;">← No Previous</span>
-        <a href="/2025/10/29/module2-getting-started-with-aws-and-ec2.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 2: Getting Started with AWS & EC2 →
-        </a>
-      {% when 'Module 2: Getting Started with AWS & EC2' %}
-        <a href="/2025/10/28/module1-introduction-to-cloud-computing.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 1 – Introduction to Cloud Computing
-        </a>
-        <a href="/2025/10/30/module3-elastic-block-store-ebs-and-elastic-file-system-efs.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 3: EBS & EFS →
-        </a>
-      {% when 'Module 3: Elastic Block Store (EBS) & Elastic File System (EFS)' %}
-        <a href="/2025/10/29/module2-getting-started-with-aws-and-ec2.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 2: Getting Started with AWS & EC2
-        </a>
-        <a href="/2025/10/30/module4-amazon-s3-simple-storage-service.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 4: Amazon S3 →
-        </a>
-      {% when 'Module 4: Amazon S3: Simple Storage Service' %}
-        <a href="/2025/10/30/module3-elastic-block-store-ebs-and-elastic-file-system-efs.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 3: EBS & EFS
-        </a>
-        <a href="/2025/11/02/module5-networking-with-amazon-vpc.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 5: VPC Networking →
-        </a>
-      {% when 'Module 5 – Networking with Amazon VPC' %}
-        <a href="/2025/10/30/module4-amazon-s3-simple-storage-service.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 4: Amazon S3
-        </a>
-        <a href="/2025/11/03/module6-elastic-load-balancing-and-auto-scaling.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 6: ELB & Auto Scaling →
-        </a>
-      {% when 'Module 6: Elastic Load Balancing & Auto Scaling' %}
-        <a href="/2025/11/02/module5-networking-with-amazon-vpc.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 5: VPC Networking
-        </a>
-        <a href="/2025/11/04/module7-amazon-route53-dns-and-traffic-routing.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 7: Route 53 →
-        </a>
-      {% when 'Module 7: Amazon Route 53 (DNS & Routing)' %}
-        <a href="/2025/11/03/module6-elastic-load-balancing-and-auto-scaling.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 6: ELB & Auto Scaling
-        </a>
-        <a href="/2025/11/05/module8-aws-cloudformation-infrastructure-as-code.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 8: CloudFormation →
-        </a>
-      {% when 'Module 8: AWS CloudFormation (Infrastructure as Code)' %}
-        <a href="/2025/11/04/module7-amazon-route53-dns-and-traffic-routing.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 7: Route 53
-        </a>
-        <a href="/2025/11/06/module9-aws-lambda-and-api-gateway-serverless-architecture.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 9: Lambda & API Gateway →
-        </a>
-      {% when 'Module 9: AWS Lambda & API Gateway (Serverless)' %}
-        <a href="/2025/11/05/module8-aws-cloudformation-infrastructure-as-code.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 8: CloudFormation
-        </a>
-        <a href="/2025/11/07/module10-amazon-s3-and-cloudfront-global-content-delivery.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 10: S3 & CloudFront →
-        </a>
-      {% when 'Module 10: Amazon S3 & CloudFront (Global Delivery)' %}
-        <a href="/2025/11/06/module9-aws-lambda-and-api-gateway-serverless-architecture.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 9: Lambda & API Gateway
-        </a>
-        <a href="/2025/11/08/module11-aws-rds-and-dynamodb-relational-vs-nosql.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 11: RDS & DynamoDB →
-        </a>
-      {% when 'Module 11: AWS RDS & DynamoDB (Relational vs NoSQL)' %}
-        <a href="/2025/11/07/module10-amazon-s3-and-cloudfront-global-content-delivery.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 10: S3 & CloudFront
-        </a>
-        <a href="/2025/11/09/module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 12: Monitoring & Logging →
-        </a>
-      {% when 'Module 12: Monitoring & Logging (CloudWatch, CloudTrail, Config)' %}
-        <a href="/2025/11/08/module11-aws-rds-and-dynamodb-relational-vs-nosql.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 11: RDS & DynamoDB
-        </a>
-        <a href="/2025/11/10/module13-identity-and-access-management-iam.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 13: IAM →
-        </a>
-      {% when 'Module 13: Identity & Access Management (IAM)' %}
-        <a href="/2025/11/09/module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 12: Monitoring & Logging
-        </a>
-        <a href="/2025/11/11/module14-aws-security-and-encryption-services.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 14: Security & Encryption →
-        </a>
-      {% when 'Module 14: AWS Security & Encryption Services' %}
-        <a href="/2025/11/10/module13-identity-and-access-management-iam.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 13: IAM
-        </a>
-        <a href="/2025/11/12/module15-automation-and-devops-tools-on-aws.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 15: DevOps Tools →
-        </a>
-      {% when 'Module 15: Automation & DevOps Tools on AWS' %}
-        <a href="/2025/11/11/module14-aws-security-and-encryption-services.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 14: Security & Encryption
-        </a>
-        <a href="/2025/11/13/module16-aws-cost-management-and-billing.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 16: Cost Management →
-        </a>
-      {% when 'Module 16: AWS Cost Management & Billing' %}
-        <a href="/2025/11/12/module15-automation-and-devops-tools-on-aws.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 15: DevOps Tools
-        </a>
-        <a href="/2025/11/14/module17-high-availability-and-fault-tolerance-architecture-in-aws.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 17: High Availability →
-        </a>
-      {% when 'Module 17: High Availability and Fault Tolerance Architecture in AWS' %}
-        <a href="/2025/11/13/module16-aws-cost-management-and-billing.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 16: Cost Management
-        </a>
-        <a href="/2025/11/14/module18-aws-security-compliance-and-governance-frameworks.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 18: Security Compliance →
-        </a>
-      {% when 'Module 18: AWS Security Compliance and Governance Frameworks' %}
-        <a href="/2025/11/14/module17-high-availability-and-fault-tolerance-architecture-in-aws.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 17: High Availability
-        </a>
-        <a href="/2025/11/15/module19-aws-data-analytics.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 19: Data Analytics →
-        </a>
-      {% when 'Module 19: AWS Data Analytics' %}
-        <a href="/2025/11/14/module18-aws-security-compliance-and-governance-frameworks.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 18: Security Compliance
-        </a>
-        <a href="/2025/11/15/module20-aws-architecture-design-patterns.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-          Next: Module 20: Architecture Patterns →
-        </a>
-      {% when 'Module 20: AWS Architecture Design Patterns' %}
-        <a href="/2025/11/15/module19-aws-data-analytics.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-          ← Previous: Module 19: Data Analytics
-        </a>
-        <span style="color: #94a3b8;">No Next → (Complete!)</span>
-      {% else %}
-        <span style="color: #94a3b8;">← Previous Module</span>
-        <span style="color: #94a3b8;">Next Module →</span>
-    {% endcase %}
+    
+    <!-- Previous -->
+    {% if prev_post %}
+      <a href="{{ prev_post.url | relative_url }}" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
+        ← Previous: {{ prev_post.title | truncate: 45 }}
+      </a>
+    {% else %}
+      <span style="color: #94a3b8;">← No Previous</span>
+    {% endif %}
+
+    <!-- Next -->
+    {% if next_post %}
+      <a href="{{ next_post.url | relative_url }}" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+        Next: {{ next_post.title | truncate: 45 }} →
+      </a>
+    {% else %}
+      <span style="color: #94a3b8;">No Next →</span>
+    {% endif %}
+
   </div>
 </nav>
+{% endif %}
