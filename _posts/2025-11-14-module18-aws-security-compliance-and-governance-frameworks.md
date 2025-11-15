@@ -1,6 +1,6 @@
 ---
 title: "Module 18 – AWS Security, Compliance and Governance Frameworks"
-date: 2025-11-15
+date: 2025-11-14
 categories: aws security compliance governance
 tags: aws security-hub guardduty config compliance frameworks
 image: /assets/images/migration.jpg
