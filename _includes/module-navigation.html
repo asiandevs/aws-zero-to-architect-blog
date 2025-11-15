@@ -1,52 +1,20 @@
-<!-- _includes/module-navigation.html -->
-{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-{% assign prev_post = null %}
-{% assign next_post = null %}
-
-{% for post in sorted_posts %}
-  {% if post.date == page.date %}
-    {% assign current_index = forloop.index0 %}
-    {% if current_index > 0 %}
-      {% assign prev_post = sorted_posts[current_index - 1] %}
-    {% endif %}
-    {% if current_index < sorted_posts.size - 1 %}
-      {% assign next_post = sorted_posts[current_index + 1] %}
-    {% endif %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-
-{% if prev_post or next_post %}
-<nav style="
-  margin: 60px 0 40px;
-  padding: 20px;
-  background: #e3f2fd;
-  border-radius: 12px;
-  text-align: center;
-  font-size: 1.1em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  font-family: 'Segoe UI', sans-serif;
-">
+{% if page.prev or page.next %}
+<nav style="margin: 60px 0 40px; padding: 20px; background: #e3f2fd; border-radius: 12px; text-align: center; font-size: 1.1em; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; align-items: center;">
-    
-    <!-- Previous -->
-    {% if prev_post %}
-      <a href="{{ prev_post.url | relative_url }}" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-        ← Previous: {{ prev_post.title | truncate: 45 }}
+    {% if page.prev %}
+      <a href="{{ page.prev.url | relative_url }}" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
+        ← Previous: {{ page.prev.title | truncate: 45 }}
       </a>
     {% else %}
       <span style="color: #94a3b8;">← No Previous</span>
     {% endif %}
-
-    <!-- Next -->
-    {% if next_post %}
-      <a href="{{ next_post.url | relative_url }}" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-        Next: {{ next_post.title | truncate: 45 }} →
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+        Next: {{ page.next.title | truncate: 45 }} →
       </a>
     {% else %}
       <span style="color: #94a3b8;">No Next →</span>
     {% endif %}
-
   </div>
 </nav>
 {% endif %}
