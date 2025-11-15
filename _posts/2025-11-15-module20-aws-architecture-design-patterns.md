@@ -1,6 +1,6 @@
 ---
 title: "Module 20 – AWS Architecture Design Patterns and Exam Readiness"
-date: 2025-11-15
+date: 2025-11-17
 categories: ["aws", "project", "review", "certification"]
 tags: ["aws", "hands-on", "labs", "certification-review", "well-architected"]
 image: /assets/images/capstone.jpg
