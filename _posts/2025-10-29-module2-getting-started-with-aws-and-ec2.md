@@ -1,12 +1,21 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 2
+# File: _posts/2025-10-29-module2-getting-started-with-aws-and-ec2.md
+# ──────────────────────────────────────────────────────────────
 ---
-title: "Module 2 – Getting Started with AWS & EC2"
+title: "Module 2: Getting Started with AWS & EC2"
 date: 2025-10-29
-categories: aws compute ec2 virtualization
-tags: aws ec2 ami ebs keypair nitro
+categories: aws ec2 compute
+tags: ec2 ami launch-template autoscaling
 image: /assets/images/ec2.jpg
-description: "AWS global infrastructure, EC2 instance setup, AMI creation, EBS attachment, and Nitro system overview."
----
+description: "EC2 instances, AMIs, EBS, and key pair management."
 
+prev:
+  title: "Module 1 – Introduction to Cloud Computing"
+  url: "/_posts/2025-10-28-module1-introduction-to-cloud-computing.md"
+next:
+  title: "Module 3: Elastic Block Store (EBS) & Elastic File System (EFS)"
+  url: "/_posts/2025-10-30-module3-elastic-block-store-ebs-and-elastic-file-system-efs.md"
 ---
 
 #  Module 2 – Getting Started with AWS & EC2
