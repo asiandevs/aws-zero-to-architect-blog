@@ -1,12 +1,21 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 10
+# File: _posts/2025-11-07-module10-amazon-s3-and-cloudfront-global-content-delivery.md
+# ──────────────────────────────────────────────────────────────
 ---
-title: "Module 10 – Amazon S3 and CloudFront (Global Content Delivery & Security)"
+title: "Module 10: Amazon S3 & CloudFront (Global Delivery)"
 date: 2025-11-07
-categories: aws storage content-delivery
-tags: aws s3 cloudfront oac static-website https
+categories: aws s3 cloudfront cdn
+tags: cloudfront cdn s3-static https
 image: /assets/images/cloudfront.jpg
-description: "Building global content delivery with Amazon S3, CloudFront, HTTPS, and Route 53 integration."
----
+description: "Static hosting, CDN distribution, HTTPS setup."
 
+prev:
+  title: "Module 9: AWS Lambda & API Gateway (Serverless)"
+  url: "/_posts/2025-11-06-module9-aws-lambda-and-api-gateway-serverless-architecture.md"
+next:
+  title: "Module 11: AWS RDS & DynamoDB (Relational vs NoSQL)"
+  url: "/_posts/2025-11-08-module11-aws-rds-and-dynamodb-relational-vs-nosql.md"
 ---
 
 #  Module 10 – Amazon S3 and CloudFront (Global Content Delivery & Security) 🌎
