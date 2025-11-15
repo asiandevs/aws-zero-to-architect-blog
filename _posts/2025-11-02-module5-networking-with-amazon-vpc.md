@@ -1,3 +1,7 @@
+# ──────────────────────────────────────────────────────────────
+# MODULE 5 (YOUR TEST)
+# File: _posts/2025-11-02-module5-networking-with-amazon-vpc.md
+# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 5 – Networking with Amazon VPC"
 date: 2025-11-02
@@ -6,15 +10,12 @@ tags: aws vpc subnet natgateway igw peering
 image: /assets/images/vpc.jpg
 description: "Designing custom VPCs with subnets, route tables, gateways, security groups, and endpoints."
 
-# === CORRECTED: Use full _posts URL ===
 prev:
   title: "Module 4: Amazon S3: Simple Storage Service"
   url: "/_posts/2025-10-30-module4-amazon-s3-simple-storage-service.md"
 next:
   title: "Module 6: Elastic Load Balancing & Auto Scaling"
   url: "/_posts/2025-11-03-module6-elastic-load-balancing-and-auto-scaling.md"
----
-
 ---
 
 # 🌐 Module 5 – Networking with Amazon VPC (Virtual Private Cloud)
