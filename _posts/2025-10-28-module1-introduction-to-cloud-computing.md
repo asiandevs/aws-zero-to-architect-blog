@@ -5,6 +5,12 @@ categories: aws cloud-computing iaas paas saas
 tags: aws azure gcp oci virtualization
 image: /assets/images/cc.jpg
 description: "Virtualization, Cloud service models, Deployment models, AWS overview."
+
+# === Navigation Links (Added for Next/Prev Buttons) ===
+prev: null
+next:
+  title: "Module 2: EC2 Instances & Launch Configurations"
+  url: "/module-02-ec2-instances.html"
 ---
 ---
 
