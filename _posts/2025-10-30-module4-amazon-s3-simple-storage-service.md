@@ -1,6 +1,6 @@
 # ──────────────────────────────────────────────────────────────
 # MODULE 4
-# File: _posts/2025-10-31-module4-amazon-s3-simple-storage-service.md
+# File: _posts/2025-10-30-module4-amazon-s3-simple-storage-service.md
 # ──────────────────────────────────────────────────────────────
 ---
 title: "Module 4: Amazon S3: Simple Storage Service"
