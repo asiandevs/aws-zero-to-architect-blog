@@ -24,10 +24,10 @@ defaults:
       layout: "default"
 
 
-# _config.yml (add to end)
+# Force default.html layout on all posts
 defaults:
   - scope:
       path: "_posts"
       type: posts
     values:
-      layout: default  # Uses your custom default.html
+      layout: default
