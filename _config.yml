@@ -5,7 +5,6 @@ theme: minima
 logo: /assets/images/icons8-aws-logo-100.png
 permalink: /:year/:month/:day/:title.html
 url: "https://asiandevs.github.io"
-baseurl: "/aws-zero-to-architect-blog"
 
 header_pages:
   - about.md
@@ -23,11 +22,14 @@ defaults:
     values:
       layout: "default"
 
-
-# Force default.html layout on all posts
+# Force custom layout for posts (overrides Minima)
 defaults:
   - scope:
       path: "_posts"
       type: posts
     values:
       layout: default
+
+# Ensure baseurl for relative URLs
+baseurl: ""
+url: "https://asiandevs.github.io/aws-zero-to-architect-blog"
