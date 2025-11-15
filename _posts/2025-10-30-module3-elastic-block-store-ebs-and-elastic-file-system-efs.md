@@ -334,9 +334,4 @@ Result:
 >  **Next Module Preview:**
 > In **Module 4**, we’ll explore **Amazon S3 – Simple Storage Service**, covering buckets, object storage, versioning, lifecycle rules, and cross-region replication with real console labs.
 
-<!-- TEMP STATIC TEST NAV -->
-<nav style="margin: 40px 0; padding: 20px; background: #f0f8ff; border-radius: 8px; text-align: center;">
-  <a href="/2025/10/29/module2-getting-started-with-aws-and-ec2.html" style="color: blue; margin-right: 20px;">← Previous: Module 2</a>
-  <a href="/2025/10/30/module4-amazon-s3-simple-storage-service.html" style="color: green;">Next: Module 4 →</a>
-</nav>
 ---
