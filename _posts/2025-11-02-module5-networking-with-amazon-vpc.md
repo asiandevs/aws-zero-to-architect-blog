@@ -5,6 +5,14 @@ categories: aws networking vpc security
 tags: aws vpc subnet natgateway igw peering
 image: /assets/images/vpc.jpg
 description: "Designing custom VPCs with subnets, route tables, gateways, security groups, and endpoints."
+
+# === Navigation Links (Next/Prev Buttons) ===
+prev:
+  title: "Module 4: S3 Storage & Data Management"
+  url: "/module-04-s3-storage.html"
+next:
+  title: "Module 6: Lambda & Serverless Computing"
+  url: "/module-06-lambda.html"
 ---
 
 ---
