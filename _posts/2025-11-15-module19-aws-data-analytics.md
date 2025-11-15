@@ -1,10 +1,10 @@
 ---
-title: "Module 19 – AWS Well-Architected Framework"
+title: "Module 19 – AWS Data Analytics and Big Data Architecture"
 date: 2025-11-15
-categories: aws architecture best-practices governance
-tags: aws well-architected pillars reliability security cost-optimization
-image: /assets/images/well-architected.jpg
-description: "Understanding the AWS Well-Architected Framework, its five pillars, and best practices for secure, efficient, and reliable architectures."
+categories: ["aws", "analytics", "big-data", "data-lake"]
+tags: ["aws", "kinesis", "glue", "athena", "redshift", "quicksight"]
+image: /assets/images/data-analytics.jpg
+description: "Building end-to-end data analytics pipelines on AWS using Kinesis, S3, Glue, Athena, and Redshift for scalable data processing and insights."
 ---
 
 #  Module 19 – AWS Data Analytics and Big Data Architecture 📊
