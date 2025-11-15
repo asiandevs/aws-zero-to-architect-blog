@@ -1,21 +1,39 @@
 <!-- _includes/module-navigation.html -->
-{% if page.prev or page.next %}
+{% comment %} Auto-detect prev/next based on post dates {% endcomment %}
+{% assign current_date = page.date | date: "%Y-%m-%d" %}
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% assign prev_post = null %}
+{% assign next_post = null %}
+
+{% for post in sorted_posts %}
+  {% if post.date == page.date %}
+    {% if forloop.first == false %}
+      {% assign prev_post = sorted_posts[forloop.index0 - 1] %}
+    {% endif %}
+    {% if forloop.last == false %}
+      {% assign next_post = sorted_posts[forloop.index0 + 1] %}
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if prev_post or next_post %}
   <nav class="module-nav" style="margin: 40px 0; padding: 20px; background: #f8f9fa; border-radius: 8px; text-align: center; font-size: 1.1em;">
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
       
       <!-- Previous Button -->
-      {% if page.prev %}
-        <a href="{{ page.prev.url }}" style="text-decoration: none; color: #0077b6; font-weight: 500;">
-          ← Previous: {{ page.prev.title | truncate: 40 }}
+      {% if prev_post %}
+        <a href="{{ prev_post.url }}" style="text-decoration: none; color: #0077b6; font-weight: 500;">
+          ← Previous: {{ prev_post.title | truncate: 40 }}
         </a>
       {% else %}
         <span style="color: #aaa;">← No Previous</span>
       {% endif %}
 
       <!-- Next Button -->
-      {% if page.next %}
-        <a href="{{ page.next.url }}" style="text-decoration: none; color: #0077b6; font-weight: 500;">
-          Next: {{ page.next.title | truncate: 40 }} →
+      {% if next_post %}
+        <a href="{{ next_post.url }}" style="text-decoration: none; color: #0077b6; font-weight: 500;">
+          Next: {{ next_post.title | truncate: 40 }} →
         </a>
       {% else %}
         <span style="color: #aaa;">No Next →</span>
