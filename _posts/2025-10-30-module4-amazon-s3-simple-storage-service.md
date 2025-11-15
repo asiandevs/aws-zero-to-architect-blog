@@ -4,7 +4,7 @@
 # ──────────────────────────────────────────────────────────────
 ---
 title: "Module 4: Amazon S3: Simple Storage Service"
-date: 2025-10-30
+date: 2025-10-31
 categories: aws storage s3
 tags: s3 versioning lifecycle replication glacier
 image: /assets/images/s3.jpg
