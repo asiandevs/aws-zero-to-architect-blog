@@ -1,19 +1,20 @@
 <!-- _includes/module-navigation.html -->
-{% comment %} Auto-find previous/next post by date order {% endcomment %}
+{% comment %} Auto-find previous/next post by date (newest first) {% endcomment %}
 
-{% assign sorted_posts = site.posts | sort: 'date' %}
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
 {% assign prev_post = null %}
 {% assign next_post = null %}
 
 {% for post in sorted_posts %}
   {% if post.date == page.date %}
     {% assign current_index = forloop.index0 %}
-    {% if forloop.index0 > 0 %}
-      {% assign prev_post = sorted_posts[forloop.index0 - 1] %}
+    {% if current_index > 0 %}
+      {% assign prev_post = sorted_posts[current_index - 1] %}
     {% endif %}
-    {% if forloop.length > forloop.index0 + 1 %}
-      {% assign next_post = sorted_posts[forloop.index0 + 1] %}
+    {% if current_index < sorted_posts.size - 1 %}
+      {% assign next_post = sorted_posts[current_index + 1] %}
     {% endif %}
+    {% break %}
   {% endif %}
 {% endfor %}
 
@@ -21,7 +22,7 @@
 <nav class="module-nav" style="margin: 60px 0 40px; padding: 20px; background: #f8f9fa; border-radius: 12px; text-align: center; font-size: 1.1em; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; align-items: center;">
     
-    <!-- Previous -->
+    <!-- Previous (earlier date) -->
     {% if prev_post %}
       <a href="{{ prev_post.url | relative_url }}" style="color: #2563eb; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 6px;">
         ← Previous: <span style="font-weight: 500;">{{ prev_post.title | truncate: 45 }}</span>
@@ -30,7 +31,7 @@
       <span style="color: #94a3b8;">← No Previous</span>
     {% endif %}
 
-    <!-- Next -->
+    <!-- Next (later date) -->
     {% if next_post %}
       <a href="{{ next_post.url | relative_url }}" style="color: #16a34a; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 6px;">
         Next: <span style="font-weight: 500;">{{ next_post.title | truncate: 45 }}</span> →
