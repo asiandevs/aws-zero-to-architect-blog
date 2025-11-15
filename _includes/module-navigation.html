@@ -1,20 +1,43 @@
-{% if page.prev or page.next %}
-<nav style="margin: 60px 0 40px; padding: 20px; background: #e3f2fd; border-radius: 12px; text-align: center; font-size: 1.1em; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+<nav style="
+  margin: 60px 0 40px;
+  padding: 20px;
+  background: #e3f2fd;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+">
   <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 15px; align-items: center;">
-    {% if page.prev %}
-      <a href="{{ page.prev.url | relative_url }}" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
-        ← Previous: {{ page.prev.title | truncate: 45 }}
-      </a>
-    {% else %}
-      <span style="color: #94a3b8;">← No Previous</span>
-    {% endif %}
-    {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}" style="color: #16a34a; font-weight: 600; text-decoration: none;">
-        Next: {{ page.next.title | truncate: 45 }} →
-      </a>
-    {% else %}
-      <span style="color: #94a3b8;">No Next →</span>
-    {% endif %}
+    {% case page.title %}
+      {% when 'Module 1 – Introduction to Cloud Computing' %}
+        <span style="color: #94a3b8;">← No Previous</span>
+        <a href="/2025/10/29/module2-getting-started-with-aws-and-ec2.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+          Next: Module 2: Getting Started with AWS & EC2 →
+        </a>
+      {% when 'Module 2: Getting Started with AWS & EC2' %}
+        <a href="/2025/10/28/module1-introduction-to-cloud-computing.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
+          ← Previous: Module 1 – Introduction to Cloud Computing
+        </a>
+        <a href="/2025/10/30/module3-elastic-block-store-ebs-and-elastic-file-system-efs.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+          Next: Module 3: EBS & EFS →
+        </a>
+      {% when 'Module 3: Elastic Block Store (EBS) & Elastic File System (EFS)' %}
+        <a href="/2025/10/29/module2-getting-started-with-aws-and-ec2.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
+          ← Previous: Module 2: Getting Started with AWS & EC2
+        </a>
+        <a href="/2025/10/30/module4-amazon-s3-simple-storage-service.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+          Next: Module 4: Amazon S3 →
+        </a>
+      {% when 'Module 4: Amazon S3: Simple Storage Service' %}
+        <a href="/2025/10/30/module3-elastic-block-store-ebs-and-elastic-file-system-efs.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">
+          ← Previous: Module 3: EBS & EFS
+        </a>
+        <a href="/2025/11/03/module6-elastic-load-balancing-and-auto-scaling.html" style="color: #16a34a; font-weight: 600; text-decoration: none;">
+          Next: Module 6: ELB & Auto Scaling →
+        </a>
+      {% else %}
+        <span style="color: #94a3b8;">← Previous Module</span>
+        <span style="color: #94a3b8;">Next Module →</span>
+    {% endcase %}
   </div>
 </nav>
-{% endif %}
