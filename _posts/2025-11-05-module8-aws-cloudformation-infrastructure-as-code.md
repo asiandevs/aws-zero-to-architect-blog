@@ -9,13 +9,6 @@ categories: aws cloudformation iac
 tags: cloudformation stack template drift
 image: /assets/images/cloudformation.jpg
 description: "IaC templates, stacks, and automation."
-
-prev:
-  title: "Module 7: Amazon Route 53 (DNS & Routing)"
-  url: "/_posts/2025-11-04-module7-amazon-route53-dns-and-traffic-routing.md"
-next:
-  title: "Module 9: AWS Lambda & API Gateway (Serverless)"
-  url: "/_posts/2025-11-06-module9-aws-lambda-and-api-gateway-serverless-architecture.md"
 ---
 
 #  Module 8 – AWS CloudFormation (Infrastructure as Code & Automation) 🧩
