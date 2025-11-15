@@ -1,6 +1,6 @@
 ---
 title: "Module 19 – AWS Data Analytics and Big Data Architecture"
-date: 2025-11-15
+date: 2025-11-16
 categories: ["aws", "analytics", "big-data", "data-lake"]
 tags: ["aws", "kinesis", "glue", "athena", "redshift", "quicksight"]
 image: /assets/images/data-analytics.jpg
