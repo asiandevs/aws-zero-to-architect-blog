@@ -33,31 +33,85 @@ description: "Comprehensive 20-module AWS Cloud Computing training covering infr
   </a>
 </div>
 
+<!-- Load Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 
 <style>
-table { width: 100%; border-collapse: separate; border-spacing: 0 14px; font-family: 'Poppins', sans-serif; }
-table th, table td { padding: 12px 10px; text-align: left; }
-table th { text-align: center; border-radius: 12px; color: white; font-weight: 700; font-size: 1em; padding: 10px 15px; box-shadow: 0 3px 6px rgba(0,0,0,0.15); }
-table th:nth-child(1) { background-color: #2ecc71; }
-table th:nth-child(3) { background-color: #1abc9c; }
-table th:nth-child(5) { background-color: #3498db; }
-table th:nth-child(7) { background-color: #9b59b6; }
-table tr { background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.2s, box-shadow 0.2s; }
-table tr:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-table img { border-radius: 12px; transition: transform 0.2s; }
-table img:hover { transform: scale(1.05); }
-table td:nth-child(5) a { color: #000 !important; font-weight: 700; font-family: 'Poppins', sans-serif; text-decoration: none; }
-table td:nth-child(5) a:hover { color: #ff6600 !important; text-decoration: underline; }
-a { color: #ff6600; font-weight: 600; text-decoration: none; }
-a:hover { color: #ff3300; text-decoration: underline; }
-h2, h3 { color: #ff6600; margin-top: 40px; margin-bottom: 20px; text-shadow: 1px 1px 4px rgba(0,0,0,0.1); }
+/* Table Card Styling */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 14px;
+  font-family: 'Poppins', sans-serif;
+}
+table th, table td {
+  padding: 12px 10px;
+  text-align: left;
+}
+table th {
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 10px 15px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+table th:nth-child(1) { background-color: #2ecc71; } /* Green */
+table th:nth-child(3) { background-color: #1abc9c; } /* Teal */
+table th:nth-child(5) { background-color: #3498db; } /* Blue */
+table th:nth-child(7) { background-color: #9b59b6; } /* Purple */
+table tr {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+table tr:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+table img {
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+table img:hover {
+  transform: scale(1.05);
+}
+/* Module Title Column */
+table td:nth-child(5) a {
+  color: #000 !important;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+table td:nth-child(5) a:hover {
+  color: #ff6600 !important;
+  text-decoration: underline;
+}
+/* Links */
+a {
+  color: #ff6600;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: #ff3300;
+  text-decoration: underline;
+}
+h2, h3 {
+  color: #ff6600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
 </style>
 
-## <a id="module-index"></a>Module Index
+## <a id="module-index"></a>📘 Module Index
 
-| No. |   | Preview |   | Module Title |   | Description |
-|:---:|:-:|:--------:|:-:|:-------------|:-:|:-------------|
+| No. | &nbsp; | Preview | &nbsp; | Module Title | &nbsp; | Description |
+|:---:|:------:|:--------:|:------:|:-------------:|:------:|:-------------|
 | 1 | | <img src="assets/images/cc.jpg" width="80" style="border-radius:10px;"> | | [Introduction to Cloud Computing](/_posts/2025-10-28-module1-introduction-to-cloud-computing.md) | | Virtualization, Cloud models, Deployment types, AWS overview. |
 | 2 | | <img src="assets/images/ec2.jpg" width="80" style="border-radius:10px;"> | | [Getting Started with AWS & EC2](/_posts/2025-10-29-module2-getting-started-with-aws-and-ec2.md) | | EC2 instances, AMIs, EBS, and key pair management. |
 | 3 | | <img src="assets/images/ebs.jpg" width="80" style="border-radius:10px;"> | | [Elastic Block Store (EBS) & Elastic File System (EFS)](/_posts/2025-10-30-module3-elastic-block-store-ebs-and-elastic-file-system-efs.md) | | Persistent storage, snapshots, Multi-Attach, lifecycle. |
@@ -72,4 +126,7 @@ h2, h3 { color: #ff6600; margin-top: 40px; margin-bottom: 20px; text-shadow: 1px
 | 12 | | <img src="assets/images/cloudwatch.jpg" width="80" style="border-radius:10px;"> | | [Monitoring & Logging (CloudWatch, CloudTrail, Config)](/_posts/2025-11-09-module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.md) | | Observability, audit logs, and compliance tools. |
 | 13 | | <img src="assets/images/iam.jpg" width="80" style="border-radius:10px;"> | | [Identity & Access Management (IAM)](/_posts/2025-11-10-module13-identity-and-access-management-iam.md) | | Users, roles, policies, and MFA. |
 | 14 | | <img src="assets/images/security.jpg" width="80" style="border-radius:10px;"> | | [AWS Security & Encryption Services](/_posts/2025-11-11-module14-aws-security-and-encryption-services.md) | | Encryption, KMS, Secrets Manager, GuardDuty. |
-| 15 | | <img src="assets/images/devops.jpg" width="80" style="border-radius:10px;"> | | [Automation & DevOps Tools on AWS](/_posts/202
+| 15 | | <img src="assets/images/devops.jpg" width="80" style="border-radius:10px;"> | | [Automation & DevOps Tools on AWS](/_posts/2025-11-12-module15-automation-and-devops-tools-on-aws.md) | | CI/CD pipelines, CodeCommit, CodeBuild, CodeDeploy. |
+| 16 | | <img src="assets/images/cost.jpg" width="80" style="border-radius:10px;"> | | [AWS Cost Management & Billing](/_posts/2025-11-13-module16-aws-cost-management-and-billing.md) | | Budgets, Cost Explorer, and cost optimization. |
+| 17 | | <img src="assets/images/backup.jpg" width="80" style="border-radius:10px;"> | | [High Availability and Fault Tolerance Architecture in AWS](/_posts/2025-11-14-module17-high-availability-and-fault-tolerance-architecture-in-aws.md) | | Backup automation, DR design, and recovery points. |
+| 18 | | <img src="assets/images/migration.jpg" width="80" style="border
