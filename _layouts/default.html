@@ -5,16 +5,13 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <meta name="description" content="{{ page.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Minima default CSS -->
     {{ site.theme.css | relative_url }}
-
     <!-- YOUR CUSTOM CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-
     {% feed_meta %}
     {% seo %}
-    
+   
     <!-- Dark/Light Mode CSS Variables -->
     <style>
       /* CSS Custom Properties for Theming */
@@ -36,7 +33,6 @@
         --nav-bg-orange: linear-gradient(90deg, #ff9900, #ff6600);
         --nav-text-orange: #fff;
       }
-
       .dark-mode {
         /* Dark Theme */
         --bg-color: #1a1a1a;
@@ -55,57 +51,46 @@
         --nav-bg-orange: linear-gradient(90deg, #cc7a00, #994c00);
         --nav-text-orange: #ffd699;
       }
-
       /* Apply theme variables to body and elements */
       body {
         background-color: var(--bg-color);
         color: var(--text-color);
         transition: background-color 0.3s ease, color 0.3s ease;
       }
-
       h1, h2, h3, h4, h5, h6 {
         color: var(--heading-color);
       }
-
       a {
         color: var(--link-color);
       }
-
       code {
         background-color: var(--code-bg);
       }
-
       /* Header and navigation theming */
       header {
         border-bottom-color: var(--border-color) !important;
       }
-
       .nav-button-lightgreen {
         background-color: var(--nav-bg-lightgreen) !important;
         color: var(--nav-text-lightgreen) !important;
       }
-
       .nav-button-lightblue {
         background-color: var(--nav-bg-lightblue) !important;
         color: var(--nav-text-lightblue) !important;
       }
-
       .nav-button-orange {
         background: var(--nav-bg-orange) !important;
         color: var(--nav-text-orange) !important;
       }
-
       /* Footer theming */
       footer {
         border-top-color: var(--footer-border) !important;
         color: var(--footer-text) !important;
       }
-
       /* Main content area */
       .container {
         background-color: var(--bg-color);
       }
-
       /* Dark mode toggle button positioning */
       #dark-mode-toggle-container {
         position: fixed;
@@ -114,13 +99,12 @@
         z-index: 1000;
       }
     </style>
-    
+   
     <script>
       function toggleDarkMode() {
         const body = document.body;
         const toggle = document.getElementById('dark-mode-toggle');
         const icon = document.getElementById('toggle-icon');
-
         if (body.classList.contains('dark-mode')) {
           // Switch to Light
           body.classList.remove('dark-mode');
@@ -137,14 +121,12 @@
           toggle.title = 'Switch to Light Mode';
         }
       }
-
       // On page load: Apply saved preference
       document.addEventListener('DOMContentLoaded', () => {
         const saved = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const toggle = document.getElementById('dark-mode-toggle');
         const icon = document.getElementById('toggle-icon');
-
         if (saved === 'dark' || (!saved && prefersDark)) {
           document.body.classList.add('dark-mode');
           icon.textContent = '☀️';
@@ -161,10 +143,8 @@
     <div class="container">
       <!-- HEADER -->
       <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #eee;">
-
         <!-- Navigation Buttons -->
         <nav style="margin-top:0.5rem; display:flex; gap:10px; flex-wrap:wrap; align-items:center;">
-
           <!-- AWS Zero to Architect (Light Green Fancy Font Button) -->
           <a href="{{ site.baseurl }}/" class="nav-button-lightgreen" style="
             display:inline-block;
@@ -176,11 +156,10 @@
             font-size:1.1rem;
             transition:all 0.3s ease;
             box-shadow:0 2px 4px rgba(0,0,0,0.1);
-          " onmouseover="this.style.transform='translateY(-2px)';" 
+          " onmouseover="this.style.transform='translateY(-2px)';"
             onmouseout="this.style.transform='translateY(0)';">
             ☁️ {{ site.title }}
           </a>
-
           <!-- About Button (Light Blue) -->
           <a href="{{ site.baseurl }}/about" class="nav-button-lightblue" style="
             display:inline-block;
@@ -191,11 +170,10 @@
             font-family:'Poppins', 'Segoe UI', sans-serif;
             transition:all 0.3s ease;
             box-shadow:0 2px 4px rgba(0,0,0,0.1);
-          " onmouseover="this.style.transform='translateY(-2px)';" 
+          " onmouseover="this.style.transform='translateY(-2px)';"
             onmouseout="this.style.transform='translateY(0)';">
             About
           </a>
-
           <!-- Main Index Button (Orange Gradient) -->
           <a href="https://asiandevs.github.io/aws-zero-to-architect-blog/#module-index" class="nav-button-orange" style="
             display:inline-block;
@@ -206,27 +184,25 @@
             font-family:'Poppins', 'Segoe UI', sans-serif;
             transition:all 0.3s ease;
             box-shadow:0 2px 4px rgba(0,0,0,0.1);
-          " onmouseover="this.style.transform='translateY(-2px)';" 
+          " onmouseover="this.style.transform='translateY(-2px)';"
             onmouseout="this.style.transform='translateY(0)';">
             🏠 Main Index
           </a>
         </nav>
       </header>
-
       <!-- MAIN CONTENT -->
       <main>
         {{ content }}
+        {% include module-navigation.html %}
       </main>
-
       <!-- FOOTER -->
       <footer style="margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #eee; font-size:0.9rem; color:#666; text-align:center;">
         © {{ site.time | date: '%Y' }} {{ site.title }} • Built with Jekyll on GitHub Pages
       </footer>
     </div>
-
     <!-- Dark Mode Toggle -->
     <div id="dark-mode-toggle-container">
-      <button id="dark-mode-toggle" 
+      <button id="dark-mode-toggle"
         style="
           width: 50px; height: 50px;
           border-radius: 50%;
@@ -248,9 +224,5 @@
         <span id="toggle-icon">🌙</span>
       </button>
     </div>
-    {{ content }}
-
-<!-- Add this line at the bottom of your layout -->
-{% include module-navigation.html %}
   </body>
 </html>
