@@ -15,11 +15,6 @@ next:
   url: "/2025/10/30/module4-amazon-s3-simple-storage-service.html"
 ---
 
-#  Module 3 - Elastic Block Store (EBS) and Elastic File System (EFS)
-
----
-
-
 ##  Learning Objectives
 
 By the end of this module, you will be able to:
