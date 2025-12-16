@@ -7,15 +7,6 @@ image: /assets/images/migration.jpg
 description: "AWS security frameworks, compliance standards, governance tools, and security services implementation."
 ---
 
-# Module 18 – AWS Security, Compliance and Governance Frameworks
-
-## ☁️ AWS Shared Responsibility Model
-
-| **Responsibility**          | **AWS**                                                       | **Customer**                                     |
-| --------------------------- | ------------------------------------------------------------- | ------------------------------------------------ |
-| **Security "of" the Cloud** | AWS secures infrastructure, hypervisor, hardware, networking. | —                                                |
-| **Security "in" the Cloud** | —                                                             | You secure OS, apps, IAM, data, network configs. |
-
 > 💡 **Analogy:**
 > AWS builds and secures the apartment building. You're responsible for locking your own door.
 
