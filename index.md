@@ -78,15 +78,15 @@ table img {
 table img:hover {
   transform: scale(1.05);
 }
-/* Module Title Column */
+/* Module Title Column - Orange links (visible from the start) */
 table td:nth-child(5) a {
-  color: #000 !important;
+  color: #ff6600 !important;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
 table td:nth-child(5) a:hover {
-  color: #ff6600 !important;
+  color: #e65c00 !important;
   text-decoration: underline;
 }
 /* Links */
