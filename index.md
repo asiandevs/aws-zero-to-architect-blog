@@ -113,19 +113,46 @@ h2, h3 {
 | No. | &nbsp; | Preview | &nbsp; | Module Title | &nbsp; | Description |
 |:---:|:------:|:--------:|:------:|:-------------:|:------:|:-------------|
 | 1 | | <img src="assets/images/cc.jpg" width="80" style="border-radius:10px;"> | | [Introduction to Cloud Computing]({{ site.baseurl }}/2025/10/28/module1-introduction-to-cloud-computing.html) | | Virtualization, Cloud models, Deployment types, AWS overview. |
-| 2 | | <img src="assets/images/ec2.jpg" width="80" style="border-radius:10px;"> | | [Getting Started with AWS & EC2]({{ site.baseurl }}{% post_url 2025-10-29-module2-getting-started-with-aws-and-ec2 %}) | | EC2 instances, AMIs, EBS, and key pair management. |
-| 3 | | <img src="assets/images/ebs.jpg" width="80" style="border-radius:10px;"> | | [Elastic Block Store (EBS) & Elastic File System (EFS)]({{ site.baseurl }}{% post_url 2025-10-30-module3-elastic-block-store-ebs-and-elastic-file-system-efs %}) | | Persistent storage, snapshots, Multi-Attach, lifecycle. |
-| 4 | | <img src="assets/images/s3.jpg" width="80" style="border-radius:10px;"> | | [Amazon S3: Simple Storage Service]({{ site.baseurl }}{% post_url 2025-10-30-module4-amazon-s3-simple-storage-service %}) | | Object storage, versioning, lifecycle, replication. |
-| 5 | | <img src="assets/images/vpc.jpg" width="80" style="border-radius:10px;"> | | [Networking with Amazon VPC]({{ site.baseurl }}{% post_url 2025-11-02-module5-networking-with-amazon-vpc %}) | | Custom VPCs, subnets, gateways, and routing. |
-| 6 | | <img src="assets/images/elb.jpg" width="80" style="border-radius:10px;"> | | [Elastic Load Balancing & Auto Scaling]({{ site.baseurl }}{% post_url 2025-11-03-module6-elastic-load-balancing-and-auto-scaling %}) | | Load balancing types, scaling policies, and health checks. |
-| 7 | | <img src="assets/images/route53.jpg" width="80" style="border-radius:10px;"> | | [Amazon Route 53 (DNS & Routing)]({{ site.baseurl }}{% post_url 2025-11-04-module7-amazon-route53-dns-and-traffic-routing %}) | | DNS routing, hosted zones, and failover strategies. |
-| 8 | | <img src="assets/images/cloudformation.jpg" width="80" style="border-radius:10px;"> | | [AWS CloudFormation (Infrastructure as Code)]({{ site.baseurl }}{% post_url 2025-11-05-module8-aws-cloudformation-infrastructure-as-code %}) | | IaC templates, stacks, and automation. |
-| 9 | | <img src="assets/images/lambda.jpg" width="80" style="border-radius:10px;"> | | [AWS Lambda & API Gateway (Serverless)]({{ site.baseurl }}{% post_url 2025-11-06-module9-aws-lambda-and-api-gateway-serverless-architecture %}) | | Build serverless APIs and event-driven apps. |
-| 10 | | <img src="assets/images/cloudfront.jpg" width="80" style="border-radius:10px;"> | | [Amazon S3 & CloudFront (Global Delivery)]({{ site.baseurl }}{% post_url 2025-11-07-module10-amazon-s3-and-cloudfront-global-content-delivery %}) | | Static hosting, CDN distribution, HTTPS setup. |
-| 11 | | <img src="assets/images/rds.jpg" width="80" style="border-radius:10px;"> | | [AWS RDS & DynamoDB (Relational vs NoSQL)]({{ site.baseurl }}{% post_url 2025-11-08-module11-aws-rds-and-dynamodb-relational-vs-nosql %}) | | Database architecture, scaling, replication. |
-| 12 | | <img src="assets/images/cloudwatch.jpg" width="80" style="border-radius:10px;"> | | [Monitoring & Logging (CloudWatch, CloudTrail, Config)]({{ site.baseurl }}{% post_url 2025-11-09-module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config %}) | | Observability, audit logs, and compliance tools. |
-| 13 | | <img src="assets/images/iam.jpg" width="80" style="border-radius:10px;"> | | [Identity & Access Management (IAM)]({{ site.baseurl }}{% post_url 2025-11-10-module13-identity-and-access-management-iam %}) | | Users, roles, policies, and MFA. |
-| 14 | | <img src="assets/images/security.jpg" width="80" style="border-radius:10px;"> | | [AWS Security & Encryption Services]({{ site.baseurl }}{% post_url 2025-11-11-module14-aws-security-and-encryption-services %}) | | Encryption, KMS, Secrets Manager, GuardDuty. |
-| 15 | | <img src="assets/images/devops.jpg" width="80" style="border-radius:10px;"> | | [Automation & DevOps Tools on AWS]({{ site.baseurl }}{% post_url 2025-11-12-module15-automation-and-devops-tools-on-aws %}) | | CI/CD pipelines, CodeCommit, CodeBuild, CodeDeploy. |
-| 16 | | <img src="assets/images/cost.jpg" width="80" style="border-radius:10px;"> | | [AWS Cost Management & Billing]({{ site.baseurl }}{% post_url 2025-11-13-module16-aws-cost-management-and-billing %}) | | Budgets, Cost Explorer, and cost optimization. |
-| 17 | | <img src="assets/images/backup.jpg" width="80" style="border-radius:10px;"> | | [High Availability and Fault Tolerance Architecture in AWS]({{ site.baseurl }}{% post_url 2025-11-14-module17-high-availability-and-fault-tolerance-architecture-in-aws %}) | | Backup automation, DR design, and recovery points. |
+| 2 | | <img src="assets/images/ec2.jpg" width="80" style="border-radius:10px;"> | | [Getting Started with AWS & EC2]({{ site.baseurl }}/2025/10/29/module2-getting-started-with-aws-and-ec2.html) | | EC2 instances, AMIs, EBS, and key pair management. |
+| 3 | | <img src="assets/images/ebs.jpg" width="80" style="border-radius:10px;"> | | [Elastic Block Store (EBS) & Elastic File System (EFS)]({{ site.baseurl }}/2025/10/30/module3-elastic-block-store-ebs-and-elastic-file-system-efs.html) | | Persistent storage, snapshots, Multi-Attach, lifecycle. |
+| 4 | | <img src="assets/images/s3.jpg" width="80" style="border-radius:10px;"> | | [Amazon S3: Simple Storage Service]({{ site.baseurl }}/2025/10/30/module4-amazon-s3-simple-storage-service.html) | | Object storage, versioning, lifecycle, replication. |
+| 5 | | <img src="assets/images/vpc.jpg" width="80" style="border-radius:10px;"> | | [Networking with Amazon VPC]({{ site.baseurl }}/2025/11/02/module5-networking-with-amazon-vpc.html) | | Custom VPCs, subnets, gateways, and routing. |
+| 6 | | <img src="assets/images/elb.jpg" width="80" style="border-radius:10px;"> | | [Elastic Load Balancing & Auto Scaling]({{ site.baseurl }}/2025/11/03/module6-elastic-load-balancing-and-auto-scaling.html) | | Load balancing types, scaling policies, and health checks. |
+| 7 | | <img src="assets/images/route53.jpg" width="80" style="border-radius:10px;"> | | [Amazon Route 53 (DNS & Routing)]({{ site.baseurl }}/2025/11/04/module7-amazon-route53-dns-and-traffic-routing.html) | | DNS routing, hosted zones, and failover strategies. |
+| 8 | | <img src="assets/images/cloudformation.jpg" width="80" style="border-radius:10px;"> | | [AWS CloudFormation (Infrastructure as Code)]({{ site.baseurl }}/2025/11/05/module8-aws-cloudformation-infrastructure-as-code.html) | | IaC templates, stacks, and automation. |
+| 9 | | <img src="assets/images/lambda.jpg" width="80" style="border-radius:10px;"> | | [AWS Lambda & API Gateway (Serverless)]({{ site.baseurl }}/2025/11/06/module9-aws-lambda-and-api-gateway-serverless-architecture.html) | | Build serverless APIs and event-driven apps. |
+| 10 | | <img src="assets/images/cloudfront.jpg" width="80" style="border-radius:10px;"> | | [Amazon S3 & CloudFront (Global Delivery)]({{ site.baseurl }}/2025/11/07/module10-amazon-s3-and-cloudfront-global-content-delivery.html) | | Static hosting, CDN distribution, HTTPS setup. |
+| 11 | | <img src="assets/images/rds.jpg" width="80" style="border-radius:10px;"> | | [AWS RDS & DynamoDB (Relational vs NoSQL)]({{ site.baseurl }}/2025/11/08/module11-aws-rds-and-dynamodb-relational-vs-nosql.html) | | Database architecture, scaling, replication. |
+| 12 | | <img src="assets/images/cloudwatch.jpg" width="80" style="border-radius:10px;"> | | [Monitoring & Logging (CloudWatch, CloudTrail, Config)]({{ site.baseurl }}/2025/11/09/module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.html) | | Observability, audit logs, and compliance tools. |
+| 13 | | <img src="assets/images/iam.jpg" width="80" style="border-radius:10px;"> | | [Identity & Access Management (IAM)]({{ site.baseurl }}/2025/11/10/module13-identity-and-access-management-iam.html) | | Users, roles, policies, and MFA. |
+| 14 | | <img src="assets/images/security.jpg" width="80" style="border-radius:10px;"> | | [AWS Security & Encryption Services]({{ site.baseurl }}/2025/11/11/module14-aws-security-and-encryption-services.html) | | Encryption, KMS, Secrets Manager, GuardDuty. |
+| 15 | | <img src="assets/images/devops.jpg" width="80" style="border-radius:10px;"> | | [Automation & DevOps Tools on AWS]({{ site.baseurl }}/2025/11/12/module15-automation-and-devops-tools-on-aws.html) | | CI/CD pipelines, CodeCommit, CodeBuild, CodeDeploy. |
+| 16 | | <img src="assets/images/cost.jpg" width="80" style="border-radius:10px;"> | | [AWS Cost Management & Billing]({{ site.baseurl }}/2025/11/13/module16-aws-cost-management-and-billing.html) | | Budgets, Cost Explorer, and cost optimization. |
+| 17 | | <img src="assets/images/backup.jpg" width="80" style="border-radius:10px;"> | | [High Availability and Fault Tolerance Architecture in AWS]({{ site.baseurl }}/2025/11/14/module17-high-availability-and-fault-tolerance-architecture-in-aws.html) | | Backup automation, DR design, and recovery points. |
+| 18 | | <img src="assets/images/migration.jpg" width="80" style="border-radius:10px;"> | | [AWS Security Compliance and Governance Frameworks]({{ site.baseurl }}/2025/11/14/module18-aws-security-compliance-and-governance-frameworks.html) | | Security, Compliance, and Governance. |
+| 19 | | <img src="assets/images/well-architected.jpg" width="80" style="border-radius:10px;"> | | [AWS Data Analytics]({{ site.baseurl }}/2025/11/15/module19-aws-data-analytics.html) | | Pillars of architecture excellence and governance. |
+| 20 | | <img src="assets/images/review.png" width="80" style="border-radius:10px;"> | | [AWS Architecture Design Patterns]({{ site.baseurl }}/2025/11/15/module20-aws-architecture-design-patterns.html) | | Final project integrating all modules. |
+
+---
+
+## Learning Outcomes
+
+By the end of this course, you will:
+
+* Understand cloud service models and AWS core services.
+* Design secure, scalable, and resilient cloud architectures.
+* Automate deployments using Infrastructure as Code.
+* Monitor, secure, and optimize workloads effectively.
+* Complete a full end-to-end AWS solution project.
+
+---
+
+### Next Steps
+
+* Visit each module post for videos and labs.
+* Access GitHub repositories for templates and sample code.
+* Subscribe for updates and future AWS specialty modules.
+
+---
+
+© 2025 Monowar Mukul — AWS Cloud Architecture Learning Series
