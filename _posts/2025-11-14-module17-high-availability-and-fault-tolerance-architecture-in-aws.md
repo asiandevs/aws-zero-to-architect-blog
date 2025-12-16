@@ -6,9 +6,9 @@ tags: ["aws", "ha", "multi-az", "multi-region", "resilience"]
 image: /assets/images/backup.jpg
 description: "Designing highly available and fault-tolerant architectures using multi-AZ, multi-region strategies, and AWS resilience services."
 ---
-
+---
 # Module 17 – High Availability and Fault Tolerance Architecture in AWS
-
+---
 ## 🎯 Learning Objectives
 
 By the end of this module, you will be able to:
