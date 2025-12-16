@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 10
-# File: _posts/2025-11-07-module10-amazon-s3-and-cloudfront-global-content-delivery.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 10: Amazon S3 & CloudFront (Global Delivery)"
 date: 2025-11-07
@@ -9,10 +5,6 @@ categories: aws s3 cloudfront cdn
 tags: cloudfront cdn s3-static https
 image: /assets/images/cloudfront.jpg
 description: "Static hosting, CDN distribution, HTTPS setup."
----
-
-#  Module 10 – Amazon S3 and CloudFront (Global Content Delivery & Security) 🌎
-
 ---
 
 ## 🎯 Learning Objectives
