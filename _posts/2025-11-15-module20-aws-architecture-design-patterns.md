@@ -7,9 +7,6 @@ image: /assets/images/capstone.jpg
 description: "Final AWS Architecture Design Patterns and Exam Readiness - Applying the six pillars of AWS Well-Architected Framework"
 ---
 
-#  Module 20 – AWS Architecture Design Patterns and Exam Readiness
-
----
 
 ## 🎯 Learning Objectives
 
