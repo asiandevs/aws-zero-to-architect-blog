@@ -112,7 +112,7 @@ h2, h3 {
 
 | No. | &nbsp; | Preview | &nbsp; | Module Title | &nbsp; | Description |
 |:---:|:------:|:--------:|:------:|:-------------:|:------:|:-------------|
-| 1 | | <img src="assets/images/cc.jpg" width="80" style="border-radius:10px;"> | | [Introduction to Cloud Computing]({{ site.baseurl }}{% post_url 2025-10-28-module1-introduction-to-cloud-computing %}) | | Virtualization, Cloud models, Deployment types, AWS overview. |
+| 1 | | <img src="assets/images/cc.jpg" width="80" style="border-radius:10px;"> | | [Introduction to Cloud Computing]({{ site.baseurl }}/2025/10/28/module1-introduction-to-cloud-computing.html) | | Virtualization, Cloud models, Deployment types, AWS overview. |
 | 2 | | <img src="assets/images/ec2.jpg" width="80" style="border-radius:10px;"> | | [Getting Started with AWS & EC2]({{ site.baseurl }}{% post_url 2025-10-29-module2-getting-started-with-aws-and-ec2 %}) | | EC2 instances, AMIs, EBS, and key pair management. |
 | 3 | | <img src="assets/images/ebs.jpg" width="80" style="border-radius:10px;"> | | [Elastic Block Store (EBS) & Elastic File System (EFS)]({{ site.baseurl }}{% post_url 2025-10-30-module3-elastic-block-store-ebs-and-elastic-file-system-efs %}) | | Persistent storage, snapshots, Multi-Attach, lifecycle. |
 | 4 | | <img src="assets/images/s3.jpg" width="80" style="border-radius:10px;"> | | [Amazon S3: Simple Storage Service]({{ site.baseurl }}{% post_url 2025-10-30-module4-amazon-s3-simple-storage-service %}) | | Object storage, versioning, lifecycle, replication. |
