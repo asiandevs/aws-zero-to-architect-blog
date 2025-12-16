@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 11
-# File: _posts/2025-11-08-module11-aws-rds-and-dynamodb-relational-vs-nosql.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 11: AWS RDS & DynamoDB (Relational vs NoSQL)"
 date: 2025-11-08
@@ -9,10 +5,6 @@ categories: aws rds dynamodb database
 tags: rds dynamodb replication scaling
 image: /assets/images/rds.jpg
 description: "Database architecture, scaling, replication."
----
-
-#  Module 11 – AWS RDS and DynamoDB (Relational vs. NoSQL Databases) 🧮
-
 ---
 
 ## 🎯 Learning Objectives
