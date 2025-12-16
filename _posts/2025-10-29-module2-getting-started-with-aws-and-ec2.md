@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 2
-# File: _posts/2025-10-29-module2-getting-started-with-aws-and-ec2.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 2: Getting Started with AWS & EC2"
 date: 2025-10-29
