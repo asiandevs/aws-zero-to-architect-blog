@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 12
-# File: _posts/2025-11-09-module12-aws-monitoring-and-logging-cloudwatch-cloudtrail-config.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 12: Monitoring & Logging (CloudWatch, CloudTrail, Config)"
 date: 2025-11-09
@@ -9,10 +5,6 @@ categories: aws cloudwatch cloudtrail
 tags: cloudwatch alarms logs audit
 image: /assets/images/cloudwatch.jpg
 description: "Observability, audit logs, and compliance tools."
----
-
-#  Module 12 – AWS Monitoring and Logging (CloudWatch, CloudTrail, AWS Config) 🛰️
-
 ---
 
 ## 🎯 Learning Objectives
