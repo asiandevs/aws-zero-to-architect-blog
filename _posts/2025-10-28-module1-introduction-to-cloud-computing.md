@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 1
-# File: _posts/2025-10-28-module1-introduction-to-cloud-computing.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 1 – Introduction to Cloud Computing"
 date: 2025-10-28
