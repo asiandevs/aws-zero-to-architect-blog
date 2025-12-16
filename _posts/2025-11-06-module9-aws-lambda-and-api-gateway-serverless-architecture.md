@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 9
-# File: _posts/2025-11-06-module9-aws-lambda-and-api-gateway-serverless-architecture.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 9: AWS Lambda & API Gateway (Serverless)"
 date: 2025-11-06
@@ -9,10 +5,6 @@ categories: aws lambda serverless
 tags: lambda api-gateway event-driven
 image: /assets/images/lambda.jpg
 description: "Build serverless APIs and event-driven apps."
----
-
-#  Module 9 – AWS Lambda and API Gateway (Serverless Architecture) ⚙️
-
 ---
 
 ## 🎯 Learning Objectives
