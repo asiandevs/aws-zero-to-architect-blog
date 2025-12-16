@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 7
-# File: _posts/2025-11-04-module7-amazon-route53-dns-and-traffic-routing.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 7: Amazon Route 53 (DNS & Routing)"
 date: 2025-11-04
@@ -9,10 +5,6 @@ categories: aws dns route53
 tags: route53 hosted-zone failover health-check
 image: /assets/images/route53.jpg
 description: "DNS routing, hosted zones, and failover strategies."
----
-
-# Module 7 – Amazon Route 53 (DNS and Traffic Routing) 🌍
-
 ---
 
 ## 🎯 Learning Objectives
