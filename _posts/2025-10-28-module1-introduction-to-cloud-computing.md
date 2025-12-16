@@ -7,10 +7,6 @@ image: /assets/images/cc.jpg
 description: "Virtualization, Cloud service models, Deployment models, AWS overview."
 ---
 
-#  Module 1 – Introduction to Cloud Computing
-
----
-
 ##  Learning Objectives
 
 By the end of this module, you’ll be able to:
