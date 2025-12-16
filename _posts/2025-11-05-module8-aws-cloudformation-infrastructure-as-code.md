@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 8
-# File: _posts/2025-11-05-module8-aws-cloudformation-infrastructure-as-code.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 8: AWS CloudFormation (Infrastructure as Code)"
 date: 2025-11-05
@@ -9,10 +5,6 @@ categories: aws cloudformation iac
 tags: cloudformation stack template drift
 image: /assets/images/cloudformation.jpg
 description: "IaC templates, stacks, and automation."
----
-
-#  Module 8 – AWS CloudFormation (Infrastructure as Code & Automation) 🧩
-
 ---
 
 ## 🎯 Learning Objectives
