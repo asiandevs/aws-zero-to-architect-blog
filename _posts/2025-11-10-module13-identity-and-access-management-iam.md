@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 13
-# File: _posts/2025-11-10-module13-identity-and-access-management-iam.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 13: Identity & Access Management (IAM)"
 date: 2025-11-10
@@ -9,10 +5,6 @@ categories: aws iam security
 tags: iam users roles policies mfa
 image: /assets/images/iam.jpg
 description: "Users, roles, policies, and MFA."
----
-
-#  Module 13 – AWS IAM and Security Services (Identity, Access, and Encryption) 🔐
-
 ---
 
 ## 🎯 Learning Objectives
