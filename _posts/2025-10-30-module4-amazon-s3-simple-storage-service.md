@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 4
-# File: _posts/2025-10-30-module4-amazon-s3-simple-storage-service.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 4: Amazon S3: Simple Storage Service"
 date: 2025-10-31
@@ -9,10 +5,6 @@ categories: aws storage s3
 tags: s3 versioning lifecycle replication glacier
 image: /assets/images/s3.jpg
 description: "Object storage, versioning, lifecycle, replication."
----
-
-# Module 4 - Amazon S3: Simple Storage Service 🪣
-
 ---
 
 ## 🎯 Learning Objectives
