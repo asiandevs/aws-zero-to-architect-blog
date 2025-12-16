@@ -7,10 +7,6 @@ image: /assets/images/ec2.jpg
 description: "EC2 instances, AMIs, EBS, and key pair management."
 ---
 
-#  Module 2 – Getting Started with AWS & EC2
-
----
-
 ##  Learning Objectives
 
 By the end of this module, you will be able to:
