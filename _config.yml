@@ -4,7 +4,8 @@ description: Blog series – from Cloud 101 to production-grade architectures
 theme: minima
 logo: /assets/images/icons8-aws-logo-100.png
 permalink: /:year/:month/:day/:title.html
-url: "https://asiandevs.github.io/aws-zero-to-architect-blog"
+baseurl: "/aws-zero-to-architect-blog"
+url: "https://asiandevs.github.io"
 baseurl: ""
 header_pages:
   - about.md
