@@ -12,3 +12,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 main_index_url: "/#module-index"
+
+# Default layout for all posts
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "page"
