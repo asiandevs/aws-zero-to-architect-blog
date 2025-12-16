@@ -7,10 +7,6 @@ image: /assets/images/data-analytics.jpg
 description: "Building end-to-end data analytics pipelines on AWS using Kinesis, S3, Glue, Athena, and Redshift for scalable data processing and insights."
 ---
 
-#  Module 19 – AWS Data Analytics and Big Data Architecture 📊
-
----
-
 ## 🎯 Learning Objectives
 
 By the end of this module, you will be able to:
