@@ -1,7 +1,3 @@
-# ──────────────────────────────────────────────────────────────
-# MODULE 6
-# File: _posts/2025-11-03-module6-elastic-load-balancing-and-auto-scaling.md
-# ──────────────────────────────────────────────────────────────
 ---
 title: "Module 6: Elastic Load Balancing & Auto Scaling"
 date: 2025-11-03
@@ -9,10 +5,6 @@ categories: aws elb autoscaling
 tags: elb alb nlb autoscaling health-check
 image: /assets/images/elb.jpg
 description: "Load balancing types, scaling policies, and health checks."
----
-
-#  Module 6 – Elastic Load Balancing (ELB) and Auto Scaling ⚖️
-
 ---
 
 ## 🎯 Learning Objectives
