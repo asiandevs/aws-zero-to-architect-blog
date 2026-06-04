@@ -5,7 +5,8 @@ theme: minima
 logo: /assets/images/icons8-aws-logo-100.png
 permalink: /:year/:month/:day/:title.html
 baseurl: "/aws-zero-to-architect-blog"
-url: "https://asiandevs.github.io"
+# url: "https://asiandevs.github.io"
+url: "https://monowar-mukul.github.io"
 header_pages:
   - about.md
 plugins:
